@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Che Tan - Game Design Portfolio </title>
+	<!-- <link rel="icon"
+		  type="images/png"
+		  href="images/icon.png" /> -->
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@450&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <div id="header">
+      <span id="title" title="The Plasmodium Corporation">
+        <img src="images/logo.png" id="name" onclick="linkAlert()" onmouseover="revealImage(this.id)">
+      </span>
+      <span id="menuBar">
+    	<ul id="menu">
+    		<li class="menuItem" onclick="linkAlert()" id="home" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> Home </li>
+    		<li class="menuItem" id="aboutUs" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> About Us </li>
+    		<li class="menuItem" onclick="linkAlert()" id="products" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> Products  </li>
+    		<li class="menuItem" onclick="linkAlert()" id="careers" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> Careers  </li>
+    		<li class="menuItem" onclick="linkAlert()" id="contactUs" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> Contact Us </li>
+      	<li class="menuItem" id="promo"> Promo Code <input type="text" id="codeInput" placeholder="Get a discount!"> <button type="button" onclick="enterCode()"> Enter </button> </li>
+    	</ul>
+      </span>
+    </div>
+  	<div id="article">
+  		<h1 id="pageName" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> About Us </h1>
+      <div id="hackDiv">
+        <p id="hack" onclick="clickAlert()" onmouseover="revealText(this.id)"  onmouseout="revertText(this.id)">
+          Hey you! Don’t be fooled! Enter ‘verumvisus’ in the promo code to see the truth! Click this to copy the code! -The Hacktivist
+        </p>
+      </div>
+      <div id="companyDiv" class="blue" class="sections" onmouseover="removeBlue(this.id)">
+        <span class="imageSpan">
+          <img id="companyImage" src="images/buildingEdit.png" onmouseover="revealImage(this.id)" onmouseout="revertImage(this.id)">
+        </span>
+        <span class="textSpan">
+    		<h2 id="company" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> Our Company </h2>
+        <p id="companyText" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)">
+    			We are Plasmodium, a team of dedicated individuals working together to help better the world.
+          We pride ourselves on own high-quality products and services in all industries we have the privilege of working with.
+          We deliver high speed Internet, push the boundaries of science, power the homes of many, and craft a unique online experiences for all our customers.
+    		</p>
+        </span>
+      </div>
+      <div id="truthDiv" class="white" class="sections">
+        <span class="textSpan">
+        <h2 id="truth" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> Our Truth </h2>
+        <p id="truthText" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)">
+          Recently, there has been some rumors surrounding our business practices. We assure you that these are nothing but misinformation. Rest assured, our team of lawyers are working day and night to fight off these baseless accusations so that everyone can see us once again as the positive force helping humanity move forward.
+        </p>
+        </span>
+        <span class="imageSpan">
+          <img id="truthImage" src="images/newsEdit.png" onmouseover="revealImage(this.id)" onmouseout="revertImage(this.id)">
+        </span>
+      </div>
+      <div id="teamDiv" class="blue" class="sections" onmouseover="removeBlue(this.id)">
+        <span class="imageSpan">
+          <img id="teamImage" src="images/teamEdit.png" onmouseover="revealImage(this.id)" onmouseout="revertImage(this.id)">
+        </span>
+        <span class="textSpan">
+        <h2 id="team" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> Our Team </h2>
+        <p id="teamText" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)">
+          To ensure the highest quality of service, we at Plasmodium work with only those who have a burning passion for betterment just like ourselves. All our staff members work tirelessly to uphold our core values of quality and growth.
+       Do you have the drive to lead the world to a new era? If so, contact us today! We will be glad to welcome you to our family!
+        </p>
+        </span>
+      </div>
+      <div id="promiseDiv" class="white" class="sections">
+        <span class="textSpan">
+        <h2 id="promise" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> Our Promise </h2>
+        <p id="promiseText" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)">
+          We make it our duty to provide nothing but the best that money can buy to all our valued customers. Until we receive universally positive reception for our work, we will continue to improve it before releasing it. You can rest assured that if you see our logo and name on anything, you know it is trustworthy.
+        </p>
+        </span>
+        <span class="imageSpan">
+          <img id="promiseImage" src="images/goodEdit.png" onmouseover="revealImage(this.id)" onmouseout="revertImage(this.id)">
+        </span>
+      </div>
+      <div id="customersDiv" class="blue" class="sections" onmouseover="removeBlue(this.id)">
+        <span class="imageSpan">
+          <img id="customersImage" src="images/customerEdit.png" onmouseover="revealImage(this.id)" onmouseout="revertImage(this.id)">
+        </span>
+        <span class="textSpan">
+        <h2 id="customers" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)"> Our Customers </h2>
+        <p id="customersText" onmouseover="revealText(this.id)" onmouseout="revertText(this.id)">
+          The most important people in the world. Without our customers, we wouldn’t be where we are today. Many thanks to all of you! Please take a moment to take a look at the following responses by our many happy customers. We take pride in our work and bringing satisfaction to everyone is our greatest joy!
+        </p>
+        </span>
+      </div>
+    <footer>
+      <em>
+        Copyright Che Tan 2023
+      </em>
+    </footer>
+  <script>
+  </script>
+  </body>
+</html>
