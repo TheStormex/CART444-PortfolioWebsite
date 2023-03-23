@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="js/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Che Tan - Game Design Portfolio </title>
   <link rel="icon" type="images/png" href="images/favicon_package_v0.16/icon.png"/>
@@ -32,12 +33,16 @@
         <li class="menuItem" id="socialMedia">
            <a href="https://www.linkedin.com/in/che-t-625842a6/" class="fa fa-linkedin"></a>
         </li>
+        <li> <button type="button" onclick="toProjectPage()"> test </button> </li>
+        <li> <button type="button" onclick="toMainPage()"> test </button> </li>
       </ul>
       </span>
     </div>
-    <div class="sectionContent">
+    <div class="sectionContent" id="mainPage">
       <div class="contentParts">
         <div class="content" id="contentHome">
+          <!-- Video -->
+          <img id="homeVideo" src="images/test.png">
         </div>
         <div class="content" id="contentAbout">
           <h1>
@@ -58,23 +63,23 @@
             </div>
           </div>
           <div class="imageSide" id="">
-            <img src="images/gameImage.png">
+            <img src="images/game2.png">
           </div>
           <div class="textSide">
             <h2>
               My Game Development Skills
             </h2>
-            <p>
-              Game design (mechanics, narrative, level, UI, UX)
-              HTML, CSS, JavaScript (p5js)
-              Unity Engine (C#)
-              Vector art (Figma)
-              Pixel Art (GraphicsGale)
-              3D Modeling (Environment) (Maya)
-              Project management
-              Electronic music composition
-              Audio engineering (FL Studio 20)
-            </p>
+              <ul class="pointsList">
+                <li>Game design (mechanics, narrative, level, UI, UX)</li>
+                <li>HTML, CSS, JavaScript (p5js)</li>
+                <li>Unity Engine (C#)</li>
+                <li>Vector art (Figma v. 116.7.103)</li>
+                <li>Pixel Art (GraphicsGale)</li>
+                <li>3D Modeling (Environment) (Maya)</li>
+                <li>Project management</li>
+                <li>Electronic music composition</li>
+                <li>Audio engineering (FL Studio 20)</li>
+              <ul>
           </div>
         </div>
         <div class="content" id="contentPortfolio">
@@ -106,12 +111,16 @@
             </div>
             <div class="textSide">
               <h2>
-                Who am I?
+                Concordia University
               </h2>
-              <p>
-                Che Tan is a game designer who lives and works in Montreal. He specializes in mechanics design and has created many games in college and university for which he attained high marks, such as Re-Boot, a 2D puzzle platformer about a clone-spawning robot. Currently, while finishing up his degree in Computation Arts at Concordia University, he works at the university’s Welcome Centre as a student ambassador and is lauded by his supervisor and coworkers for his dependability and interpersonal skills. His hobbies include dancing, and he was the Canadian champion of Just Dance World Cup in 2014, 2015, and 2019.
-              <a href=images/Tan_TASK02.pdf> Resumé (CV) </a>
-              </p>
+              <ul class="pointsList">
+                <li>2019 - Present</li>
+                <li>Public University</li>
+                <li>Specialization in Computation Arts</li>
+                <li>3.89 CGPA</li>
+                <li>Member of Golden Key International Honour Society</li>
+                <li>Currently working here as student ambassador</li>
+              <ul>
             </div>
           </div>
           <div class="contentBlock">
@@ -120,12 +129,17 @@
             </div>
             <div class="textSide">
               <h2>
-                Who am I?
+                Dawson College
               </h2>
-              <p>
-                Che Tan is a game designer who lives and works in Montreal. He specializes in mechanics design and has created many games in college and university for which he attained high marks, such as Re-Boot, a 2D puzzle platformer about a clone-spawning robot. Currently, while finishing up his degree in Computation Arts at Concordia University, he works at the university’s Welcome Centre as a student ambassador and is lauded by his supervisor and coworkers for his dependability and interpersonal skills. His hobbies include dancing, and he was the Canadian champion of Just Dance World Cup in 2014, 2015, and 2019.
-              <a href=images/Tan_TASK02.pdf> Resumé (CV) </a>
-              </p>
+              <ul class="pointsList">
+                <li>2017 - 2019</li>
+                <li>Public CEGEP</li>
+                <li>Interactive Media Arts</li>
+                <li>92% Average cumulative grade</li>
+                <li>Honour Student</li>
+                <li>Letter of recommendation from main instructor (available upon request)</li>
+                <li>Performed in a play as part of the Dawson Theatre Collective</li>
+              <ul>
             </div>
           </div>
           <div class="contentBlock">
@@ -134,12 +148,16 @@
             </div>
             <div class="textSide">
               <h2>
-                Who am I?
+                Collège Saint-Louis
               </h2>
-              <p>
-                Che Tan is a game designer who lives and works in Montreal. He specializes in mechanics design and has created many games in college and university for which he attained high marks, such as Re-Boot, a 2D puzzle platformer about a clone-spawning robot. Currently, while finishing up his degree in Computation Arts at Concordia University, he works at the university’s Welcome Centre as a student ambassador and is lauded by his supervisor and coworkers for his dependability and interpersonal skills. His hobbies include dancing, and he was the Canadian champion of Just Dance World Cup in 2014, 2015, and 2019.
-              <a href=images/Tan_TASK02.pdf> Resumé (CV) </a>
-              </p>
+              <ul class="pointsList">
+                <li>2012 - 2017</li>
+                <li>Public High School</li>
+                <li>Natural Science Math</li>
+                <li>Physics and Chemistry</li>
+                <li>Performed in the Dance and acting clubs</li>
+                <li>Volunteered for Christmas basket and Open House events</li>
+              <ul>
             </div>
           </div>
         </div>
@@ -150,6 +168,7 @@
         </em>
       </footer>
     </div>
+    <div class="sectionContent" id="projectPage">
   <script>
   </script>
   </body>
