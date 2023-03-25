@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Che Tan - Game Design Portfolio </title>
   <link rel="icon" type="images/png" href="images/favicon_package_v0.16/icon.png"/>
@@ -23,7 +24,7 @@
   <body>
     <div class="sectionMenu">
       <span id="title" title="Che Tan">
-        <img src="images/largeLogoHorinzontal.png" id="name">
+        <img src="images/logo/largeLogoHorinzontal.png" id="name">
       </span>
       <span id="menuBar">
       <ul id="menu">
@@ -51,9 +52,20 @@
           <h1>
             Promo Video
           </h1>
-          <video autoplay muted loop id="video">
-            <source src="images/Tan_Task04.mp4" type="video/mp4">
-          </video>
+          <div id="videoContainer">
+            <video autoplay muted loop id="video">
+              <source src="images/Tan_Task04.mp4" type="video/mp4">
+            </video>
+            <video id="videoFull" controls>
+              <source src="images/Tan_Task04.mp4" type="video/mp4">
+            </video>
+            <div id="overlay">
+              <p>
+                Hi! Welcome to my portfolio website! <br>
+                <button type="button" onclick="playVideo()"> Play Promo Video </button>
+              </p>
+            </div>
+          </div>
         </div>
         <div class="content" id="contentAbout">
           <h1>
@@ -61,7 +73,7 @@
           </h1>
           <div class="contentBlock">
             <div class="imageSide">
-              <img src="images/gameImage.png">
+              <img src="images/test.png">
             </div>
             <div class="textSide">
               <h2>
