@@ -23,8 +23,8 @@ function createProjectPages() {
     "ok",
     "ok",
     "ok",
-    "ok",
-    "ok");
+    [],
+    ["Aiming the ball", "Hitting the pins", "Back view camera perspective"]);
   projectPages.push(project1);
   let project2 = new ProjectPage (
     "Nerdy Cards",
@@ -37,8 +37,8 @@ function createProjectPages() {
     "ok",
     "ok",
     "ok",
-    "ok",
-    "ok");
+    [],
+    ["Zones of the play area", "Different types of cards", "Different colors of cards"]);
   projectPages.push(project2);
   let project3 = new ProjectPage (
     "Re-Boot",
@@ -51,8 +51,8 @@ function createProjectPages() {
     "ok",
     "ok",
     "ok",
-    "ok",
-    "ok");
+    [],
+    ["Level 1", "Level 13", "Level 15 (Final level)"]);
   projectPages.push(project3);
   let project4 = new ProjectPage (
     "Screen",
@@ -65,8 +65,8 @@ function createProjectPages() {
     "ok",
     "ok",
     "ok",
-    "ok",
-    "ok");
+    [],
+    ["Spreadsheets", "Interactive chatroom", "Diary entries"]);
   projectPages.push(project4);
 }
 

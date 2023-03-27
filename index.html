@@ -22,7 +22,7 @@
   <meta name="theme-color" content="#000000">
   </head>
 
-  <body onload="createProjectPages()">
+  <body onload="createProjectPages(); toMainPage()">
     <div class="sectionMenu">
       <span id="title" title="Che Tan">
         <img src="images/logo/largeLogoHorinzontal.png" id="name">
@@ -33,7 +33,7 @@
         <li class="menuItem" id="aboutMe"> <a href="#contentAbout"> About Me </a> </li>
         <li class="menuItem" id="portfolio"> <a href="#contentPortfolio"> Portfolio </a> </li>
         <hr />
-        <li class="menuItem" class="projectItem"> Breakdown <br> Bowling </li>
+        <li class="menuItem" onclick="toProjectPage(1, 'breakdownBowling')"> Breakdown <br> Bowling </li>
         <li class="menuItem" class="projectItem"> Nerdy Cards </li>
         <li class="menuItem" class="projectItem"> Re-Boot </li>
         <li class="menuItem" class="projectItem"> Screen </li>
@@ -227,15 +227,7 @@
               My Responsibilities
             </h2>
               <ul class="pointsList" id="projectResponsibilities">
-                <li>Game design (mechanics, narrative, level, UI, UX)</li>
-                <li>HTML, CSS, JavaScript (p5js)</li>
-                <li>Unity Engine (C#)</li>
-                <li>Vector art (Figma v. 116.7.103)</li>
-                <li>Pixel Art (GraphicsGale v. 2.08.24)</li>
-                <li>3D Modeling for Environment (Maya)</li>
-                <li>Project management</li>
-                <li>Electronic music composition</li>
-                <li>Audio engineering (FL Studio 20)</li>
+
               <ul>
           </div>
           <div class="contentBlock">

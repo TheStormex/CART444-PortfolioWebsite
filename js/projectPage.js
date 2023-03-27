@@ -22,7 +22,12 @@ class ProjectPage {
     $('#projectType').text(this.type);
     $('#projectGenre').text(this.genre);
     $('#projectLine').text(this.oneLine);
-    $('#projectResponsibilities').text(this.responsibilities);
+    let theList = document.getElementById("projectResponsibilities");
+    this.responsibilities.forEach((item)=>{
+      let li = document.createElement("li");
+       li.innerText = item;
+       theList.appendChild(li);
+    })
     $('#projectDocumentation').text(this.documentation);
     $('#projectAdditional').text(this.additionalInfo);
     $('#projectVideo').text(this.video);
