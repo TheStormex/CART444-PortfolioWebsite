@@ -23,6 +23,7 @@ class ProjectPage {
     $('#projectGenre').text(this.genre);
     $('#projectLine').text(this.oneLine);
     let theList = document.getElementById("projectResponsibilities");
+    theList.innerHTML = "";
     this.responsibilities.forEach((item)=>{
       let li = document.createElement("li");
        li.innerText = item;

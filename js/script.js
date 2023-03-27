@@ -77,6 +77,15 @@ function toProjectPage(mainSection, projectName) {
     case "breakdownBowling":
       projectPages[0].show();
       break;
+    case "nerdyCards":
+      projectPages[1].show();
+      break;
+    case "reBoot":
+      projectPages[2].show();
+      break;
+    case "screen":
+      projectPages[3].show();
+      break;
     default:
   }
   $(mainPage).fadeOut(150);
