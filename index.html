@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="js/projectPage.js"></script>
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Che Tan - Game Design Portfolio </title>
-  <link rel="icon" type="images/png" href="images/favicon_package_v0.16/icon.png"/>
+  <!-- <link rel="icon" type="images/png" href="images/favicon_package_v0.16/icon.png"/> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
   <meta name="theme-color" content="#000000">
   </head>
 
-  <body>
+  <body onload="createProjectPages()">
     <div class="sectionMenu">
       <span id="title" title="Che Tan">
         <img src="images/logo/largeLogoHorinzontal.png" id="name">
@@ -43,7 +44,7 @@
         <li class="menuItem" id="socialMedia">
            <a href="https://www.linkedin.com/in/che-t-625842a6/" class="fa fa-linkedin"></a>
         </li>
-        <li> <button type="button" onclick="toProjectPage()"> proj </button> <button type="button" onclick="toMainPage()"> main </button> </li>
+        <li> <button type="button" onclick="toProjectPage(1, 'breakdownBowling')"> proj </button> <button type="button" onclick="toMainPage()"> main </button> </li>
       </ul>
       </span>
     </div>
@@ -180,6 +181,7 @@
               <ul class="pointsList">
                 <li>2012 - 2017</li>
                 <li>Public High School</li>
+                <li>International Baccalaureate</li>
                 <li>Natural Science Math</li>
                 <li>Physics and Chemistry</li>
                 <li>Performed in the Dance and Acting clubs</li>
@@ -192,35 +194,39 @@
     </div>
     <div class="sectionContent" id="projectPage">
       <div class="contentParts">
-        <div class="content" id="projectName">
-          <h1>
+        <div class="content">
+          <h1 id="projectName">
             Project Name
           </h1>
+        </div>
+        <div class="content">
+          <h3 id="projectLine">
+            Line
+          </h3>
+        </div>
           <div class="contentBlock">
             <div class="imageSide">
-              <img src="images/rectangle/test.png">
+              <video id="projectVideo" controls>
+                <source src="images/Tan_Task04.mp4" type="video/mp4">
+              </video>
             </div>
             <div class="textSide">
               <h2>
-                Who am I?
+                Description
               </h2>
-              <p>
-                I am a game designer from Montreal. I specialize in mechanics design and have created many games
-                 in college and university for which I attained high marks, such as Re-Boot, a 2D puzzle platformer about a clone-spawning robot. Currently,
-                  while finishing up his degree in Computation Arts at Concordia University, I work at the university’s Welcome Centre as a student ambassador
-                   and am lauded by my supervisor and coworkers for my dependability and interpersonal skills.
-                   My hobbies include dancing, and I was the Canadian champion of Just Dance World Cup in 2014, 2015, and 2019.
+              <p id="projectDescription">
+
               </p>
             </div>
           </div>
-          <div class="imageSide" id="">
+          <div class="imageSide" id="projectImage1">
             <img src="images/rectangle/game2.png">
           </div>
           <div class="textSide">
             <h2>
-              My Game Development Skills
+              My Responsibilities
             </h2>
-              <ul class="pointsList">
+              <ul class="pointsList" id="projectResponsibilities">
                 <li>Game design (mechanics, narrative, level, UI, UX)</li>
                 <li>HTML, CSS, JavaScript (p5js)</li>
                 <li>Unity Engine (C#)</li>
@@ -232,9 +238,33 @@
                 <li>Audio engineering (FL Studio 20)</li>
               <ul>
           </div>
-        </div>
+          <div class="contentBlock">
+            <div class="imageSide">
+              <img src="images/rectangle/test.png">
+            </div>
+            <div class="textSide">
+              <h2>
+                Documentation
+              </h2>
+                <ul class="pointsList">
+                  <li>Game design (mechanics, narrative, level, UI, UX)</li>
+                  <li>HTML, CSS, JavaScript (p5js)</li>
+                  <li>Unity Engine (C#)</li>
+                <ul>
+            </div>
+          </div>
+          <div class="imageSide" id="">
+            <img src="images/rectangle/game2.png">
+          </div>
+          <div class="textSide">
+            <h2>
+              Addtional Information
+            </h2>
+              <p>
+              </p>
+          </div>
       </div>
-      </div>
+    </div>
     <footer>
       <em>
         Copyright Che Tan 2023
