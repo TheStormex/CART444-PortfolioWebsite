@@ -25,7 +25,7 @@
   <body onload="createProjectPages(); toMainPage()">
     <div class="sectionMenu">
       <span id="title" title="Che Tan">
-        <img src="images/logo/largeLogoHorinzontal.png" id="name">
+         <a href="#contentVideo"> <img onclick="toMainPage()" src="images/logo/largeLogoHorinzontal.png" id="name"> </a>
       </span>
       <span id="menuBar">
       <ul id="menu">
@@ -199,6 +199,14 @@
           </h1>
         </div>
         <div class="content">
+          <div id="tagsLine">
+            <h4 class="tag" id="projectType">
+            </h4>
+            <h4 class="tag" id="projectGenre">
+            </h4>
+            <h4 class="tag" id="projectEngine">
+            </h4>
+          </div>
           <h3 id="projectLine">
             Line
           </h3>
@@ -208,18 +216,22 @@
               <video id="projectVideo" controls>
                 <source src="images/Tan_Task04.mp4" type="video/mp4">
               </video>
+              <h3 class="underImage" id="projectVideoText">
+                Video
+              </h3>
             </div>
             <div class="textSide">
               <h2>
                 Description
               </h2>
               <p id="projectDescription">
-
               </p>
             </div>
           </div>
           <div class="imageSide" id="projectImage1">
             <img src="images/rectangle/game2.png">
+            <h3 class="underImage" id="projectImage1Text">
+            </h3>
           </div>
           <div class="textSide">
             <h2>
@@ -231,26 +243,37 @@
           <div class="contentBlock">
             <div class="imageSide">
               <img src="images/rectangle/test.png">
+              <h3 class="underImage" id="projectImage2Text">
+              </h3>
             </div>
             <div class="textSide">
               <h2>
                 Documentation
               </h2>
-                <ul class="pointsList">
-                  <li>Game design (mechanics, narrative, level, UI, UX)</li>
-                  <li>HTML, CSS, JavaScript (p5js)</li>
-                  <li>Unity Engine (C#)</li>
+                <ul class="pointsList" id="projectDocumentation">
                 <ul>
             </div>
           </div>
           <div class="imageSide" id="">
             <img src="images/rectangle/game2.png">
+            <h3 class="underImage" id="projectImage3Text">
+            </h3>
           </div>
           <div class="textSide">
             <h2>
               Addtional Information
             </h2>
             <div id="projectAdditional">
+            </div>
+          </div>
+          <div>
+            <h1>
+              Other Games
+            </h1>
+            <div id="otherProjects">
+              <img class="otherProjectsPanel" src="images/rectangle/game2.png">
+              <img class="otherProjectsPanel" src="images/rectangle/game2.png">
+              <img class="otherProjectsPanel" src="images/rectangle/game2.png">
             </div>
           </div>
       </div>

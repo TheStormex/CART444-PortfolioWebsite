@@ -87,6 +87,18 @@
   transform: translate(-50%, -50%);
 }
 
+#projectGenre {
+	background-color: #AA0000;
+}
+
+#projectEngine {
+	background-color: #00AA00;
+}
+
+#projectType {
+	background-color: #0000AA;
+}
+
 .imageSide {
 	width: 49%;
 	margin-left: 0.5vw;
@@ -209,9 +221,26 @@
 
 }
 
+.otherProjectsPanel {
+	display: inline-block;
+	width: 31%;
+	position: relative;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
 ::selection {
 	background-color: #BBBBBB;
 }
+
+.tag {
+	display: inline-block;
+	border-radius: 30px;
+	width: 30%;
+	position: relative;
+	text-align: center;
+}
+
 
 html {
 	scroll-behavior: smooth;
@@ -263,6 +292,7 @@ h3 {
 	margin-top: 0.5vh;
 	margin-left: 3.5vw;
 	margin-right:2vw;
+	margin-bottom: 0;
 	font-size: 1.5vw;
 	text-align: center;
 	line-height: 150%;
@@ -280,13 +310,13 @@ button {
 	padding: 1%;
 	font-weight: bold;
 	transition-duration: 0.2s;
-	font-size: 2vw;
+	font-size: 5vw;
 
 	border-radius: 0.5vw;
 }
 
 button:hover {
-	font-size: 2.02vw;
+	font-size: 5.5vw;
 	cursor: pointer;
 }
 
@@ -316,6 +346,14 @@ h2 {
 	text-decoration-color: #FFD355;
 	text-align: center;
 	font-size: 1.8vw;
+}
+
+h4 {
+	text-align: center;
+	font-size: 2vw;
+	color: #FFFFFF;
+	margin: 0;
+	margin-top: 0.5%;
 }
 
 a {

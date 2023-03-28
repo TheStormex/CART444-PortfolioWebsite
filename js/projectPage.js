@@ -19,8 +19,9 @@ class ProjectPage {
   show() {
     $('#projectName').text(this.name);
     $('#projectDescription').text(this.description);
-    $('#projectType').text(this.type);
-    $('#projectGenre').text(this.genre);
+    $('#projectType').text(this.gameType);
+    $('#projectGenre').text(this.gameGenre);
+    $('#projectEngine').text(this.gameEngine);
     $('#projectLine').text(this.oneLine);
     let theList = document.getElementById("projectResponsibilities");
     theList.innerHTML = "";
@@ -29,7 +30,13 @@ class ProjectPage {
        li.innerText = item;
        theList.appendChild(li);
     })
-    $('#projectDocumentation').text(this.documentation);
+    let documentationList = document.getElementById("projectDocumentation");
+    documentationList.innerHTML = "";
+    this.documentation.forEach((item)=>{
+      let li = document.createElement("li");
+       li.innerText = item;
+       documentationList.appendChild(li);
+    })
     $('#projectAdditional').text(this.additionalInfo);
     let addInfoSection = document.getElementById("projectAdditional");
     addInfoSection.innerHTML = "";
@@ -41,6 +48,9 @@ class ProjectPage {
     $('#projectVideo').text(this.video);
     $('#projectImages').text(this.images);
     $('#projectImagesDesc').text(this.imagesDesc);
+    $('#projectImage1Text').text(this.imagesDesc[0]);
+    $('#projectImage2Text').text(this.imagesDesc[1]);
+    $('#projectImage3Text').text(this.imagesDesc[2]);
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
