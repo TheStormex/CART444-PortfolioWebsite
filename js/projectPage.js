@@ -16,6 +16,7 @@ class ProjectPage {
     this.imagesDesc = imagesDesc;
     this.visited = false;
   }
+  
   show() {
     $('#projectName').text(this.name);
     $('#projectDescription').text(this.description);

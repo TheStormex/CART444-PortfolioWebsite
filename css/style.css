@@ -18,7 +18,7 @@
 	max-width: 100%;
 	vertical-align: baseline;
 	object-fit: fill;
-	border-radius: 2%;
+	border-radius: 30px;
 }
 
 #menu {
@@ -41,6 +41,7 @@
 	margin: 0.1%;
 	vertical-align: middle;
 	object-fit: contain;
+  border-radius: 0;
 }
 
 #promo:hover {
@@ -52,7 +53,7 @@
 }
 
 #homeVideo {
-	border-radius: 0%;
+	border-radius: 30%;
 	margin: 0;
 }
 
@@ -326,7 +327,7 @@ img {
 	max-width: 100%;
 	vertical-align: baseline;
 	object-fit: fill;
-	border-radius: 2%;
+	border-radius: 30px;
 }
 
 h1 {
