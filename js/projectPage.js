@@ -34,5 +34,7 @@ class ProjectPage {
     $('#projectVideo').text(this.video);
     $('#projectImages').text(this.images);
     $('#projectImagesDesc').text(this.imagesDesc);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 }

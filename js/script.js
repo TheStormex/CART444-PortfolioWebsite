@@ -94,11 +94,13 @@ function toProjectPage(mainSection, projectName) {
 }
 
 function toMainPage() {
-  mainPage = document.getElementById('mainPage');
-  projectPage = document.getElementById('projectPage');
-  $(projectPage).fadeOut(150);
-  $(mainPage).fadeIn(150);
-  isProject = false;
+  if (isProject === true) {
+    mainPage = document.getElementById('mainPage');
+    projectPage = document.getElementById('projectPage');
+    $(projectPage).fadeOut(150);
+    $(mainPage).fadeIn(150);
+    isProject = false;
+  }
 }
 
 function playVideo() {
