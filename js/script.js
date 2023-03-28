@@ -64,7 +64,7 @@ function createProjectPages() {
     "Unity Engine",
     "Save the hostage, detective! Catfish a gang member into giving you their location!",
     "The player is a detective who has hacked into the laptop of a gang member. They must pretend to be that gang member and catfish  another to reveal the location of a hostage. The player must explore the files on the computer to learn what the gang member knows to make their act convincing.",
-    ["play", "make stuff", "more!"],
+    ["Mechanics design", "Narrative design", "Music and sound creation", "Documentation", "Writing dialogue and other texts", "Project management"],
     ["stuff", "other"],
     ["This game was created in a team of 3 during a 3 weeks university class game jam. The theme was ‘I know what you did’ and the game must have no on-screen player character.",
     "My main inspirations for this game are Emily is Away and Welcome to the Game, other computer simulators with information gathering and/or chatroom dialogue choices."],

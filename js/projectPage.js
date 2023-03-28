@@ -16,7 +16,7 @@ class ProjectPage {
     this.imagesDesc = imagesDesc;
     this.visited = false;
   }
-  
+
   show() {
     $('#projectName').text(this.name);
     $('#projectDescription').text(this.description);
@@ -34,11 +34,10 @@ class ProjectPage {
     let documentationList = document.getElementById("projectDocumentation");
     documentationList.innerHTML = "";
     this.documentation.forEach((item)=>{
-      let li = document.createElement("li");
-       li.innerText = item;
-       documentationList.appendChild(li);
+      let paragraph = document.createElement("p");
+       paragraph.innerText = item;
+       documentationList.appendChild(paragraph);
     })
-    $('#projectAdditional').text(this.additionalInfo);
     let addInfoSection = document.getElementById("projectAdditional");
     addInfoSection.innerHTML = "";
     this.additionalInfo.forEach((item)=>{

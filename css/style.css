@@ -100,6 +100,10 @@
 	background-color: #0000AA;
 }
 
+#tagsLine {
+	display: flex;
+}
+
 .imageSide {
 	width: 49%;
 	margin-left: 0.5vw;
@@ -239,6 +243,7 @@
 	border-radius: 30px;
 	width: 30%;
 	position: relative;
+	margin: 1rem;
 	text-align: center;
 }
 
