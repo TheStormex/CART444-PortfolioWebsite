@@ -31,6 +31,13 @@ class ProjectPage {
     })
     $('#projectDocumentation').text(this.documentation);
     $('#projectAdditional').text(this.additionalInfo);
+    let addInfoSection = document.getElementById("projectAdditional");
+    addInfoSection.innerHTML = "";
+    this.additionalInfo.forEach((item)=>{
+      let paragraph = document.createElement("p");
+       paragraph.innerText = item;
+       addInfoSection.appendChild(paragraph);
+    })
     $('#projectVideo').text(this.video);
     $('#projectImages').text(this.images);
     $('#projectImagesDesc').text(this.imagesDesc);
