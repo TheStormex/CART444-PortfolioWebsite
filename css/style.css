@@ -172,7 +172,6 @@
 	font-size: 1.8vw;
 	margin-top: 3%;
 	margin-bottom: 3%;
-	margin-left: 20%;
 	padding: 0.5%;
 }
 
@@ -181,6 +180,13 @@
 	color: #FF7800;
 	font-size: 1.82vw;
 	cursor: pointer;
+}
+
+.menuSide {
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	margin: 0;
 }
 
 .pointsList {
@@ -222,8 +228,16 @@
 }
 
 .projectItem {
+  display: inline-block;
+}
 
+.controller {
+	width: 70%;
+	border-radius: 0;
+}
 
+.controller:hover {
+	src: url('images/decoration/yellowController.png');
 }
 
 .otherProjectsPanel {
@@ -278,7 +292,6 @@ li::marker {
   height: 2vh;
   width: 2vw;
 	border-radius: 50%;
-	margin-left: 10%;
 }
 
 hr {
