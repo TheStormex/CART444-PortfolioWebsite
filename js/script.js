@@ -23,7 +23,7 @@ function createProjectPages() {
     ["stuff", "other"],
     ["This game was my final project for my introduction to Unity class. Retroactively, I improved the UI and added more levels.",
     "My main inspirations for this game are Angry Birds and the Cannon Game in the MMORPG Wizard101, games where you shoot a projectile to demolish structures, plan how to use each projectile, and have specific targets to aim for."],
-    "ok",
+    "images/rectangle/projects/breakdownBowling/Tan_Task04.mp4",
     [],
     ["Aiming the ball", "Hitting the pins", "Back view camera perspective"]);
   projectPages.push(project1);

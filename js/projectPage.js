@@ -44,8 +44,9 @@ class ProjectPage {
       let paragraph = document.createElement("p");
        paragraph.innerText = item;
        addInfoSection.appendChild(paragraph);
-    })
-    $('#projectVideo').text(this.video);
+    });
+    let video = document.getElementById("projectVideo");
+    video.src = this.video;
     $('#projectImages').text(this.images);
     $('#projectImagesDesc').text(this.imagesDesc);
     $('#projectImage1Text').text(this.imagesDesc[0]);
