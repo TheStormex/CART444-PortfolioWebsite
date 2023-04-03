@@ -42,7 +42,7 @@ class ProjectPage {
     addInfoSection.innerHTML = "";
     this.additionalInfo.forEach((item)=>{
       let paragraph = document.createElement("p");
-       paragraph.innerText = item;
+       paragraph.innerHTML = item;
        addInfoSection.appendChild(paragraph);
     });
     let video = document.getElementById("projectVideo");

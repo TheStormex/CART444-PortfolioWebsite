@@ -264,6 +264,7 @@
 .linkAway {
 	text-decoration: underline;
 	color: #FFD355;
+	cursor: pointer;
 }
 
 html {
