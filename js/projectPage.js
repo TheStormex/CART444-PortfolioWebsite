@@ -47,7 +47,12 @@ class ProjectPage {
     });
     let video = document.getElementById("projectVideo");
     video.src = this.video;
-    $('#projectImages').text(this.images);
+    let projectImage1 = document.getElementById("projectImage1Image");
+    projectImage1.src = this.images[0];
+    let projectImage2 = document.getElementById("projectImage2Image");
+    projectImage2.src = this.images[1];
+    let projectImage3 = document.getElementById("projectImage3Image");
+    projectImage3.src = this.images[2];
     $('#projectImagesDesc').text(this.imagesDesc);
     $('#projectImage1Text').text(this.imagesDesc[0]);
     $('#projectImage2Text').text(this.imagesDesc[1]);
