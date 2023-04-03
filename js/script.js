@@ -38,7 +38,7 @@ function createProjectPages() {
     ["stuff", "other"],
     ["I love playing trading card games so I want to make my own card game. The main unique aspect of this game is the positioning system, which trading card games rarely use.",
     "The resource (Energy) mechanic is inspired by the roguelike deckbuilder Slay the Spire. the Upgrade mechanic is a combination of Pokemon TCG's Energy cards mechanic, Digimon TCG's digivolution mechanic, and Yu-Gi-Oh! TCG's XYZ materials mechanic."],
-    "images/rectangle/projects/nerdyCards/video.mp4",
+    "images/rectangle/projects/nerdyCards/video2.mp4",
     ["images/rectangle/projects/nerdyCards/playArea.png", "images/rectangle/projects/nerdyCards/typesOfCards.png", "images/rectangle/projects/nerdyCards/colors.png"],
     ["Zones of the play area", "Different types of cards", "Different colors of cards"]);
   projectPages.push(project2);
