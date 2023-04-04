@@ -31,6 +31,7 @@
       <ul id="menu">
         <a href="#contentVideo"> <li class="menuItem" id="promoVideo" onclick="toMainPage()">
           <div class="menuSide">
+            <img class="sideLogo" onclick="toMainPage()" src="images/logo/staffLogo.png">
           </div>
           Promo Video </li> </a>
         <a href="#contentAbout"> <li class="menuItem" id="aboutMe" onclick="toMainPage()">
@@ -50,28 +51,35 @@
           <div class="menuSide">
           </div>
           Bowling
-          </li>
+          <img class="checkmark" id="check1" src="images/decoration/check.png">
+        </li>
         <li class="menuItem" class="projectItem" onclick="toProjectPage(1, 'nerdyCards')">
           <div class="menuSide">
               <img class="controller" onclick="toProjectPage(1, 'breakdownBowling')" src="images/decoration/orangeController.png">
           </div>
-          Nerdy Cards </li>
+          Nerdy Cards
+          <img class="checkmark" id="check2" src="images/decoration/check.png">
+        </li>
         <li class="menuItem" class="projectItem" onclick="toProjectPage(1, 'reBoot')">
           <div class="menuSide">
               <img class="controller" onclick="toProjectPage(1, 'breakdownBowling')" src="images/decoration/orangeController.png">
           </div>
-          Re-Boot </li>
+          Re-Boot
+          <img class="checkmark" id="check3" src="images/decoration/check.png">
+        </li>
         <li class="menuItem" class="projectItem" onclick="toProjectPage(1, 'screen')">
           <div class="menuSide">
               <img class="controller" onclick="toProjectPage(1, 'breakdownBowling')" src="images/decoration/orangeController.png">
           </div>
-          Screen </li>
+          Screen
+          <img class="checkmark" id="check4" src="images/decoration/check.png">
+        </li>
         <hr />
          <a href="#contentEducation"> <li class="menuItem" id="education" onclick="toMainPage()">
            <div class="menuSide">
            </div>
            Education </li>  </a>
-        <a href=images/cv.pdf> <li class="menuItem" id="cv" onclick="toMainPage()">
+        <a href=images/cv.pdf  target="_blank" rel="noopener noreferrer"> <li class="menuItem" id="cv" onclick="toMainPage()">
           <div class="menuSide">
           </div>
           CV </li> </a>
@@ -111,9 +119,6 @@
           <div class="contentBlock">
             <div class="imageSide">
               <img src="images/rectangle/test.png">
-              <h3 class="underImage">
-                Hover over
-              </h3>
             </div>
             <div class="textSide">
               <h2>
@@ -130,6 +135,9 @@
           </div>
           <div class="imageSide" id="">
             <img src="images/rectangle/game2.png">
+            <h3 class="underImage">
+              Hover over <strong>keywords</strong> to see examples
+            </h3>
           </div>
           <div class="textSide">
             <h2>
@@ -143,7 +151,7 @@
                 <li>Pixel Art (GraphicsGale v. 2.08.24)</li>
                 <li>3D Modeling for Environment (Maya)</li>
                 <li>Project management</li>
-                <li>Electronic music composition</li>
+                <li>Electronic music composition <button class="smallButton" type="button" onclick="playMusic()"> Play Song </button> </li>
                 <li>Audio engineering (FL Studio 20)</li>
               <ul>
           </div>
@@ -362,9 +370,9 @@
               Other Games
             </h1>
             <div id="otherProjects">
-              <img class="otherProjectsPanel" src="images/rectangle/game2.png">
-              <img class="otherProjectsPanel" src="images/rectangle/game2.png">
-              <img class="otherProjectsPanel" src="images/rectangle/game2.png">
+              <img class="otherProjectsPanel" id="panel1" src="images/rectangle/game2.png">
+              <img class="otherProjectsPanel" id="panel2" src="images/rectangle/game2.png">
+              <img class="otherProjectsPanel" id="panel3" src="images/rectangle/game2.png">
             </div>
           </div>
       </div>

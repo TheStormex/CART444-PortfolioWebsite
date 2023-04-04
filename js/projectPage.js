@@ -1,7 +1,8 @@
 "use strict";
 
 class ProjectPage {
-  constructor(name, gameType, gameGenre, gameEngine, oneLine, description, responsibilities, documentation, additionalInfo, video, images, imagesDesc) {
+  constructor(id, name, gameType, gameGenre, gameEngine, oneLine, description, responsibilities, documentation, additionalInfo, video, images, imagesDesc) {
+    this.id = id;
     this.name = name;
     this.gameType = gameType;
     this.gameGenre = gameGenre;
@@ -19,6 +20,11 @@ class ProjectPage {
 
 
   show() {
+    this.visited = true;
+    localStorage.setItem(this.id, "true");
+    let thisCheckmarkId = "check" + this.id;
+    let thisCheckmark = document.getElementById(thisCheckmarkId);
+    thisCheckmark.style.display = "inline-block";
     $('#projectName').text(this.name);
     $('#projectDescription').text(this.description);
     $('.projectType').text(this.gameType);
@@ -58,6 +64,7 @@ class ProjectPage {
     $('#projectImage1Text').text(this.imagesDesc[0]);
     $('#projectImage2Text').text(this.imagesDesc[1]);
     $('#projectImage3Text').text(this.imagesDesc[2]);
+
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }

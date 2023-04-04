@@ -13,6 +13,7 @@ let projectPage;
 
 function createProjectPages() {
   let project1 = new ProjectPage (
+    "1",
     "Breakdown Bowling",
     "University Game",
     "3D Puzzle Strategy",
@@ -29,6 +30,7 @@ function createProjectPages() {
     ["Aiming the ball", "Hitting the pins", "Back view camera perspective"]);
   projectPages.push(project1);
   let project2 = new ProjectPage (
+    "2",
     "Nerdy Cards",
     "Personal Project",
     "Card Game",
@@ -45,6 +47,7 @@ function createProjectPages() {
     ["Zones of the play area", "Different types of cards", "Different colors of cards"]);
   projectPages.push(project2);
   let project3 = new ProjectPage (
+    "3",
     "Re-Boot",
     "Game Jam Game",
     "2D Puzzle Platformer",
@@ -61,6 +64,7 @@ function createProjectPages() {
     ["Level 1", "Level 13", "Level 15 (Final level)"]);
   projectPages.push(project3);
   let project4 = new ProjectPage (
+    "4",
     "Screen",
     "Game Jam Game",
     "2D Mystery Simulator",
@@ -86,6 +90,13 @@ function createProjectPages() {
     theProjectType.textContent = projectPages[i-1].gameType;
     theProjectGenre.textContent = projectPages[i-1].gameGenre;
     theProjectEngine.textContent = projectPages[i-1].gameEngine;
+    // see if need to add the checkmark
+    let visitedBefore = localStorage.getItem(i);
+    if (visitedBefore === "true") {
+      let thisCheckmarkId = "check" + i;
+      let thisCheckmark = document.getElementById(thisCheckmarkId);
+      thisCheckmark.style.display = "inline-block";
+    }
   }
 }
 
