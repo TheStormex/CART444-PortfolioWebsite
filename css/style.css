@@ -88,19 +88,19 @@
   transform: translate(-50%, -50%);
 }
 
-#projectGenre {
+.projectGenre {
 	background-color: #AA0000;
 }
 
-#projectEngine {
+.projectEngine {
 	background-color: #00AA00;
 }
 
-#projectType {
+.projectType {
 	background-color: #0000AA;
 }
 
-#tagsLine {
+.tagsLine {
 	display: flex;
 }
 
@@ -133,15 +133,15 @@
 
 .portfolioOverlay {
 	position: absolute;
-	display: inline;
 	margin: 1vw;
+	margin-bottom: 0;
 	margin-right: 2vw;
 	background: rgba(0, 0, 0, 0.65);
 	border-radius: 30px;
 	color: #f1f1f1;
 	width: 100%;
 	height: 30%;
-	top: 63%;
+	bottom: 0;
   left: 0;
 	z-index: 10;
 	text-align: center;
@@ -392,6 +392,14 @@ h2 {
 h4 {
 	text-align: center;
 	font-size: 2vw;
+	color: #FFFFFF;
+	margin: 0;
+	margin-top: 0.5%;
+}
+
+h5 {
+	text-align: center;
+	font-size: 1vw;
 	color: #FFFFFF;
 	margin: 0;
 	margin-top: 0.5%;

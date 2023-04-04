@@ -76,6 +76,17 @@ function createProjectPages() {
     ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
     ["Spreadsheets", "Interactive chatroom", "Diary entries"]);
   projectPages.push(project4);
+  for (let i = 1; i < projectPages.length+1; i++) {
+    let targetId = "portfolioButton" + i;
+    console.log(targetId);
+    let targetIdElement = document.getElementById(targetId);
+    let theProjectType = targetIdElement.querySelector('.projectType');
+    let theProjectGenre = targetIdElement.querySelector('.projectGenre');
+    let theProjectEngine = targetIdElement.querySelector('.projectEngine');
+    theProjectType.textContent = projectPages[i-1].gameType;
+    theProjectGenre.textContent = projectPages[i-1].gameGenre;
+    theProjectEngine.textContent = projectPages[i-1].gameEngine;
+  }
 }
 
 function toProjectPage(mainSection, projectName) {

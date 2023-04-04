@@ -17,12 +17,13 @@ class ProjectPage {
     this.visited = false;
   }
 
+
   show() {
     $('#projectName').text(this.name);
     $('#projectDescription').text(this.description);
-    $('#projectType').text(this.gameType);
-    $('#projectGenre').text(this.gameGenre);
-    $('#projectEngine').text(this.gameEngine);
+    $('.projectType').text(this.gameType);
+    $('.projectGenre').text(this.gameGenre);
+    $('.projectEngine').text(this.gameEngine);
     $('#projectLine').text(this.oneLine);
     let theList = document.getElementById("projectResponsibilities");
     theList.innerHTML = "";
