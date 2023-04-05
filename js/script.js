@@ -80,6 +80,10 @@ function createProjectPages() {
     ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
     ["Spreadsheets", "Interactive chatroom", "Diary entries"]);
   projectPages.push(project4);
+  generateTabs()
+}
+
+function generateTabs() {
   for (let i = 1; i < projectPages.length+1; i++) {
     let targetId = "portfolioButton" + i;
     console.log(targetId);
@@ -90,13 +94,6 @@ function createProjectPages() {
     theProjectType.textContent = projectPages[i-1].gameType;
     theProjectGenre.textContent = projectPages[i-1].gameGenre;
     theProjectEngine.textContent = projectPages[i-1].gameEngine;
-    // see if need to add the checkmark
-    // let visitedBefore = localStorage.getItem(i);
-    // if (visitedBefore === "true") {
-    //   let thisCheckmarkId = "check" + i;
-    //   let thisCheckmark = document.getElementById(thisCheckmarkId);
-    //   thisCheckmark.style.display = "inline-block";
-    // }
   }
 }
 
@@ -135,6 +132,7 @@ function toMainPage() {
 
 function toggleProjects() {
   $('.projectItem').fadeToggle(100);
+  generateTabs();
 }
 
 function playVideo() {
