@@ -31,7 +31,6 @@
       <ul id="menu">
         <a href="#contentVideo"> <li class="menuItem" id="promoVideo" onclick="toMainPage()">
           <div class="menuSide">
-            <img class="sideLogo" onclick="toMainPage()" src="images/logo/staffLogo.png">
           </div>
           Promo Video </li> </a>
         <a href="#contentAbout"> <li class="menuItem" id="aboutMe" onclick="toMainPage()">
@@ -40,41 +39,52 @@
           About Me </li> </a>
         <a href="#contentPortfolio"> <li class="menuItem" id="portfolio" onclick="toMainPage()">
           <div class="menuSide">
+              <img class="dropDown" onclick="toggleProjects()" src="images/decoration/projectMenuButton.png">
           </div>
           Featured Projects </li> </a>
-        <hr />
-        <li class="menuItem" class="projectItem" onclick="toProjectPage(1, 'breakdownBowling')">
+        <!-- <hr /> -->
+        <li class="menuItem projectItem" onclick="toProjectPage(1, 'breakdownBowling')">
+          <div class="menuSide">
+          </div>
           <div class="menuSide">
               <img class="controller" onclick="toProjectPage(1, 'breakdownBowling')" src="images/decoration/orangeController.png">
           </div>
           Breakdown <br>
           <div class="menuSide">
           </div>
+          <div class="menuSide">
+          </div>
           Bowling
-          <img class="checkmark" id="check1" src="images/decoration/check.png">
+          <!-- <img class="checkmark" id="check1" src="images/decoration/check.png"> -->
         </li>
-        <li class="menuItem" class="projectItem" onclick="toProjectPage(1, 'nerdyCards')">
+        <li class="menuItem projectItem" onclick="toProjectPage(1, 'nerdyCards')">
+          <div class="menuSide">
+          </div>
           <div class="menuSide">
               <img class="controller" onclick="toProjectPage(1, 'breakdownBowling')" src="images/decoration/orangeController.png">
           </div>
           Nerdy Cards
-          <img class="checkmark" id="check2" src="images/decoration/check.png">
+          <!-- <img class="checkmark" id="check2" src="images/decoration/check.png"> -->
         </li>
-        <li class="menuItem" class="projectItem" onclick="toProjectPage(1, 'reBoot')">
+        <li class="menuItem projectItem" onclick="toProjectPage(1, 'reBoot')">
+          <div class="menuSide">
+          </div>
           <div class="menuSide">
               <img class="controller" onclick="toProjectPage(1, 'breakdownBowling')" src="images/decoration/orangeController.png">
           </div>
           Re-Boot
-          <img class="checkmark" id="check3" src="images/decoration/check.png">
+          <!-- <img class="checkmark" id="check3" src="images/decoration/check.png"> -->
         </li>
-        <li class="menuItem" class="projectItem" onclick="toProjectPage(1, 'screen')">
+        <li class="menuItem projectItem" onclick="toProjectPage(1, 'screen')">
+          <div class="menuSide">
+          </div>
           <div class="menuSide">
               <img class="controller" onclick="toProjectPage(1, 'breakdownBowling')" src="images/decoration/orangeController.png">
           </div>
           Screen
-          <img class="checkmark" id="check4" src="images/decoration/check.png">
+          <!-- <img class="checkmark" id="check4" src="images/decoration/check.png"> -->
         </li>
-        <hr />
+        <!-- <hr /> -->
          <a href="#contentEducation"> <li class="menuItem" id="education" onclick="toMainPage()">
            <div class="menuSide">
            </div>
@@ -94,9 +104,9 @@
     <div class="sectionContent" id="mainPage">
       <div class="contentParts">
         <div class="content" id="contentVideo">
-          <h1>
+          <!-- <h1>
             Promo Video
-          </h1>
+          </h1> -->
           <div id="videoContainer">
             <video autoplay muted loop id="video">
               <source src="images/Tan_Task04.mp4" type="video/mp4">

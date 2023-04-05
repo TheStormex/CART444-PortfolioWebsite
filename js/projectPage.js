@@ -20,11 +20,11 @@ class ProjectPage {
 
 
   show() {
-    this.visited = true;
-    localStorage.setItem(this.id, "true");
-    let thisCheckmarkId = "check" + this.id;
-    let thisCheckmark = document.getElementById(thisCheckmarkId);
-    thisCheckmark.style.display = "inline-block";
+    // this.visited = true;
+    // localStorage.setItem(this.id, "true");
+    // let thisCheckmarkId = "check" + this.id;
+    // let thisCheckmark = document.getElementById(thisCheckmarkId);
+    // thisCheckmark.style.display = "inline-block";
     $('#projectName').text(this.name);
     $('#projectDescription').text(this.description);
     $('.projectType').text(this.gameType);

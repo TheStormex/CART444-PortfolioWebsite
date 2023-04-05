@@ -91,12 +91,12 @@ function createProjectPages() {
     theProjectGenre.textContent = projectPages[i-1].gameGenre;
     theProjectEngine.textContent = projectPages[i-1].gameEngine;
     // see if need to add the checkmark
-    let visitedBefore = localStorage.getItem(i);
-    if (visitedBefore === "true") {
-      let thisCheckmarkId = "check" + i;
-      let thisCheckmark = document.getElementById(thisCheckmarkId);
-      thisCheckmark.style.display = "inline-block";
-    }
+    // let visitedBefore = localStorage.getItem(i);
+    // if (visitedBefore === "true") {
+    //   let thisCheckmarkId = "check" + i;
+    //   let thisCheckmark = document.getElementById(thisCheckmarkId);
+    //   thisCheckmark.style.display = "inline-block";
+    // }
   }
 }
 
@@ -131,6 +131,10 @@ function toMainPage() {
     $(mainPage).fadeIn(150);
     isProject = false;
   }
+}
+
+function toggleProjects() {
+  $('.projectItem').fadeToggle(100);
 }
 
 function playVideo() {
