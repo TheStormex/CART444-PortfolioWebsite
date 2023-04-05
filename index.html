@@ -37,11 +37,14 @@
           <div class="menuSide">
           </div>
           About Me </li> </a>
-        <a href="#contentPortfolio"> <li class="menuItem" id="portfolio" onclick="toMainPage()">
+        <li class="menuItem" id="portfolio" onclick="toMainPage()">
           <div class="menuSide">
-              <img class="dropDown" onclick="toggleProjects()" src="images/decoration/projectMenuButton.png">
+              <!-- <a href="#"> -->
+                <img class="dropDown" onclick="toggleProjects()" src="images/decoration/projectMenuButton.png">
+              <!-- </a> -->
           </div>
-          Featured Projects </li> </a>
+          <a href="#contentPortfolio"> Featured Projects </a>
+        </li>
         <!-- <hr /> -->
         <li class="menuItem projectItem" onclick="toProjectPage(1, 'breakdownBowling')">
           <div class="menuSide">
@@ -96,7 +99,8 @@
         <li class="menuItem" id="socialMedia">
             <div class="menuSide">
             </div>
-           <a href="https://www.linkedin.com/in/che-t-625842a6/" class="fa fa-linkedin"></a>
+           <a href="https://www.linkedin.com/in/che-t-625842a6/" title="LinkedIn" class="fa fa-linkedin">
+           </a>
         </li>
       </ul>
       </span>
@@ -104,9 +108,9 @@
     <div class="sectionContent" id="mainPage">
       <div class="contentParts">
         <div class="content" id="contentVideo">
-          <!-- <h1>
+          <h1>
             Promo Video
-          </h1> -->
+          </h1>
           <div id="videoContainer">
             <video autoplay muted loop id="video">
               <source src="images/Tan_Task04.mp4" type="video/mp4">
@@ -161,7 +165,12 @@
                 <li>Pixel Art (GraphicsGale v. 2.08.24)</li>
                 <li>3D Modeling for Environment (Maya)</li>
                 <li>Project management</li>
-                <li>Electronic music composition <button class="smallButton" type="button" onclick="playMusic()"> Play Song </button> </li>
+                <li>Electronic music composition
+                  <br>
+                  <audio id="song" controls>
+                    <source src="images/epicSong.wav" type="audio/wav">
+                  </audio>
+                 </li>
                 <li>Audio engineering (FL Studio 20)</li>
               <ul>
           </div>
