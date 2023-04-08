@@ -104,7 +104,7 @@
 }
 
 .tagsLine {
-	display: flex;
+	/* display: flex; */
 }
 
 .imageSide {
@@ -154,6 +154,8 @@
 }
 
 .thumbnail:hover {
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
 	transform: scale(1.05);
 	filter: brightness(70%);
 }
@@ -220,7 +222,7 @@
 
 .pointsList {
 	margin-top: 0.5vh;
-	margin-left: 3.5vw;
+	margin-left: 4.5vw;
 	margin-right:2vw;
 	font-size: 1.2vw;
 	text-align: justify;
@@ -295,7 +297,7 @@
 
 .tag {
 	display: inline-block;
-	width: 30%;
+	padding: 0.3vw;
 	position: relative;
 	margin: 0.5vw;
 	text-align: center;
