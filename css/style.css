@@ -29,6 +29,7 @@
 #videoContainer {
 	position: relative;
 	margin-bottom: 8%;
+	margin-top: 1%;
 }
 
 #egg {
@@ -349,6 +350,7 @@ ul {
 
 li {
   list-style: square;
+	padding-left: 0.5vw;
 }
 
 li::marker {
@@ -467,6 +469,15 @@ strong {
 	color: #FF7800;
 	font-size: inherit;
 	cursor: help;
-	text-decoration-line: underline;
-	text-decoration-style: wavy;
+	text-decoration-line: none;
+	border: 3px;
+	padding: 3px;
+	border-style: solid;
+	border-color: #ff7800;
+}
+
+strong:hover {
+	color: #000000;
+	background-color: #FFFFFF;
+	font-size: inherit;
 }
