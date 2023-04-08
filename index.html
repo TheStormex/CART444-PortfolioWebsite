@@ -26,6 +26,9 @@
     <div class="sectionMenu">
       <span id="title" title="Che Tan">
          <a href="#contentVideo"> <img onclick="toMainPage()" src="images/logo/largeLogoHorinzontal.png" id="name"> </a>
+         <h2>
+           Game Designer
+         </h2>
       </span>
       <span id="menuBar">
       <ul id="menu">
@@ -108,8 +111,8 @@
     <div class="sectionContent" id="mainPage">
       <div class="contentParts">
         <div class="content" id="contentVideo">
-          <h1>
-            Promo Video
+          <h1 id="egg">
+            Hi! This is an easter egg!
           </h1>
           <div id="videoContainer">
             <video autoplay muted loop id="video">
@@ -120,7 +123,7 @@
             </video>
             <div id="overlay">
               <p>
-                Hi! Welcome to my Portfolio Website! <br>
+                Che Tan's Game Design Portfolio<br>
                 <button type="button" onclick="playVideo()"> Play </button>
               </p>
             </div>
@@ -139,11 +142,10 @@
                 Who am I?
               </h2>
               <p>
-                I am a game designer from Montreal. I specialize in mechanics design and have created many games
-                 in college and university for which I attained high marks, such as <a class="linkAway" onclick="toProjectPage(1, 'reBoot')"> Re-Boot</a>, a 2D puzzle platformer about a clone-spawning robot. Currently,
-                  while finishing up his degree in Computation Arts at Concordia University, I work at the university’s Welcome Centre as a student ambassador
-                   and am lauded by my supervisor and coworkers for my dependability and interpersonal skills.
-                   My hobbies include dancing, and I was the Canadian champion of Just Dance World Cup in 2014, 2015, and 2019.
+                I am a game designer from Montreal. I specialize in mechanics design.
+              </p>
+              <p>
+                I have created many games in college and university for which I attained high marks, such as <a class="linkAway" onclick="toProjectPage(1, 'reBoot')"> Re-Boot</a>, a 2D puzzle platformer about a clone-spawning robot.
               </p>
             </div>
           </div>
@@ -181,7 +183,7 @@
           </h1>
           <div class="contentBlock">
             <div class="portfolioGame" onclick="toProjectPage(1, 'breakdownBowling')">
-              <img src="images/rectangle/projects/breakdownBowling/hitting.png">
+              <img class="thumbnail" src="images/rectangle/projects/breakdownBowling/hitting.png">
               <div class="portfolioOverlay">
                 <h2>
                   Breakdown Bowling
@@ -197,7 +199,7 @@
               </div>
             </div>
             <div class="portfolioGame" onclick="toProjectPage(1, 'nerdyCards')">
-              <img src="images/rectangle/projects/nerdyCards/typesOfCards.png">
+              <img class="thumbnail" src="images/rectangle/projects/nerdyCards/typesOfCards.png">
               <div class="portfolioOverlay">
                 <h2>
                   Nerdy Cards
@@ -213,7 +215,7 @@
               </div>
             </div>
             <div class="portfolioGame" onclick="toProjectPage(1, 'reBoot')">
-              <img src="images/rectangle/projects/reBoot/level13.png">
+              <img class="thumbnail" src="images/rectangle/projects/reBoot/level13.png">
               <div class="portfolioOverlay">
                 <h2>
                   Re-Boot
@@ -229,7 +231,7 @@
               </div>
             </div>
             <div class="portfolioGame" onclick="toProjectPage(1, 'screen')">
-              <img src="images/rectangle/projects/screen/diary.png">
+              <img class="thumbnail" src="images/rectangle/projects/screen/diary.png">
               <div class="portfolioOverlay">
                 <h2>
                   Screen
