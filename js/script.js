@@ -5,7 +5,7 @@ let darkMode = false;
 let isProject = false;
 let videoPlaying = false;
 let currentSection;
-
+let currentSkill = "none";
 let projectPages = [];
 let projectAmount = 4;
 let mainPage;
@@ -54,7 +54,7 @@ function createProjectPages() {
     "Unity Engine",
     "Guide the robot to the exit! Use energy and leave behind clones to solve the puzzles!",
     "The player controls a robot and must get to the end of each level through opening doors, stepping on switches, and respawning to leave behind a clone that can be used as platforms and to keep switches pressed. These actions require battery energy to use, which is limited, and must be managed properly.",
-    ["Mechanics design", "Level design", "Music and sound creation", "Programming", "Documentation", "Project management"],
+    ["Mechanics design", "Level design", "Music and sound creation", "Programming (debugging)", "Documentation", "Project management"],
     ["This game was created in a team of 3 during a 3 weeks university class game jam in November 2022. I, as the designer, had a miscommunication with the lead programmer. I designed the game to cost a resource when the player jumps, but did not communicate this properly with the programmer.",
     "This caused the levels I designed to not work and I had to design new ones to fit the rules the actual game was coded to have. I learned to maintain rigorous communication with the rest of the team so everyone is always on the same page."],
     ["The theme of the game jam was rebirth and the game must have no (or few) text.",
@@ -81,6 +81,33 @@ function createProjectPages() {
     ["Spreadsheets", "Interactive chatroom", "Diary entries"]);
   projectPages.push(project4);
   generateTabs()
+}
+
+function changeSkill(skill) {
+  currentSkill = skill;
+  showSkills();
+}
+
+function showSkills() {
+  if (currentSkill !== "none") {
+    let topImage = document.getElementById('aboutImage1');
+    let bottomImage = document.getElementById('aboutImage2');
+    // let helpText = document.getElementById(helpHover);
+    // helpText.innerHTML = "Hover over <strong>Skills</strong> to see examples";
+    topImage.src = 'images/rectangle/examples/fixed_' + currentSkill + '.png';
+    bottomImage.src = 'images/rectangle/examples/fixed_' + currentSkill + '2.png';
+  } else {
+    resetSkills();
+  }
+}
+
+function resetSkills() {
+  let topImage = document.getElementById('aboutImage1');
+  let bottomImage = document.getElementById('aboutImage2');
+  // let helpText = document.getElementById(helpHover);
+  // helpText.innerHTML = "Hover over <strong>Skills</strong> to see examples";
+  topImage.src = "images/rectangle/portrait.png";
+  bottomImage.src = "images/rectangle/game2.png";
 }
 
 function generateTabs() {

@@ -134,8 +134,8 @@
             About Me
           </h1>
           <div class="contentBlock">
-            <div class="imageSide">
-              <img src="images/rectangle/test.png">
+            <div class="imageSide aboutImage">
+              <img id="aboutImage1" src="images/rectangle/portrait.png">
             </div>
             <div class="textSide">
               <h2>
@@ -152,9 +152,9 @@
               </p>
             </div>
           </div>
-          <div class="imageSide" id="">
-            <img src="images/rectangle/game2.png">
-            <h3 class="underImage">
+          <div class="imageSide aboutImage" id="">
+            <img id="aboutImage2" src="images/rectangle/game2.png">
+            <h3 class="underImage" id="helpHover">
               Hover over <strong>Skills</strong> to see examples
             </h3>
           </div>
@@ -163,20 +163,20 @@
               My Game Development Skills
             </h2>
               <ul class="pointsList">
-                <li> <strong> Game design (mechanics, narrative, level, UI, UX) </strong> </li>
-                <li> <strong>HTML, CSS, JavaScript (p5js) </strong> </li>
-                <li> <strong>Unity Engine (C#) </strong> </li>
-                <li> <strong>Vector art (Figma v. 116.7.103) </strong> </li>
-                <li> <strong>Pixel Art (GraphicsGale v. 2.08.24) </strong> </li>
-                <li> <strong>3D Modeling for Environment (Maya) </strong> </li>
-                <li> <strong>Project management </strong> </li>
-                <li> <strong>Electronic music composition  </strong>
+                <li> <strong onmouseover="changeSkill('design')" onmouseout="resetSkills()"> Game design (mechanics, narrative, level, UI, UX) </strong> </li>
+                <li> <strong onmouseover="changeSkill('website')" onmouseout="resetSkills()">HTML, CSS, JavaScript (p5js) </strong> </li>
+                <li> <strong onmouseover="changeSkill('engine')" onmouseout="resetSkills()">Game Engines (Unity, Unreal, GameMaker, etc.) </strong> </li>
+                <li> <strong onmouseover="changeSkill('vector')" onmouseout="resetSkills()">Vector art (Figma v. 116.7.103) </strong> </li>
+                <li> <strong onmouseover="changeSkill('pixel')" onmouseout="resetSkills()">Pixel Art (GraphicsGale v. 2.08.24) </strong> </li>
+                <li> <strong onmouseover="changeSkill('3d')" onmouseout="resetSkills()">3D Modeling for Environment (Maya) </strong> </li>
+                <li> <strong onmouseover="changeSkill('management')" onmouseout="resetSkills()">Project management </strong> </li>
+                <li> <strong onmouseover="changeSkill('music')" onmouseout="resetSkills()">Electronic music composition  </strong>
                   <br>
                   <audio id="song" controls>
                     <source src="images/epicSong.wav" type="audio/wav">
                   </audio>
                  </li>
-                <li> <strong> Audio engineering (FL Studio 20) </strong> </li>
+                <li> <strong onmouseover="changeSkill('audioEn')" onmouseout="resetSkills()"> Audio engineering (FL Studio v20.9.2, Audacity 2.3.3) </strong> </li>
               <ul>
           </div>
         </div>

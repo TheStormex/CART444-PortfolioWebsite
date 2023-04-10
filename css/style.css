@@ -108,6 +108,12 @@
 	/* display: flex; */
 }
 
+.aboutImage {
+	width: 45%;
+	max-width: 45%;
+	/* overflow: hidden; */
+}
+
 .imageSide {
 	width: 49%;
 	margin-left: 0.5vw;
