@@ -116,6 +116,7 @@ function resetSkills() {
 
 function generateProjects() {
   let containerDiv = document.getElementById('portfolioSection');
+  containerDiv.innerHTML = "";
   for (let i = 0; i < projectPages.length; i++) {
     let theCamelName = projectPages[i].camelName;
     let divPortfolio = document.createElement("div");

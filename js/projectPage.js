@@ -21,6 +21,7 @@ class ProjectPage {
 
 
   show() {
+
     // this.visited = true;
     // localStorage.setItem(this.id, "true");
     // let thisCheckmarkId = "check" + this.id;
@@ -66,14 +67,45 @@ class ProjectPage {
     let otherGamesList = [];
     for (let i = 0; i < projectPages.length; i++) {
       if (this.id !== projectPages[i].id) {
-        otherGamesList.push(i);
+        otherGamesList.push(projectPages[i]);
       }
     }
-    let eachPanelWidth = (100 / projectPages.length) - 2;
-    $('#projectImage1Text').text(this.imagesDesc[0]);
-    $('#projectImage2Text').text(this.imagesDesc[1]);
-    $('#projectImage3Text').text(this.imagesDesc[2]);
-
+    let eachPanelWidth = (100 / otherGamesList.length) - 5;
+    let otherProjectsDiv = document.getElementById('otherProjects');
+    otherProjectsDiv.innerHTML = "";
+    for (let i = 0; i < otherGamesList.length; i++) {
+      let theCamelName = otherGamesList[i].camelName;
+      let divPortfolio = document.createElement("div");
+      otherProjectsDiv.appendChild(divPortfolio);
+      divPortfolio.className = "portfolioGame otherProjectsPanel";
+      divPortfolio.style.width = eachPanelWidth + "%";
+      divPortfolio.onclick = function() {toProjectPage(1, theCamelName)};
+      let thumbnailImage = document.createElement("img");
+      thumbnailImage.className = "thumbnail";
+      thumbnailImage.src = otherGamesList[i].images[1];
+      divPortfolio.appendChild(thumbnailImage);
+      let overlaySection = document.createElement("div");
+      overlaySection.className = "portfolioOverlay";
+      divPortfolio.appendChild(overlaySection);
+      let projectTitle = document.createElement("h2");
+      projectTitle.textContent = otherGamesList[i].name;
+      overlaySection.appendChild(projectTitle);
+      // let tagsLineDiv = document.createElement("div");
+      // tagsLineDiv.className = "tagsLine";
+      // overlaySection.appendChild(tagsLineDiv);
+      // let tagType = document.createElement("h5");
+      // tagType.className = "tag projectType";
+      // tagType.textContent = otherGamesList[i].gameType;
+      // tagsLineDiv.appendChild(tagType);
+      // let tagGenre = document.createElement("h5");
+      // tagGenre.className = "tag projectGenre";
+      // tagGenre.textContent = otherGamesList[i].gameGenre;
+      // tagsLineDiv.appendChild(tagGenre);
+      // let tagEngine = document.createElement("h5");
+      // tagEngine.className = "tag projectEngine";
+      // tagEngine.textContent = otherGamesList[i].gameEngine;
+      // tagsLineDiv.appendChild(tagEngine);
+    }
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
