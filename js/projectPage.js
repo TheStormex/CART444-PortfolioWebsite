@@ -20,11 +20,6 @@ class ProjectPage {
   }
 
   show() {
-    // this.visited = true;
-    // localStorage.setItem(this.id, "true");
-    // let thisCheckmarkId = "check" + this.id;
-    // let thisCheckmark = document.getElementById(thisCheckmarkId);
-    // thisCheckmark.style.display = "inline-block";
     $('#projectName').text(this.name);
     $('#projectDescription').text(this.description);
     $('.projectType').text(this.gameType);
@@ -94,24 +89,7 @@ class ProjectPage {
       let projectTitle = document.createElement("h2");
       projectTitle.textContent = otherGamesList[i].name;
       overlaySection.appendChild(projectTitle);
-      // let tagsLineDiv = document.createElement("div");
-      // tagsLineDiv.className = "tagsLine";
-      // overlaySection.appendChild(tagsLineDiv);
-      // let tagType = document.createElement("h5");
-      // tagType.className = "tag projectType";
-      // tagType.textContent = otherGamesList[i].gameType;
-      // tagsLineDiv.appendChild(tagType);
-      // let tagGenre = document.createElement("h5");
-      // tagGenre.className = "tag projectGenre";
-      // tagGenre.textContent = otherGamesList[i].gameGenre;
-      // tagsLineDiv.appendChild(tagGenre);
-      // let tagEngine = document.createElement("h5");
-      // tagEngine.className = "tag projectEngine";
-      // tagEngine.textContent = otherGamesList[i].gameEngine;
-      // tagsLineDiv.appendChild(tagEngine);
     }
-    // document.body.scrollTop = 0;
-    // document.documentElement.scrollTop = 0;
     $('html, body').animate({ scrollTop: 0 }, 'fast');
   }
 }

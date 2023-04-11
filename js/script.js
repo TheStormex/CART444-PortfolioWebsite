@@ -101,8 +101,6 @@ function showSkills() {
   if (currentSkill !== "none") {
     let topImage = document.getElementById('aboutImage1');
     let bottomImage = document.getElementById('aboutImage2');
-    // let helpText = document.getElementById(helpHover);
-    // helpText.innerHTML = "Hover over <strong>Skills</strong> to see examples";
     topImage.src = 'images/rectangle/examples/fixed_' + currentSkill + '.png';
     bottomImage.src = 'images/rectangle/examples/fixed_' + currentSkill + '2.png';
   } else {
@@ -113,8 +111,6 @@ function showSkills() {
 function resetSkills() {
   let topImage = document.getElementById('aboutImage1');
   let bottomImage = document.getElementById('aboutImage2');
-  // let helpText = document.getElementById(helpHover);
-  // helpText.innerHTML = "Hover over <strong>Skills</strong> to see examples";
   topImage.src = "images/rectangle/portrait.png";
   bottomImage.src = "images/rectangle/game2.png";
 }
