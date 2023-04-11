@@ -43,7 +43,7 @@ function createProjectPages() {
     ["I brainstormed ideas for this game for a long time, but nothing felt right. In 2022, having played many different trading card games, I took inspiration from my favorite games and came up with these mechanics I found both interesting and fun.",
      "In 2023, I started prototyping cards of different colors, which have different playstyles, and playtested the game with a friend who has expertise in card games. I am still tweaking the rules to see how I can maximise its potential."],
     ["I love playing trading card games so I want to make my own card game. The main unique aspect of this game is the positioning system, which trading card games rarely use.",
-    "The resource (Energy) mechanic is inspired by the roguelike deckbuilder <a href='https://store.steampowered.com/app/646570/Slay_the_Spire/' class='linkAway'>Slay the Spire</a>. the Upgrade mechanic is a combination of <a href='https://www.pokemon.com/us/pokemon-tcg' class='linkAway'>Pokemon TCG</a>'s Energy cards mechanic, <a href='https://world.digimoncard.com/' class='linkAway'>Digimon TCG</a>'s digivolution mechanic, and Yu-Gi-Oh! TCG's XYZ materials mechanic."],
+    "The resource (Energy) mechanic is inspired by the roguelike deckbuilder <a href='https://store.steampowered.com/app/646570/Slay_the_Spire/' class='linkAway'>Slay the Spire</a>. the Upgrade mechanic is a combination of <a href='https://www.pokemon.com/us/pokemon-tcg' class='linkAway'>Pokemon TCG</a>'s Energy cards mechanic, <a href='https://world.digimoncard.com/' class='linkAway'>Digimon TCG</a>'s digivolution mechanic, and <a href='https://www.yugioh-card.com/en/' class='linkAway'>Yu-Gi-Oh! TCG</a>'s XYZ materials mechanic."],
     "images/rectangle/projects/nerdyCards/video2.mp4",
     ["images/rectangle/projects/nerdyCards/playArea.png", "images/rectangle/projects/nerdyCards/typesOfCards.png", "images/rectangle/projects/nerdyCards/colors.png"],
     ["Zones of the play area", "Different types of cards", "Different colors of cards"]);
@@ -90,6 +90,11 @@ function createProjectPages() {
 function changeSkill(skill) {
   currentSkill = skill;
   showSkills();
+}
+
+function justDanceImages(year) {
+  let topImage = document.getElementById('aboutImage1');
+  topImage.src = 'images/rectangle/fixed_jd' + year + '.png';
 }
 
 function showSkills() {

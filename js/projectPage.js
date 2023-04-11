@@ -19,9 +19,7 @@ class ProjectPage {
     this.visited = false;
   }
 
-
   show() {
-
     // this.visited = true;
     // localStorage.setItem(this.id, "true");
     // let thisCheckmarkId = "check" + this.id;
@@ -63,6 +61,12 @@ class ProjectPage {
     let projectImage3 = document.getElementById("projectImage3Image");
     projectImage3.src = this.images[2];
     $('#projectImagesDesc').text(this.imagesDesc);
+    let underImageText1 = document.getElementById("projectImage1Text");
+    underImageText1.textContent = this.imagesDesc[0];
+    let underImageText2 = document.getElementById("projectImage2Text");
+    underImageText2.textContent = this.imagesDesc[1];
+    let underImageText3 = document.getElementById("projectImage3Text");
+    underImageText3.textContent = this.imagesDesc[2];
     // generate other games
     let otherGamesList = [];
     for (let i = 0; i < projectPages.length; i++) {
@@ -106,7 +110,8 @@ class ProjectPage {
       // tagEngine.textContent = otherGamesList[i].gameEngine;
       // tagsLineDiv.appendChild(tagEngine);
     }
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    // document.body.scrollTop = 0;
+    // document.documentElement.scrollTop = 0;
+    $('html, body').animate({ scrollTop: 0 }, 'fast');
   }
 }
