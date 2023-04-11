@@ -13,6 +13,7 @@ let projectPage;
 
 function createProjectPages() {
   let project1 = new ProjectPage (
+    "breakdownBowling",
     "1",
     "Breakdown Bowling",
     "University Game",
@@ -30,6 +31,7 @@ function createProjectPages() {
     ["Aiming the ball", "Hitting the pins", "Back view camera perspective"]);
   projectPages.push(project1);
   let project2 = new ProjectPage (
+    "nerdyCards",
     "2",
     "Nerdy Cards",
     "Personal Project",
@@ -47,6 +49,7 @@ function createProjectPages() {
     ["Zones of the play area", "Different types of cards", "Different colors of cards"]);
   projectPages.push(project2);
   let project3 = new ProjectPage (
+    "reBoot",
     "3",
     "Re-Boot",
     "Game Jam Game",
@@ -64,6 +67,7 @@ function createProjectPages() {
     ["Level 1", "Level 13", "Level 15 (Final level)"]);
   projectPages.push(project3);
   let project4 = new ProjectPage (
+    "screen",
     "4",
     "Screen",
     "Game Jam Game",
@@ -80,7 +84,7 @@ function createProjectPages() {
     ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
     ["Spreadsheets", "Interactive chatroom", "Diary entries"]);
   projectPages.push(project4);
-  generateTabs()
+  generateProjects();
 }
 
 function changeSkill(skill) {
@@ -110,17 +114,39 @@ function resetSkills() {
   bottomImage.src = "images/rectangle/game2.png";
 }
 
-function generateTabs() {
-  for (let i = 1; i < projectPages.length+1; i++) {
-    let targetId = "portfolioButton" + i;
-    console.log(targetId);
-    let targetIdElement = document.getElementById(targetId);
-    let theProjectType = targetIdElement.querySelector('.projectType');
-    let theProjectGenre = targetIdElement.querySelector('.projectGenre');
-    let theProjectEngine = targetIdElement.querySelector('.projectEngine');
-    theProjectType.textContent = projectPages[i-1].gameType;
-    theProjectGenre.textContent = projectPages[i-1].gameGenre;
-    theProjectEngine.textContent = projectPages[i-1].gameEngine;
+function generateProjects() {
+  let containerDiv = document.getElementById('portfolioSection');
+  for (let i = 0; i < projectPages.length; i++) {
+    let theCamelName = projectPages[i].camelName;
+    let divPortfolio = document.createElement("div");
+    containerDiv.appendChild(divPortfolio);
+    divPortfolio.className = "portfolioGame";
+    divPortfolio.onclick = function() {toProjectPage(1, theCamelName)};
+    let thumbnailImage = document.createElement("img");
+    thumbnailImage.className = "thumbnail";
+    thumbnailImage.src = projectPages[i].images[1];
+    divPortfolio.appendChild(thumbnailImage);
+    let overlaySection = document.createElement("div");
+    overlaySection.className = "portfolioOverlay";
+    divPortfolio.appendChild(overlaySection);
+    let projectTitle = document.createElement("h2");
+    projectTitle.textContent = projectPages[i].name;
+    overlaySection.appendChild(projectTitle);
+    let tagsLineDiv = document.createElement("div");
+    tagsLineDiv.className = "tagsLine";
+    overlaySection.appendChild(tagsLineDiv);
+    let tagType = document.createElement("h5");
+    tagType.className = "tag projectType";
+    tagType.textContent = projectPages[i].gameType;
+    tagsLineDiv.appendChild(tagType);
+    let tagGenre = document.createElement("h5");
+    tagGenre.className = "tag projectGenre";
+    tagGenre.textContent = projectPages[i].gameGenre;
+    tagsLineDiv.appendChild(tagGenre);
+    let tagEngine = document.createElement("h5");
+    tagEngine.className = "tag projectEngine";
+    tagEngine.textContent = projectPages[i].gameEngine;
+    tagsLineDiv.appendChild(tagEngine);
   }
 }
 
@@ -145,6 +171,7 @@ function toProjectPage(mainSection, projectName) {
   $(mainPage).fadeOut(150);
   $(projectPage).fadeIn(150);
   isProject = true;
+  generateProjects();
 }
 
 function toMainPage() {
@@ -154,12 +181,13 @@ function toMainPage() {
     $(projectPage).fadeOut(150);
     $(mainPage).fadeIn(150);
     isProject = false;
+    generateProjects();
   }
 }
 
 function toggleProjects() {
   $('.projectItem').fadeToggle(100);
-  generateTabs();
+  generateProjects();
 }
 
 function playVideo() {

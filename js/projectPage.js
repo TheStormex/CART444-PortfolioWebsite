@@ -1,7 +1,8 @@
 "use strict";
 
 class ProjectPage {
-  constructor(id, name, gameType, gameGenre, gameEngine, oneLine, description, responsibilities, documentation, additionalInfo, video, images, imagesDesc) {
+  constructor(camelName, id, name, gameType, gameGenre, gameEngine, oneLine, description, responsibilities, documentation, additionalInfo, video, images, imagesDesc) {
+    this.camelName = camelName;
     this.id = id;
     this.name = name;
     this.gameType = gameType;
@@ -61,6 +62,14 @@ class ProjectPage {
     let projectImage3 = document.getElementById("projectImage3Image");
     projectImage3.src = this.images[2];
     $('#projectImagesDesc').text(this.imagesDesc);
+    // generate other games
+    let otherGamesList = [];
+    for (let i = 0; i < projectPages.length; i++) {
+      if (this.id !== projectPages[i].id) {
+        otherGamesList.push(i);
+      }
+    }
+    let eachPanelWidth = (100 / projectPages.length) - 2;
     $('#projectImage1Text').text(this.imagesDesc[0]);
     $('#projectImage2Text').text(this.imagesDesc[1]);
     $('#projectImage3Text').text(this.imagesDesc[2]);
