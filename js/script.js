@@ -18,11 +18,15 @@ function createProjectPages() {
   });
   language = firstLanguage.lang;
   if (language === 'fr') {
-    $('html').attr('lang','fr');
+    // $('html').attr('lang','fr');
     $('[lang="en"]').hide();
   } else if (language === 'en') {
-    $('html').attr('lang','en');
+    // $('html').attr('lang','en');
     $('[lang="fr"]').hide();
+  } else {
+    $('[lang="fr"]').hide();
+    language = "en";
+    window.history.pushState('language', '', '/?lang=en');
   }
   let project1 = new ProjectPage (
     "breakdownBowling",
@@ -220,14 +224,15 @@ function finishVideo() {
 }
 
 function changeLanguage() {
-  console.log(language);
   if (language === "en") {
-    $('[lang="fr"]').fadeIn(0);
-    $('[lang="en"]').fadeOut(0);
+    $('[lang="fr"]').show();
+    $('[lang="en"]').hide();
     language = "fr";
+    window.history.pushState('language', '', '/?lang=fr');
   } else if (language === "fr") {
-    $('[lang="en"]').fadeIn(0);
-    $('[lang="fr"]').fadeOut(0);
+    $('[lang="en"]').show();
+    $('[lang="fr"]').hide();
     language = "en";
+    window.history.pushState('language', '', '/?lang=en');
   }
 }
