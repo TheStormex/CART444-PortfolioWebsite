@@ -1,6 +1,7 @@
 "use strict";
 
 let darkMode = false;
+let language = "en";
 // is the page a project or the main page?
 let isProject = false;
 let videoPlaying = false;
@@ -12,6 +13,17 @@ let mainPage;
 let projectPage;
 
 function createProjectPages() {
+  const firstLanguage = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  });
+  language = firstLanguage.lang;
+  if (language === 'fr') {
+    $('html').attr('lang','fr');
+    $('[lang="en"]').hide();
+  } else if (language === 'en') {
+    $('html').attr('lang','en');
+    $('[lang="fr"]').hide();
+  }
   let project1 = new ProjectPage (
     "breakdownBowling",
     "1",
@@ -205,4 +217,17 @@ function finishVideo() {
   $('#videoFull').fadeOut(0);
   $('#video').fadeIn(0);
   $('#overlay').fadeIn(0);
+}
+
+function changeLanguage() {
+  console.log(language);
+  if (language === "en") {
+    $('[lang="fr"]').fadeIn(0);
+    $('[lang="en"]').fadeOut(0);
+    language = "fr";
+  } else if (language === "fr") {
+    $('[lang="en"]').fadeIn(0);
+    $('[lang="fr"]').fadeOut(0);
+    language = "en";
+  }
 }
