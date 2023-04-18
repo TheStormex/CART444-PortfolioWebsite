@@ -26,7 +26,7 @@ function createProjectPages() {
   } else {
     $('[lang="fr"]').hide();
     language = "en";
-    window.history.pushState('language', '', '/?lang=en');
+    window.history.pushState('language', '', '/CART444-PortfolioWebsite/?lang=en');
   }
   let project1 = new ProjectPage (
     "breakdownBowling",
@@ -228,11 +228,11 @@ function changeLanguage() {
     $('[lang="fr"]').show();
     $('[lang="en"]').hide();
     language = "fr";
-    window.history.pushState('language', '', '/?lang=fr');
+    window.history.pushState('language', '', '/CART444-PortfolioWebsite/?lang=fr');
   } else if (language === "fr") {
     $('[lang="en"]').show();
     $('[lang="fr"]').hide();
     language = "en";
-    window.history.pushState('language', '', '/?lang=en');
+    window.history.pushState('language', '', '/CART444-PortfolioWebsite/?lang=en');
   }
 }

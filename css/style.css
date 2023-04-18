@@ -156,6 +156,10 @@
 	text-align: center;
 }
 
+.portfolioOverlay h2 {
+	margin-top: 0;
+}
+
 .thumbnail {
 	transition: transform .2s, filter .2s;
 }
@@ -207,16 +211,16 @@
 	display: block;
   transition-duration: 0.2s;
 	text-decoration: none;
-	font-size: 1.4vw;
-	margin-top: 3%;
-	margin-bottom: 3%;
+	font-size: 1.2vw;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	padding: 0.5%;
 }
 
 
 .menuItem:hover {
 	color: #FF7800;
-	font-size: 1.42vw;
+	font-size: 1.22vw;
 	cursor: pointer;
 }
 
@@ -231,7 +235,7 @@
 	margin-top: 0.5vh;
 	margin-left: 4.5vw;
 	margin-right:2vw;
-	font-size: 1.2vw;
+	font-size: 1vw;
 	text-align: justify;
 	line-height: 180%;
 }
@@ -379,7 +383,7 @@ p {
 	margin-top: 0.5vh;
 	margin-left: 3.5vw;
 	margin-right:2vw;
-	font-size: 1.2vw;
+	font-size: 1vw;
 	text-align: justify;
 	line-height: 150%;
 }
@@ -389,7 +393,7 @@ h3 {
 	margin-left: 3.5vw;
 	margin-right:2vw;
 	margin-bottom: 0;
-	font-size: 1.5vw;
+	font-size: 1.2vw;
 	text-align: center;
 	line-height: 150%;
 }
@@ -424,7 +428,7 @@ img {
 
 h1 {
 	text-align: center;
-	font-size: 3vw;
+	font-size: 4vw;
 	margin: 0;
 	margin-top: 1.8vh;
 	margin-bottom: 1.8vh;
@@ -437,7 +441,7 @@ h2 {
 	text-decoration: underline;
 	text-decoration-color: #FFD355;
 	text-align: center;
-	font-size: 1.8vw;
+	font-size: 2.5vw;
 }
 
 h4 {

@@ -27,7 +27,7 @@
       <span id="title" title="Che Tan">
          <span> <img onclick="window.location.reload()" src="images/logo/largeLogoHorinzontal.png" id="name" alt="Che Tan horizontal name logo"> </span>
          <h2>
-           Game Designer
+           <span lang="en"> Game Designer </span> <span lang="fr"> Designer de jeu </span>
          </h2>
       </span>
       <span id="menuBar">
@@ -35,18 +35,18 @@
         <a href="#contentVideo"> <li class="menuItem" id="promoVideo" onclick="toMainPage()">
           <div class="menuSide">
           </div>
-          Promo Video </li> </a>
+          <span lang="en"> Promo Video </span> <span lang="fr"> Vidéo de Promotion </span> </li> </a>
         <a href="#contentAbout"> <li class="menuItem" id="aboutMe" onclick="toMainPage()">
           <div class="menuSide">
           </div>
-          About Me </li> </a>
+          <span lang="en"> About Me </span> <span lang="fr"> À Propos </span> </li> </a>
         <li class="menuItem" id="portfolio" onclick="toMainPage()">
           <div class="menuSide">
               <!-- <a href="#"> -->
                 <img class="dropDown" onclick="toggleProjects()" src="images/decoration/projectMenuButton.png">
               <!-- </a> -->
           </div>
-          <a href="#contentPortfolio"> Featured Projects </a>
+          <a href="#contentPortfolio"> <span lang="en"> Featured Projects </span> <span lang="fr"> Projets Présentés </span> </a>
         </li>
         <!-- <hr /> -->
         <li class="menuItem projectItem" onclick="toProjectPage(1, 'breakdownBowling')">
@@ -94,7 +94,7 @@
          <a href="#contentEducation"> <li class="menuItem" id="education" onclick="toMainPage()">
            <div class="menuSide">
            </div>
-           Education </li>  </a>
+           <span lang="en"> Education </span> <span lang="fr"> Éducation </span> </li>  </a>
         <a href=images/cv.pdf  target="_blank" rel="noopener noreferrer"> <li class="menuItem" id="cv" onclick="toMainPage()">
           <div class="menuSide">
           </div>
@@ -105,13 +105,10 @@
            <a href="https://www.linkedin.com/in/che-t-625842a6/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="fa fa-linkedin"></a>
            <a href="https://www.facebook.com/TheStormex/" target="_blank" rel="noopener noreferrer" title="Facebook" class="fa fa-facebook"></a>
         </li>
-        <li class="menuItem" id="languageButton">
-            <div class="menuSide">
-            </div>
-           <span onclick="changeLanguage()">
-             <span lang="en"> Français </span> <span lang="fr"> English </span>
-           </span>
-        </li>
+        <a> <li class="menuItem"  id="languageButton" onclick="changeLanguage()">
+          <div class="menuSide">
+          </div>
+          <span lang="en"> Français </span> <span lang="fr"> English </span> </li>  </a>
       </ul>
       </span>
     </div>
@@ -130,7 +127,7 @@
             </video>
             <div id="overlay">
               <p>
-                Che Tan's Game Design Portfolio<br>
+                <span lang="en"> Che Tan's Game Design Portfolio </span> <span lang="fr"> Portfolio de Design de Jeux de Che Tan </span> <br>
                 <button type="button" onclick="playVideo()"> Play </button>
               </p>
             </div>
@@ -138,7 +135,7 @@
         </div>
         <div class="content" id="contentAbout">
           <h1>
-            About Me
+            <span lang="en"> About Me </span> <span lang="fr"> À Propos </span>
           </h1>
           <div class="contentBlock">
             <div class="imageSide aboutImage">
@@ -146,19 +143,25 @@
             </div>
             <div class="textSide">
               <h2>
-                Who am I?
+                <span lang="en"> Who am I? </span> <span lang="fr"> Qui suis-je? </span>
               </h2>
               <p>
-                I am a game designer from Montreal. I specialize in mechanics design.
+                <span lang="en"> I am a game designer from Montreal. I specialize in mechanics design. </span> <span lang="fr"> Je suis un designer de jeu de Montréal. Je spécialise au design de méchaniques. </span>
               </p>
               <p>
-                I have created many games in college and university for which I attained high marks, such as <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, a 2D puzzle platformer about a clone-spawning robot.
+                <span lang="en"> I have created many games in college and university for which I attained high marks, such as <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, a 2D puzzle platformer about a clone-spawning robot. </span>
+                <span lang="fr"> J'ai crée plusieurs jeux au CÉGEP et à l'université pour lesquels j'ai reçu des bonnes notes, comme <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, un jeu platformeur 2D puzzle sur un robot qui fabrique des clones. </span>
+
               </p>
               <p>
-                I was the Canadian champion of <a title="Link to Fandom Wiki page" class="linkAway" href="https://justdance.fandom.com/wiki/Just_Dance_World_Cup" target="_blank" rel="noopener noreferrer">Just Dance World Cup</a> in
-                <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2014')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10152758284116578&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2014</a>,
-                <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2015')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10153174328836629&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2015</a>, and
-                <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2019')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=3920627001343361&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2019</a>.
+                <span lang="en"> I was the Canadian champion of <a title="Link to Fandom Wiki page" class="linkAway" href="https://justdance.fandom.com/wiki/Just_Dance_World_Cup" target="_blank" rel="noopener noreferrer">Just Dance World Cup</a> in
+                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2014')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10152758284116578&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2014</a>,
+                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2015')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10153174328836629&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2015</a>, and
+                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2019')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=3920627001343361&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2019</a>. </span>
+                <span lang="fr"> J'étais le champion de <a title="Link to Fandom Wiki page" class="linkAway" href="https://justdance.fandom.com/wiki/Just_Dance_World_Cup" target="_blank" rel="noopener noreferrer">World Cup Just Dance</a> en
+                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2014')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10152758284116578&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2014</a>,
+                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2015')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10153174328836629&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2015</a>, et
+                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2019')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=3920627001343361&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2019</a>. </span>
               </p>
             </div>
           </div>
