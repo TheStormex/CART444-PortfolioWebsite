@@ -26,11 +26,44 @@ function createProjectPages() {
   } else {
     $('[lang="fr"]').hide();
     language = "en";
-    window.history.pushState('language', '', '/CART444-PortfolioWebsite/?lang=en');
+    window.history.pushState('language', '', '?lang=en');
   }
   let project1 = new ProjectPage (
-    "breakdownBowling",
+    "theLastHacktivists2",
     "1",
+    "The Last Hacktivists 2",
+    "Personal Project",
+    "2D Turn-Based / Action RPG",
+    "JavaScript (p5js)",
+    "Role-playing-game about combining turn-based strategy and action combat",
+    "The player controls a team of 4 characters and must defeat the 4 enemies in an RPG battle that alternates between a turn-based tactics phase and an action-based combat phase. In the turn-based section, the player can decide who will fight and use utility abilities. In the action-based section, the player must dodge enemies's bullets and shoot back to deal damage.",
+    ["Mechanics design", "Programming (html, css, js)", "Character ability design", "User Interface design", "2D assets creation", "Music composition", "Sound effects creation"],
+    ["This is an expansion upon and improvement over a university class's final project. I wanted to create a unique RPG combat system that combines the strategic decisions of turn-based games and the exciting gameplay of action games."],
+    ["My main inspirations for this game are the combat systems of <a href='https://store.steampowered.com/app/391540/Undertale/' class='linkAway'>Undertale</a>  and <a href='https://store.steampowered.com/app/1671210/DELTARUNE/' class='linkAway'>Deltarune</a>, as well as top-down action games like <a href='https://store.steampowered.com/app/399640/Flamebreak/' class='linkAway'>Flamebreak</a> and <a href='https://store.steampowered.com/app/445980/Wizard_of_Legend/?curator_clanid=6869120' class='linkAway'>Wizard of Legend</a>."],
+    "images/rectangle/projects/reBoot/video.mp4",
+    ["images/rectangle/projects/reBoot/level1.png", "images/rectangle/projects/reBoot/level13.png", "images/rectangle/projects/reBoot/level15.png"],
+    ["Tactics Phase", "Combat Phase", "Enemy Talents (Stun)"]);
+  projectPages.push(project1);
+  let project2 = new ProjectPage (
+    "reBoot",
+    "2",
+    "Re-Boot",
+    "Game Jam Game",
+    "2D Puzzle Platformer",
+    "Unity Engine",
+    "Puzzle-platformer game about respawning and placing clones.",
+    "The player controls a robot and must get to the end of each level through opening doors, stepping on switches, and respawning to leave behind a clone that can be used as platforms and to keep switches pressed. These actions require battery energy to use, which is limited, and must be managed properly.",
+    ["Mechanics design", "Level design", "Music and sound creation", "Programming (debugging)", "Documentation", "Project management"],
+    ["This game was created in a team of 3 during a 3 weeks university class game jam in November 2022. I, as the designer, had a miscommunication with the lead programmer. I designed the game to cost a resource when the player jumps, but did not communicate this properly with the programmer.",
+    "This caused the levels I designed to not work and I had to design new ones to fit the rules the actual game was coded to have. I learned to maintain rigorous communication with the rest of the team so everyone is always on the same page."],
+    ["My main inspiration for this game is <a href='https://armorgames.com/play/1567/chronotron' class='linkAway'>Chronotron</a>, another puzzle platformer where the player robot character must use previous selves to solve the levels."],
+    "images/rectangle/projects/reBoot/video.mp4",
+    ["images/rectangle/projects/reBoot/level1.png", "images/rectangle/projects/reBoot/level13.png", "images/rectangle/projects/reBoot/level15.png"],
+    ["Level 1", "Level 13", "Level 15 (Final level)"]);
+  projectPages.push(project2);
+  let project3 = new ProjectPage (
+    "ftk",
+    "3",
     "Breakdown Bowling",
     "University Game",
     "3D Puzzle Strategy",
@@ -45,42 +78,6 @@ function createProjectPages() {
     "images/rectangle/projects/breakdownBowling/video.mp4",
     ["images/rectangle/projects/breakdownBowling/aim.png", "images/rectangle/projects/breakdownBowling/hitting.png", "images/rectangle/projects/breakdownBowling/backview.png"],
     ["Aiming the ball", "Hitting the pins", "Back view camera perspective"]);
-  projectPages.push(project1);
-  let project2 = new ProjectPage (
-    "nerdyCards",
-    "2",
-    "Nerdy Cards",
-    "Personal Project",
-    "Card Game",
-    "Tabletop",
-    "Use careful positioning to defeat your opponent with your army!",
-    "This is a two-players game where they must damage each other’s shields until a direct hit is made. Players summon units onto zones of the battlefield and play ability cards to affect the game state. Positioning matters, as units and abilities can only affect specific zones relative to themselves.",
-    ["Mechanics design", "Card layout and content design", "Vector artwork", "Documentation", "Project management"],
-    ["I brainstormed ideas for this game for a long time, but nothing felt right. In 2022, having played many different trading card games, I took inspiration from my favorite games and came up with these mechanics I found both interesting and fun.",
-     "In 2023, I started prototyping cards of different colors, which have different playstyles, and playtested the game with a friend who has expertise in card games. I am still tweaking the rules to see how I can maximise its potential."],
-    ["I love playing trading card games so I want to make my own card game. The main unique aspect of this game is the positioning system, which trading card games rarely use.",
-    "The resource (Energy) mechanic is inspired by the roguelike deckbuilder <a href='https://store.steampowered.com/app/646570/Slay_the_Spire/' class='linkAway'>Slay the Spire</a>. the Upgrade mechanic is a combination of <a href='https://www.pokemon.com/us/pokemon-tcg' class='linkAway'>Pokemon TCG</a>'s Energy cards mechanic, <a href='https://world.digimoncard.com/' class='linkAway'>Digimon TCG</a>'s digivolution mechanic, and <a href='https://www.yugioh-card.com/en/' class='linkAway'>Yu-Gi-Oh! TCG</a>'s XYZ materials mechanic."],
-    "images/rectangle/projects/nerdyCards/video2.mp4",
-    ["images/rectangle/projects/nerdyCards/playArea.png", "images/rectangle/projects/nerdyCards/typesOfCards.png", "images/rectangle/projects/nerdyCards/colors.png"],
-    ["Zones of the play area", "Different types of cards", "Different colors of cards"]);
-  projectPages.push(project2);
-  let project3 = new ProjectPage (
-    "reBoot",
-    "3",
-    "Re-Boot",
-    "Game Jam Game",
-    "2D Puzzle Platformer",
-    "Unity Engine",
-    "Guide the robot to the exit! Use energy and leave behind clones to solve the puzzles!",
-    "The player controls a robot and must get to the end of each level through opening doors, stepping on switches, and respawning to leave behind a clone that can be used as platforms and to keep switches pressed. These actions require battery energy to use, which is limited, and must be managed properly.",
-    ["Mechanics design", "Level design", "Music and sound creation", "Programming (debugging)", "Documentation", "Project management"],
-    ["This game was created in a team of 3 during a 3 weeks university class game jam in November 2022. I, as the designer, had a miscommunication with the lead programmer. I designed the game to cost a resource when the player jumps, but did not communicate this properly with the programmer.",
-    "This caused the levels I designed to not work and I had to design new ones to fit the rules the actual game was coded to have. I learned to maintain rigorous communication with the rest of the team so everyone is always on the same page."],
-    ["The theme of the game jam was rebirth and the game must have no (or few) text.",
-    "My main inspiration for this game is <a href='https://armorgames.com/play/1567/chronotron' class='linkAway'>Chronotron</a>, another puzzle platformer where the player robot character must use previous selves to solve the levels."],
-    "images/rectangle/projects/reBoot/video.mp4",
-    ["images/rectangle/projects/reBoot/level1.png", "images/rectangle/projects/reBoot/level13.png", "images/rectangle/projects/reBoot/level15.png"],
-    ["Level 1", "Level 13", "Level 15 (Final level)"]);
   projectPages.push(project3);
   let project4 = new ProjectPage (
     "screen",
@@ -100,6 +97,42 @@ function createProjectPages() {
     ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
     ["Spreadsheets", "Interactive chatroom", "Diary entries"]);
   projectPages.push(project4);
+  let project5 = new ProjectPage (
+    "charmingOffering",
+    "5",
+    "Screen",
+    "Game Jam Game",
+    "2D Mystery Simulator",
+    "Unity Engine",
+    "Save the hostage, detective! Catfish a gang member into giving you their location!",
+    "The player is a detective who has hacked into the laptop of a gang member. They must pretend to be that gang member and catfish  another to reveal the location of a hostage. The player must explore the files on the computer to learn what the gang member knows to make their act convincing.",
+    ["Mechanics design", "Narrative design", "Music and sound creation", "Documentation", "Writing dialogue and other texts", "Project management"],
+    ["This game was created in a team of 3 during a 3 weeks university class game jam in October 2022. I worked with another member of the team to come up with the story and dialogue. The original idea of the puzzles all being different each playthrough was too ambitious so we scaled it down.",
+    "After playtesting, it was found that the game was confusing. The hacker character was added, dialogue was cut, and more tutorialization was placed in the beginning."],
+    ["The theme of the game jam was ‘I know what you did’ and the game must have no on-screen player character. The name has the double meaning of both a computer screen and the screening process from the gang member the player goes through.",
+    "My main inspirations for this game are <a href='https://store.steampowered.com/app/417860/Emily_is_Away/' class='linkAway'>Emily is Away</a> and <a href='https://store.steampowered.com/app/485380/Welcome_to_the_Game/' class='linkAway'>Welcome to the Game</a>, other computer simulators with information gathering and/or chatroom dialogue choices."],
+    "images/rectangle/projects/screen/video.mp4",
+    ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
+    ["Spreadsheets", "Interactive chatroom", "Diary entries"]);
+  projectPages.push(project5);
+  let project6 = new ProjectPage (
+    "stanStopper",
+    "6",
+    "Screen",
+    "Game Jam Game",
+    "2D Mystery Simulator",
+    "Unity Engine",
+    "Save the hostage, detective! Catfish a gang member into giving you their location!",
+    "The player is a detective who has hacked into the laptop of a gang member. They must pretend to be that gang member and catfish  another to reveal the location of a hostage. The player must explore the files on the computer to learn what the gang member knows to make their act convincing.",
+    ["Mechanics design", "Narrative design", "Music and sound creation", "Documentation", "Writing dialogue and other texts", "Project management"],
+    ["This game was created in a team of 3 during a 3 weeks university class game jam in October 2022. I worked with another member of the team to come up with the story and dialogue. The original idea of the puzzles all being different each playthrough was too ambitious so we scaled it down.",
+    "After playtesting, it was found that the game was confusing. The hacker character was added, dialogue was cut, and more tutorialization was placed in the beginning."],
+    ["The theme of the game jam was ‘I know what you did’ and the game must have no on-screen player character. The name has the double meaning of both a computer screen and the screening process from the gang member the player goes through.",
+    "My main inspirations for this game are <a href='https://store.steampowered.com/app/417860/Emily_is_Away/' class='linkAway'>Emily is Away</a> and <a href='https://store.steampowered.com/app/485380/Welcome_to_the_Game/' class='linkAway'>Welcome to the Game</a>, other computer simulators with information gathering and/or chatroom dialogue choices."],
+    "images/rectangle/projects/screen/video.mp4",
+    ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
+    ["Spreadsheets", "Interactive chatroom", "Diary entries"]);
+  projectPages.push(project6);
   generateProjects();
 }
 
@@ -127,7 +160,7 @@ function showSkills() {
 function resetSkills() {
   let topImage = document.getElementById('aboutImage1');
   let bottomImage = document.getElementById('aboutImage2');
-  topImage.src = "images/rectangle/portrait.png";
+  topImage.src = "images/rectangle/portrait2.png";
   bottomImage.src = "images/rectangle/game2.png";
 }
 
@@ -172,17 +205,23 @@ function toProjectPage(mainSection, projectName) {
   mainPage = document.getElementById('mainPage');
   projectPage = document.getElementById('projectPage');
   switch (projectName) {
-    case "breakdownBowling":
+    case "theLastHacktivists2":
       projectPages[0].show();
       break;
-    case "nerdyCards":
+    case "reBoot":
       projectPages[1].show();
       break;
-    case "reBoot":
+    case "ftk":
       projectPages[2].show();
       break;
     case "screen":
       projectPages[3].show();
+      break;
+    case "charmingOffering":
+      projectPages[4].show();
+      break;
+    case "stanStopper":
+      projectPages[5].show();
       break;
     default:
   }
@@ -228,11 +267,11 @@ function changeLanguage() {
     $('[lang="fr"]').show();
     $('[lang="en"]').hide();
     language = "fr";
-    window.history.pushState('language', '', '/CART444-PortfolioWebsite/?lang=fr');
+    window.history.pushState('language', '', '?lang=fr');
   } else if (language === "fr") {
     $('[lang="en"]').show();
     $('[lang="fr"]').hide();
     language = "en";
-    window.history.pushState('language', '', '/CART444-PortfolioWebsite/?lang=en');
+    window.history.pushState('language', '', '?lang=en');
   }
 }

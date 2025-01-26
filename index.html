@@ -36,10 +36,6 @@
           <div class="menuSide">
           </div>
           <span lang="en"> Promo Video </span> <span lang="fr"> Vidéo de Promotion </span> </li> </a>
-        <a href="#contentAbout"> <li class="menuItem" id="aboutMe" onclick="toMainPage()">
-          <div class="menuSide">
-          </div>
-          <span lang="en"> About Me </span> <span lang="fr"> À Propos </span> </li> </a>
         <li class="menuItem" id="portfolio" onclick="toMainPage()">
           <div class="menuSide">
               <!-- <a href="#"> -->
@@ -91,6 +87,10 @@
           <!-- <img class="checkmark" id="check4" src="images/decoration/check.png"> -->
         </li>
         <!-- <hr /> -->
+        <a href="#contentAbout"> <li class="menuItem" id="aboutMe" onclick="toMainPage()">
+          <div class="menuSide">
+          </div>
+          <span lang="en"> About Me </span> <span lang="fr"> À Propos </span> </li> </a>
          <a href="#contentEducation"> <li class="menuItem" id="education" onclick="toMainPage()">
            <div class="menuSide">
            </div>
@@ -102,8 +102,9 @@
         <li class="menuItem" id="socialMedia">
             <div class="menuSide">
             </div>
-           <a href="https://www.linkedin.com/in/che-t-625842a6/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="fa fa-linkedin"></a>
-           <a href="https://www.facebook.com/TheStormex/" target="_blank" rel="noopener noreferrer" title="Facebook" class="fa fa-facebook"></a>
+           <a href="https://www.linkedin.com/in/che-t-625842a6/" target="_blank" rel="noopener noreferrer" title="LinkedIn"> LinkedIn </a>
+           <!-- <a href="https://www.linkedin.com/in/che-t-625842a6/" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="fa fa-linkedin"></a> -->
+           <!-- <a href="https://www.facebook.com/TheStormex/" target="_blank" rel="noopener noreferrer" title="Facebook" class="fa fa-facebook"></a> -->
         </li>
         <a> <li class="menuItem"  id="languageButton" onclick="changeLanguage()">
           <div class="menuSide">
@@ -116,7 +117,7 @@
       <div class="contentParts">
         <div class="content" id="contentVideo">
           <h3 id="egg">
-            Hi! This is an easter egg!
+            <span lang="en"> Hi! This is an easter egg! </span> <span lang="fr"> Allô! Voici un easter egg! </span>
           </h3>
           <div id="videoContainer">
             <video autoplay muted loop id="video">
@@ -128,9 +129,16 @@
             <div id="overlay">
               <p>
                 <span lang="en"> Che Tan's Game Design Portfolio </span> <span lang="fr"> Portfolio de Design de Jeux de Che Tan </span> <br>
-                <button type="button" onclick="playVideo()"> Play </button>
+                <button type="button" onclick="playVideo()"> <span lang="en"> Play </span> <span lang="fr"> Jouer </span>  </button>
               </p>
             </div>
+          </div>
+        </div>
+        <div class="content" id="contentPortfolio">
+          <h1>
+            <span lang="en"> Featured Projects </span> <span lang="fr"> Projets Présentés </span>
+          </h1>
+          <div class="contentBlock" id="portfolioSection">
           </div>
         </div>
         <div class="content" id="contentAbout">
@@ -139,7 +147,7 @@
           </h1>
           <div class="contentBlock">
             <div class="imageSide aboutImage">
-              <img id="aboutImage1" src="images/rectangle/portrait.png">
+              <img id="aboutImage1" src="images/rectangle/portrait2.png">
             </div>
             <div class="textSide">
               <h2>
@@ -168,12 +176,12 @@
           <div class="imageSide aboutImage" id="">
             <img id="aboutImage2" src="images/rectangle/game2.png">
             <h3 class="underImage" id="helpHover">
-              Hover over <strong>Skills</strong> to see examples
+              <span lang="en"> Hover over <strong>Skills</strong> to see examples </span> <span lang="fr"> Bougez la souris sur <strong>Compétences</strong> pour voir des exemples </span>
             </h3>
           </div>
           <div class="textSide">
             <h2>
-              My Game Development Skills
+              <span lang="en"> My Game Development Skills </span> <span lang="fr"> Mes Compétences de Développement de Jeux </span>
             </h2>
               <ul class="pointsList">
                 <li> <strong onmouseover="changeSkill('design')" onmouseout="resetSkills()"> Game design (mechanics, narrative, level, UI, UX) </strong> </li>
@@ -193,70 +201,192 @@
               <ul>
           </div>
         </div>
-        <div class="content" id="contentPortfolio">
-          <h1>
-            Featured Projects
-          </h1>
-          <div class="contentBlock" id="portfolioSection">
-          </div>
-        </div>
         <div class="content" id="contentEducation">
           <h1>
-            Education
+            <span lang="en"> Education </span> <span lang="fr"> Éducation </span>
           </h1>
           <div class="contentBlock">
             <div class="imageSide">
-              <a href="https://www.concordia.ca" target="_blank" rel="noopener noreferrer"> <img title="Concordia University (Click to to go the school's website)" src="images/rectangle/schools/concordia_crop.png"> </a>
+              <span lang="en">
+                <a href="https://www.concordia.ca" target="_blank" rel="noopener noreferrer"> <img title="Concordia University (Click to go the school's website)" src="images/rectangle/schools/concordia_crop.png"> </a>
+              </span>
+              <span lang="fr">
+                <a href="https://www.concordia.ca/fr.html" target="_blank" rel="noopener noreferrer"> <img title="Université Concordia (Cliquez pour aller au site web de l'école)" src="images/rectangle/schools/concordia_crop.png"> </a>
+              </span>
             </div>
             <div class="textSide">
               <h2>
-                <a title="Concordia University (Click to to go the school's website)" href="https://www.concordia.ca" target="_blank" rel="noopener noreferrer"> Concordia University </a>
+                <span lang="en">
+                  <a title="Concordia University (Click to go the school's website)" href="https://www.concordia.ca" target="_blank" rel="noopener noreferrer"> Concordia University </a>
+                </span>
+                <span lang="fr">
+                  <a title="Université Concordia (Cliquez pour aller au site web de l'école)" href="https://www.concordia.ca/fr.html" target="_blank" rel="noopener noreferrer">  Université Concordia </a>
+                </span>
               </h2>
               <ul class="pointsList">
-                <li>2019 - Present</li>
-                <li>Public University</li>
-                <li>Specialization in <a class="linkAway" href="https://www.concordia.ca/academics/undergraduate/computation-arts.html" target="_blank" rel="noopener noreferrer"> Computation Arts </a> </li>
-                <li>3.89 CGPA</li>
-                <li>Member of <a class="linkAway" href="https://goldenkey.org/" target="_blank" rel="noopener noreferrer"> Golden Key International Honour Society </a></li>
-                <li>Currently working here as student ambassador for <a class="linkAway" href="https://www.concordia.ca/admissions/undergraduate/welcometours.html#campustours" target="_blank" rel="noopener noreferrer"> campus tours </a> </li>
+                <li>2019 - 2023</li>
+                <li><span lang="en"> Public University </span> <span lang="fr"> Université publique </span></li>
+                <li>
+                  <span lang="en">
+                    Specialization in <a class="linkAway" href="https://www.concordia.ca/academics/undergraduate/computation-arts.html" target="_blank" rel="noopener noreferrer"> Computation Arts </a>
+                  </span>
+                  <span lang="fr">
+                    Spécialisation en <a class="linkAway" href="https://www.concordia.ca/fr/etudes/programmes-de-1er-cycle/arts-numeriques.html" target="_blank" rel="noopener noreferrer"> Arts numériques </a>
+                  </span>
+                </li>
+                <li><span lang="en"> 3.87 Cumulative GPA at the time of graduation </span> <span lang="fr"> 3.87 GPA cumulative à la graduation </span></li>
+                <li><span lang="en"> <a class="linkAway" href="images/honor.pdf" target="_blank" rel="noopener noreferrer"> Graduated with Distinction </a></span> <span lang="fr"> <a class="linkAway" href="images/honor.pdf" target="_blank" rel="noopener noreferrer"> Diplômé avec distinction </a></span> </li>
+                <li>
+                  <span lang="en">
+                    Worked as a student ambassador from 2022 to 2023. Delivering <a class="linkAway" href="https://www.concordia.ca/admissions/undergraduate/welcometours.html#campustours" target="_blank" rel="noopener noreferrer"> campus tours </a>
+                  </span>
+                  <span lang="fr">
+                    Travaillé en étant ambassadeur scolaire de 2022 à 2023. Délivrant des <a class="linkAway" href="https://www.concordia.ca/fr/admission/etudes-au-1er-cycle/accueilvisites.html" target="_blank" rel="noopener noreferrer"> visites guidées </a>
+                  </span>
+                </li>
               <ul>
             </div>
           </div>
           <div class="contentBlock">
             <div class="imageSide">
-              <a href="https://www.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> <img  title="Dawson College (Click to to go the school's website)" src="images/rectangle/schools/dawson_crop.png"> </a>
+              <span lang="en">
+                <a href="https://www.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> <img title="Dawson College (Click to go the school's website)" src="images/rectangle/schools/dawson_crop.png"> </a>
+              </span>
+              <span lang="fr">
+                <a href="https://fr.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> <img title="Collège Dawson (Cliquez pour aller au site web de l'école)" src="images/rectangle/schools/dawson_crop.png"> </a>
+              </span>
             </div>
             <div class="textSide">
               <h2>
-                <a title="Dawson College (Click to to go the school's website)" href="https://www.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> Dawson College </a>
+                <span lang="en">
+                  <a title="Dawson College (Click to go the school's website)" href="https://www.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> Dawson College </a>
+                </span>
+                <span lang="fr">
+                  <a title="Collège Dawson (Cliquez pour aller au site web de l'école)" href="https://fr.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> Collège Dawson </a>
+                </span>
+
               </h2>
               <ul class="pointsList">
                 <li>2017 - 2019</li>
-                <li>Public CEGEP</li>
-                <li><a class="linkAway" href="https://www.dawsoncollege.qc.ca/interactive-media-arts/" target="_blank" rel="noopener noreferrer"> Interactive Media Arts </a></li>
-                <li>92% Average cumulative grade</li>
-                <li><a class="linkAway" href="images/honor.pdf" target="_blank" rel="noopener noreferrer"> Received semestral honours letter </a></li>
-                <li> <a class="linkAway" href="images/Recommendation_ Che.pdf" target="_blank" rel="noopener noreferrer"> Letter of recommendation from main instructor </a> </li>
-                <li> <a class="linkAway" href="https://www.dawsoncollege.qc.ca/alc-festival/wp-content/uploads/sites/164/Verity_Press-Release.pdf" target="_blank" rel="noopener noreferrer"> Performed in a play as part of the Dawson Theatre Collective </a></li>
+                <li>
+                  <span lang="en">
+                    Public CEGEP
+                  </span>
+                  <span lang="fr">
+                    Cégep public
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    <a class="linkAway" href="https://www.dawsoncollege.qc.ca/interactive-media-arts/" target="_blank" rel="noopener noreferrer"> Interactive Media Arts </a>
+                  </span>
+                  <span lang="fr">
+                    <a class="linkAway" href="https://fr.dawsoncollege.qc.ca/interactive-media-arts/" target="_blank" rel="noopener noreferrer"> Arts médiatiques interactifs </a>
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    92% Average cumulative grade
+                  </span>
+                  <span lang="fr">
+                    92% note moyenne cumulative
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    <a class="linkAway" href="images/honor.pdf" target="_blank" rel="noopener noreferrer"> Received semestral honours letter </a>
+                  </span>
+                  <span lang="fr">
+                    <a class="linkAway" href="images/honor.pdf" target="_blank" rel="noopener noreferrer"> Reçu la lettre d'honneurs semesterielle </a>
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    <a class="linkAway" href="images/Recommendation_ Che.pdf" target="_blank" rel="noopener noreferrer"> Letter of recommendation from main instructor </a>
+                  </span>
+                  <span lang="fr">
+                    <a class="linkAway" href="images/Recommendation_ Che.pdf" target="_blank" rel="noopener noreferrer"> Lettre de recommandation du professeur principal </a>
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    <a class="linkAway" href="https://www.dawsoncollege.qc.ca/alc-festival/wp-content/uploads/sites/164/Verity_Press-Release.pdf" target="_blank" rel="noopener noreferrer"> Performed in a play as part of the Dawson Theatre Collective </a>
+                  </span>
+                  <span lang="fr">
+                    <a class="linkAway" href="https://www.dawsoncollege.qc.ca/alc-festival/wp-content/uploads/sites/164/Verity_Press-Release.pdf" target="_blank" rel="noopener noreferrer"> Performé dans une pièce de théâtre en faisant partie du Dawson Theatre Collective </a>
+                  </span>
+                </li>
               <ul>
             </div>
           </div>
           <div class="contentBlock">
             <div class="imageSide">
-              <a href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> <img  title="Collège Saint-Louis (Click to to go the school's website)" src="images/rectangle/schools/saintLouis_crop.png"> </a>
+              <span lang="en">
+                <a href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> <img  title="Collège Saint-Louis (Click to go the school's website)" src="images/rectangle/schools/saintLouis_crop.png"> </a>
+              </span>
+              <span lang="fr">
+                <a href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> <img  title="Collège Saint-Louis (Cliquez pour aller au site web de l'école)" src="images/rectangle/schools/saintLouis_crop.png"> </a>
+              </span>
             </div>
             <div class="textSide">
               <h2>
-                <a title="Collège Saint-Louis (Click to to go the school's website)" href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> Collège Saint-Louis </a>
+                <span lang="en">
+                  <a title="Collège Saint-Louis (Click to go the school's website)" href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> Collège Saint-Louis </a>
+                </span>
+                <span lang="fr">
+                  <a title="Collège Saint-Louis (Cliquez pour aller au site web de l'école)" href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> Collège Saint-Louis </a>
+                </span>
               </h2>
               <ul class="pointsList">
                 <li>2012 - 2017</li>
-                <li>Public High School</li>
-                <li><a class="linkAway" href="https://www.ibo.org/" target="_blank" rel="noopener noreferrer"> International Baccalaureate </a></li>
-                <li>Natural Science Math</li>
-                <li>Physics and Chemistry</li>
-                <li>Performed in the Dance and Acting clubs</li>
-                <li>Volunteered for Christmas Basket and Open House events</li>
+                <li>
+                  <span lang="en">
+                    Public High School
+                  </span>
+                  <span lang="fr">
+                    École secondaire publique
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    <a class="linkAway" href="https://www.ibo.org/" target="_blank" rel="noopener noreferrer"> International Baccalaureate </a>
+                  </span>
+                  <span lang="fr">
+                    <a class="linkAway" href="https://www.ibo.org/fr/" target="_blank" rel="noopener noreferrer"> Baccalauréat International </a>
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    Taken Natural Science Math
+                  </span>
+                  <span lang="fr">
+                    Pris les classes de mathématique de Science Naturelle
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    Taken Physics and Chemistry
+                  </span>
+                  <span lang="fr">
+                    Pris les classes de Physique et Chimie
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    Performed in the Dance and Acting clubs
+                  </span>
+                  <span lang="fr">
+                    Performé dans les clubs de danse et de théâtre
+                  </span>
+                </li>
+                <li>
+                  <span lang="en">
+                    Volunteered for Christmas Basket and Open House events
+                  </span>
+                  <span lang="fr">
+                    Fait du bénévolat pour les paniers de Noël et les événements de portes ouvertes
+                  </span>
+                </li>
               <ul>
             </div>
           </div>
@@ -289,7 +419,12 @@
                 <source src="images/Tan_Task04.mp4" type="video/mp4">
               </video>
               <h3 class="underImage" id="projectVideoText">
-                Video
+                <span lang="en">
+                  Video
+                </span>
+                <span lang="fr">
+                  Vidéo
+                </span>
               </h3>
             </div>
             <div class="textSide">
@@ -307,7 +442,12 @@
           </div>
           <div class="textSide">
             <h2>
-              My Responsibilities
+              <span lang="en">
+                My Responsibilities
+              </span>
+              <span lang="fr">
+                Mes Responsabilités
+              </span>
             </h2>
               <ul class="pointsList" id="projectResponsibilities">
               </ul>
@@ -333,14 +473,19 @@
           </div>
           <div class="textSide">
             <h2>
-              Additional Information
+              Inspirations
             </h2>
             <div id="projectAdditional">
             </div>
           </div>
           <div>
             <h1>
-              Other Games
+              <span lang="en">
+                Other Games
+              </span>
+              <span lang="fr">
+                Autres Jeux
+              </span>
             </h1>
             <div id="otherProjects">
             </div>
@@ -349,7 +494,12 @@
     </div>
     <footer>
       <em>
-        Copyright Che Tan 2023
+        <span lang="en">
+          Website coded by Che Tan, school images belong to their respective photographers
+        </span>
+        <span lang="fr">
+          Site web codé par Che Tan, images des écoles appartiennent à leurs photographes respectifs
+        </span>
       </em>
     </footer>
   <script>
