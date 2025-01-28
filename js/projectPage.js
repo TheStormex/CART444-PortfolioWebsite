@@ -42,11 +42,6 @@ class ProjectPage {
     let addInfoSection = document.getElementById("projectAdditional");
     addInfoSection.innerHTML = "";
     makeLanguageSpans(addInfoSection, this.additionalInfo[0], this.additionalInfo[1], "paragraph");
-    // this.additionalInfo.forEach((item)=>{
-    //   let paragraph = document.createElement("p");
-    //    paragraph.innerHTML = item;
-    //    addInfoSection.appendChild(paragraph);
-    // });
     let video = document.getElementById("projectVideo");
     video.src = this.video;
     let projectImage1 = document.getElementById("projectImage1Image");
