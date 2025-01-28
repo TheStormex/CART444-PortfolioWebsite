@@ -20,33 +20,33 @@ class ProjectPage {
   }
 
   show() {
-    $('#projectName').text(this.name);
-    $('#projectDescription').text(this.description);
-    $('.projectType').text(this.gameType);
-    $('.projectGenre').text(this.gameGenre);
-    $('.projectEngine').text(this.gameEngine);
-    $('#projectLine').text(this.oneLine);
+    // $('#projectName').text(this.name);
+    let projectName = document.getElementById('projectName');
+    makeLanguageSpans(projectName, this.name[0], this.name[1], "normal");
+    let projectDescription = document.getElementById('projectDescription');
+    makeLanguageSpans(projectDescription, this.description[0], this.description[1], "normal");
+    let projectType = document.getElementById('projectPageType');
+    makeLanguageSpans(projectType, this.gameType[0], this.gameType[1], "normal");
+    let projectGenre = document.getElementById('projectPageGenre');
+    makeLanguageSpans(projectGenre, this.gameGenre[0], this.gameGenre[1], "normal");
+    let projectEngine = document.getElementById('projectPageEngine');
+    makeLanguageSpans(projectEngine, this.gameEngine[0], this.gameEngine[1], "normal");
+    let projectLine = document.getElementById('projectLine');
+    makeLanguageSpans(projectLine, this.oneLine[0], this.oneLine[1], "normal");
     let theList = document.getElementById("projectResponsibilities");
     theList.innerHTML = "";
-    this.responsibilities.forEach((item)=>{
-      let li = document.createElement("li");
-       li.innerText = item;
-       theList.appendChild(li);
-    })
+    makeLanguageSpans(theList, this.responsibilities[0], this.responsibilities[1], "list");
     let documentationList = document.getElementById("projectDocumentation");
     documentationList.innerHTML = "";
-    this.documentation.forEach((item)=>{
-      let paragraph = document.createElement("p");
-       paragraph.innerText = item;
-       documentationList.appendChild(paragraph);
-    })
+    makeLanguageSpans(documentationList, this.documentation[0], this.documentation[1], "paragraph");
     let addInfoSection = document.getElementById("projectAdditional");
     addInfoSection.innerHTML = "";
-    this.additionalInfo.forEach((item)=>{
-      let paragraph = document.createElement("p");
-       paragraph.innerHTML = item;
-       addInfoSection.appendChild(paragraph);
-    });
+    makeLanguageSpans(addInfoSection, this.additionalInfo[0], this.additionalInfo[1], "paragraph");
+    // this.additionalInfo.forEach((item)=>{
+    //   let paragraph = document.createElement("p");
+    //    paragraph.innerHTML = item;
+    //    addInfoSection.appendChild(paragraph);
+    // });
     let video = document.getElementById("projectVideo");
     video.src = this.video;
     let projectImage1 = document.getElementById("projectImage1Image");
@@ -57,11 +57,11 @@ class ProjectPage {
     projectImage3.src = this.images[2];
     $('#projectImagesDesc').text(this.imagesDesc);
     let underImageText1 = document.getElementById("projectImage1Text");
-    underImageText1.textContent = this.imagesDesc[0];
+    makeLanguageSpans(underImageText1, this.imagesDesc[0][0], this.imagesDesc[1][0], "normal");
     let underImageText2 = document.getElementById("projectImage2Text");
-    underImageText2.textContent = this.imagesDesc[1];
+    makeLanguageSpans(underImageText2, this.imagesDesc[0][1], this.imagesDesc[1][1], "normal");
     let underImageText3 = document.getElementById("projectImage3Text");
-    underImageText3.textContent = this.imagesDesc[2];
+    makeLanguageSpans(underImageText3, this.imagesDesc[0][2], this.imagesDesc[1][2], "normal");
     // generate other games
     let otherGamesList = [];
     for (let i = 0; i < projectPages.length; i++) {
@@ -86,10 +86,12 @@ class ProjectPage {
       let overlaySection = document.createElement("div");
       overlaySection.className = "portfolioOverlay";
       divPortfolio.appendChild(overlaySection);
-      let projectTitle = document.createElement("h2");
-      projectTitle.textContent = otherGamesList[i].name;
+      let projectTitle = document.createElement("h5");
+      makeLanguageSpans(projectTitle, otherGamesList[i].name[0], otherGamesList[i].name[1], "normal");
+      // projectTitle.textContent = otherGamesList[i].name;
       overlaySection.appendChild(projectTitle);
     }
+    refreshSameLanguage();
     $('html, body').animate({ scrollTop: 0 }, 'fast');
   }
 }
