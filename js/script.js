@@ -39,7 +39,7 @@ function createProjectPages() {
     // gameType
     ["Personal Project", "Projet Personel"],
     // gameGenre
-    ["2D Turn-Based / Action RPG", "RPG au tour par tour / Action 2D"],
+    ["2D Turn-Based / Action RPG", "RPG de tour par tour / Action 2D"],
     // gameEngine
     ["JavaScript (p5js)", "JavaScript (p5js)"],
     // oneLine
@@ -88,7 +88,7 @@ function createProjectPages() {
     ["Unity Engine", "Moteur Unity"],
     // oneLine
     ["Puzzle-platformer game about respawning and placing clones.",
-    ""],
+    "Jeu de plateforme-réflexion sur "],
     // description
     ["The player controls a robot and must get to the end of each level through opening doors, stepping on switches, and respawning to leave behind a clone that can be used as platforms and to keep switches pressed. These actions require battery energy to use, which is limited, and must be managed properly.",
     ""],
@@ -197,7 +197,7 @@ function createProjectPages() {
     // images
     ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
     // imagesDesc
-    [["Spreadsheets", "Interactive chatroom", "Diary entries"], ["","",""]]);
+    [["Spreadsheets", "Interactive chatroom", "Diary entries"], ["Feuilles de calcul", "Salle de discussion interactive", "Entrées de journal"]]);
   projectPages.push(project4);
   let project5 = new ProjectPage (
     // camelName
@@ -209,14 +209,14 @@ function createProjectPages() {
     // gameType
     ["Game Jam Game", "Jeu de Game Jam"],
     // gameGenre
-    ["2 Player Card Game", "Jeu de cartes à 2 joueurs"],
+    ["1 Player Card Game", "Jeu de cartes à 1 joueur"],
     // gameEngine
     ["Tabletop", "Jeu de table"],
     // oneLine
-    ["Save the hostage, detective! Catfish a gang member into giving you their location!",
+    ["1-player card game about luck and superstitions",
     "fr"],
     // description
-    ["The player is a detective who has hacked into the laptop of a gang member. They must pretend to be that gang member and catfish  another to reveal the location of a hostage. The player must explore the files on the computer to learn what the gang member knows to make their act convincing.",
+    ["The player must rely on a combination of resource management and luck to craft the perfect hand of cards to please 2 random gods of luck. Each turn, a random event occurs and the player must make a decision which affects the content of their hand.",
      "fr"],
     // responsibilities
     [
@@ -230,15 +230,15 @@ function createProjectPages() {
     ],
     // inspirations
     [
-      [""],
+      ["My main inspiration for this game was the mobile game Underhand, another game about crafting a hand of the right resources to please various Gods. My teammates also introduced the card game FLUXX as an inspiration."],
       [""]
     ],
     // video
     "images/rectangle/projects/screen/video.mp4",
     // images
-    ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
+    ["images/rectangle/projects/charmingOffering/gameBoard.png", "images/rectangle/projects/charmingOffering/eventCards.png", "images/rectangle/projects/charmingOffering/godCards.png"],
     // imagesDesc
-    [["Game Board", "Event Cards", "God Cards"], ["Tableau de jeu", "Cartes des Événements", "Cartes de Dieux"]]);
+    [["Game Board", "Event Cards", "God and Resource Cards"], ["Tableau de jeu", "Cartes des Événements", "Cartes de Dieux et de Ressources"]]);
   projectPages.push(project5);
   let project6 = new ProjectPage (
     // camelName
@@ -255,10 +255,10 @@ function createProjectPages() {
     ["Unity Engine", "Moteur Unity"],
     // oneLine
     ["Action arcade game about protecting a singer from rabid fans",
-    "fr"],
+    "Jeu d'action style arcade sur la protection d'un chanteur de ses admiratrices obsédées"],
     // description
     ["The player is a bodyguard who must protect a famous singer from his overly attached fans. The player tackles and shoots T-Shirts to knock off the fans who climbed onto the stage. The goal is to help the singer stay 'alive' as long as possible.",
-    "fr"],
+    "Le joueur incarne un garde du corps qui doit protéger un chanteur célèbre de ses fans trop attachés. Le joueur pousse et tire des T-shirts pour faire tomber les fans qui sont montées sur scène. Le but est d'aider le chanteur à rester « en vie » le plus longtemps possible."],
     // responsibilities
     [
       ["Mechanics design", "Character ability design", "2D asset creation", "Music and sound creation"],
@@ -275,9 +275,9 @@ function createProjectPages() {
       [""]
     ],
     // video
-    "images/rectangle/projects/screen/video.mp4",
+    "images/rectangle/projects/stanStopper/video.mp4",
     // images
-    ["images/rectangle/projects/stanStopper/inAction.png", "images/rectangle/projects/stanStopper/explanation.png", "images/rectangle/projects/screen/diary.png"],
+    ["images/rectangle/projects/stanStopper/inAction.png", "images/rectangle/projects/stanStopper/explanation.png", "images/rectangle/projects/stanStopper/defeat.PNG"],
     // imagesDesc
     [["Bodyguard Vs. Fans", "Explanation Screen", "Defeat Screen"], ["Le garde du corps contre les admirateurs", "Écran d'explications", "Écran de défaite"]]);
   projectPages.push(project6);
@@ -368,7 +368,7 @@ function generateProjects() {
     divPortfolio.onclick = function() {toProjectPage(1, theCamelName)};
     let thumbnailImage = document.createElement("img");
     thumbnailImage.className = "thumbnail";
-    thumbnailImage.src = projectPages[i].images[1];
+    thumbnailImage.src = projectPages[i].images[0];
     divPortfolio.appendChild(thumbnailImage);
     let overlaySection = document.createElement("div");
     overlaySection.className = "portfolioOverlay";
