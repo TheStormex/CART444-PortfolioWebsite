@@ -1,7 +1,7 @@
 "use strict";
 
 class ProjectPage {
-  constructor(camelName, id, name, gameType, gameGenre, gameEngine, oneLine, description, responsibilities, documentation, additionalInfo, video, images, imagesDesc) {
+  constructor(camelName, id, name, gameType, gameGenre, gameEngine, oneLine, description, responsibilities, documentation, additionalInfo, video, images, imagesDesc, thumbnailIndex) {
     this.camelName = camelName;
     this.id = id;
     this.name = name;
@@ -17,6 +17,7 @@ class ProjectPage {
     this.images = images;
     this.imagesDesc = imagesDesc;
     this.visited = false;
+    this.thumbnailIndex = thumbnailIndex;
   }
 
   show() {
@@ -76,7 +77,7 @@ class ProjectPage {
       divPortfolio.onclick = function() {toProjectPage(1, theCamelName)};
       let thumbnailImage = document.createElement("img");
       thumbnailImage.className = "thumbnail";
-      thumbnailImage.src = otherGamesList[i].images[1];
+      thumbnailImage.src = otherGamesList[i].images[otherGamesList[i].thumbnailIndex];
       divPortfolio.appendChild(thumbnailImage);
       let overlaySection = document.createElement("div");
       overlaySection.className = "portfolioOverlay";

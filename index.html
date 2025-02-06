@@ -24,12 +24,12 @@
   <meta name="theme-color" content="#000000">
   </head>
 
-  <body onload="createProjectPages(); toMainPage()">
+  <body onload="createProjectPages(); toMainPage(); refreshSameLanguage()">
     <div class="sectionMenu">
       <span id="title" title="Che Tan">
          <span> <img onclick="window.location.reload()" src="images/logo/largeLogoHorinzontal.png" id="name" alt="Che Tan horizontal name logo"> </span>
          <h2>
-           <span lang="en"> Game Designer </span> <span lang="fr"> Concepteur de jeu </span>
+           <span lang="en"> Game Designer </span> <span lang="fr"> Concepteur de Jeux </span>
          </h2>
       </span>
       <span id="menuBar">
@@ -182,11 +182,11 @@
                 <span lang="en"> Who am I? </span> <span lang="fr"> Qui suis-je? </span>
               </h2>
               <p>
-                <span lang="en"> I am a game designer from Montreal. I specialize in mechanics design. </span> <span lang="fr"> Je suis un concepteur de jeu de Montréal. Je spécialise au conception de mécaniques. </span>
+                <span lang="en"> I am a game designer from Montreal. I specialize in mechanics design. </span> <span lang="fr"> Je suis un concepteur de jeux à Montréal. Je spécialise au conception de mécaniques. </span>
               </p>
               <p>
                 <span lang="en"> I have created many games in college and university for which I attained high marks, such as <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, a 2D puzzle platformer about a clone-spawning robot. </span>
-                <span lang="fr"> J'ai crée plusieurs jeux au CÉGEP et à l'université pour lesquels j'ai reçu des bonnes notes, comme <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, un jeu platformeur 2D puzzle sur un robot qui fabrique des clones. </span>
+                <span lang="fr"> J'ai crée plusieurs jeux au CÉGEP et à l'université pour lesquels j'ai reçu des bonnes notes, comme <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, un jeu de platforme et de réflexion sur un robot qui fabrique des clones. </span>
 
               </p>
               <p>
@@ -212,20 +212,76 @@
               <span lang="en"> My Game Development Skills </span> <span lang="fr"> Mes Compétences de Développement de Jeux </span>
             </h2>
               <ul class="pointsList">
-                <li> <strong onmouseover="changeSkill('design')" onmouseout="resetSkills()"> Game design (mechanics, narrative, level, UI, UX) </strong> </li>
-                <li> <strong onmouseover="changeSkill('website')" onmouseout="resetSkills()">HTML, CSS, JavaScript (p5js) </strong> </li>
-                <li> <strong onmouseover="changeSkill('engine')" onmouseout="resetSkills()">Game Engines (Unity, Unreal, GameMaker, etc.) </strong> </li>
-                <li> <strong onmouseover="changeSkill('vector')" onmouseout="resetSkills()">Vector art (Figma v. 116.7.103) </strong> </li>
-                <li> <strong onmouseover="changeSkill('pixel')" onmouseout="resetSkills()">Pixel Art (GraphicsGale v. 2.08.24) </strong> </li>
-                <li> <strong onmouseover="changeSkill('3d')" onmouseout="resetSkills()">3D Modeling for Environment (Maya) </strong> </li>
-                <li> <strong onmouseover="changeSkill('management')" onmouseout="resetSkills()">Project management </strong> </li>
-                <li> <strong onmouseover="changeSkill('music')" onmouseout="resetSkills()">Electronic music composition  </strong>
+                <li> <strong onmouseover="changeSkill('design')" onmouseout="resetSkills()">
+                  <span lang="en">
+                    Game design (mechanics, narrative, level, UI, UX)
+                  </span>
+                  <span lang="fr">
+                    Conception des jeux (mécaniques, histoires, niveaux, interfaces, expérience de l'utilisateur)
+                  </span>
+                </strong> </li>
+                <li> <strong onmouseover="changeSkill('website')" onmouseout="resetSkills()">
+                  <span lang="en">
+                    HTML, CSS, JavaScript (p5js)
+                  </span>
+                  <span lang="fr">
+                    HTML, CSS, JavaScript (p5js)
+                  </span>
+                </strong> </li>
+                <li> <strong onmouseover="changeSkill('engine')" onmouseout="resetSkills()">
+                  <span lang="en">
+                    Game Engines (Unity, Unreal)
+                  </span>
+                  <span lang="fr">
+                    Moteurs de jeux (Unity, Unreal)
+                  </span>
+                   </strong> </li>
+                <li> <strong onmouseover="changeSkill('vector')" onmouseout="resetSkills()">
+                  <span lang="en">
+                    Vector art (Figma)
+                  </span>
+                  <span lang="fr">
+                    Art vectoriel (Figma)
+                  </span>
+                </strong> </li>
+                <li> <strong onmouseover="changeSkill('pixel')" onmouseout="resetSkills()">
+                  <span lang="en">
+                    Pixel Art (GraphicsGale)
+                  </span>
+                  <span lang="fr">
+                    Pixel-Art (GraphicsGale)
+                  </span>
+                </strong> </li>
+                <li> <strong onmouseover="changeSkill('3d')" onmouseout="resetSkills()">
+                  <span lang="en">
+                    3D Modeling for Environment (Maya)
+                  </span>
+                  <span lang="fr">
+                    Modélisation 3D pour l'environnement (Maya)
+                  </span>
+                </strong> </li>
+                <li> <strong onmouseover="changeSkill('management')" onmouseout="resetSkills()">
+                  <span lang="en">
+                    Project management
+                  </span>
+                  <span lang="fr">
+                    Gestion des projets
+                  </span>
+                </strong> </li>
+                <li> <strong onmouseover="changeSkill('music')" onmouseout="resetSkills()">
+                  <span lang="en">
+                    Electronic music composition
+                  </span>
+                  <span lang="fr">
+                    Composition de musique électronique
+                  </span>
+                </strong>
                   <br>
                   <audio title="Stan Stopper" id="song" controls>
                     <source src="images/epicSong.wav" type="audio/wav">
                   </audio>
                  </li>
-                <li> <strong onmouseover="changeSkill('audioEn')" onmouseout="resetSkills()"> Audio engineering (FL Studio v20.9.2, Audacity 2.3.3) </strong> </li>
+                <li> <strong onmouseover="changeSkill('audioEn')" onmouseout="resetSkills()"> Audio engineering (FL Studio, Audacity) </strong> </li>
               <ul>
           </div>
         </div>
