@@ -158,7 +158,7 @@ function createProjectPages() {
       ["Mon inspiration principale pour ce jeu, c'est <a href=' https://www.youtube.com/watch?v=Gqcbau9OoaI' class='linkAway' target='_blank' rel='noopener noreferrer'>cette vidéo</a> au sujet d'un événement de Nouvel An dans <a href='https://store.steampowered.com/app/1449850/YuGiOh_Master_Duel/' class='linkAway' target='_blank' rel='noopener noreferrer'>Yu-Gi-Oh! Master Duel</a>, où les joueurs ont peu de points de vie et peuvent gagner au premier tour avec du dégât direct."]
     ],
     // video
-    "images/rectangle/projects/ftk/video.mp4",
+    "images/rectangle/projects/ftk/video2.mp4",
     // images
     ["images/rectangle/projects/ftk/slow.png", "images/rectangle/projects/ftk/fast.png", "images/rectangle/projects/ftk/actionChain.png"],
     // imagesDesc
