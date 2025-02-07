@@ -104,8 +104,9 @@ function createProjectPages() {
     // documentation
     [
       ["This game was created in a team of 3 during a 3 weeks university class game jam in November 2022. The theme was rebirth and the limitation of no / little text was enforced. I created this game alongside 2 partners, Luka and Meg.",
-      "We had a miscommunation early on regarding who the battery mechanic would work, causing delays. From then on, I learned to maintain rigorous communication with the rest of the team so everyone is always on the same page."],
-      ["fr"]
+      "We had a miscommunication early on regarding who the battery mechanic would work, causing delays. From then on, I learned to maintain rigorous communication with the rest of the team so everyone is always on the same page."],
+      ["Ce jeu a été créé par une équipe de 3 pendant un game jam d'une classe universitaire en novembre 2022. Le thème était la renaissance du personnage et on avait la limitation d'avoir pas de ou peu de texte. J'ai créé ce je jeu avec mes 2 partenaires, Luka et Meg.",
+      "Nous avions eu un problème de communication assez tôt sur le mécanique de la pile, causant des retards. De ce point ci, j'ai appris à maintenir une communication rigoureuse avec mes coéquipiers pour que tout le monde est sur la même page."]
     ],
     // inspirations
     [
@@ -197,7 +198,7 @@ function createProjectPages() {
      "The theme of the game jam was ‘I know what you did’ and the game must have no on-screen player character. The name has the double meaning of both a computer screen and the screening process from the gang member the player goes through."],
      ["Ce jeu a été créé par une équipe de 3 pendant un game jam d'une classe universitaire en octobre 2022. J'ai travaillé avec un autre membre de l'équipe pour inventer l'histoire et les dialogues. L'idée originale d'avoir des énigmes différentes pour chaque session était trop ambitieuse, alors nous avons réduit la portée.",
      "Le jeu était trop complex pour nos camarades de classe. Alors, une section tutoriel est ajoutée et certaines dialogues ont été coupés.",
-     "The theme of the game jam was ‘I know what you did’ and the game must have no on-screen player character. The name has the double meaning of both a computer screen and the screening process from the gang member the player goes through."]
+     "Le thème du game jam était 'Je sais ce que tu as fait' et le jeu ne doit pas avoir de personnages visibles. Le nom du jeu est un jeu de mot anglais sur l'écran et le processus de dépistage du trafiquant auquel le joueur est confronté."]
     ],
     // inspirations
     [
@@ -229,24 +230,24 @@ function createProjectPages() {
     ["Tabletop", "Jeu de table"],
     // oneLine
     ["1-player card game about luck and superstitions",
-    "fr"],
+    "Jeu de cartes à 1 joueur sur le hasard et les superstitions"],
     // description
     ["The player must rely on a combination of resource management and luck to craft the perfect hand of cards to please 2 random gods of luck. Each turn, a random event occurs and the player must make a decision which affects the content of their hand.",
-     "fr"],
+     "Le joueur doit compter sur une combinaison de gestion de ressources et de la chance pour bâtir la main parfaite des cartes pour plaire 2 dieux aléatoires de la chance. Chaque tour, un événement aléatoire arrive et le joueur doit prendre une décision qui affectera le contenu de leur main"],
     // responsibilities
     [
-      ["Mechanics design", "Narrative design", "Music and sound creation", "Documentation", "Writing dialogue and other texts", "Project management"],
-      ["fr"]
+      ["Mechanics design", "Writing card texts", "Card presentation design", 'Project Management and eadership', 'Documentation'],
+      ["Conception de mécaniques", "Écriture du texte des cartes", "Conception de la présentation des cartes", 'Gestion du projet et leadership', 'Documentation']
     ],
     // documentation
     [
-      ["en"],
-      ["fr"]
+      ["To write"],
+      ["À écrire"]
     ],
     // inspirations
     [
-      ["My main inspiration for this game was the mobile game Underhand, another game about crafting a hand of the right resources to please various Gods. My teammates also introduced the card game FLUXX as an inspiration."],
-      [""]
+      ["My main inspiration for this game was the mobile game <a href='https://play.google.com/store/apps/details?id=edu.cornell.gdiac.underhand&hl=en_CA&pli=1' class='linkAway' target='_blank' rel='noopener noreferrer'>Underhand</a>, another game about crafting a hand of the right resources to please various Gods. My teammates also introduced the card game <a href='https://www.looneylabs.com/games/fluxx' class='linkAway' target='_blank' rel='noopener noreferrer'>FLUXX</a> as an inspiration."],
+      ["Mon inspiration principale pour ce jeu est le jeu pour téléphone portable <a href='https://play.google.com/store/apps/details?id=edu.cornell.gdiac.underhand&hl=en_CA&pli=1' class='linkAway' target='_blank' rel='noopener noreferrer'>Underhand</a>, un autre jeu sur la préparation d'une main parfaite des ressources pour plaire des dieux. Mes coéquipiers ont aussi introduit le jeu de cartes <a href='https://www.looneylabs.com/games/fluxx' class='linkAway' target='_blank' rel='noopener noreferrer'>FLUXX</a> comme une inspiration."]
     ],
     // video
     "images/rectangle/projects/charmingOffering/video.mp4",
@@ -279,18 +280,20 @@ function createProjectPages() {
     "Le joueur incarne un garde du corps qui doit protéger un chanteur célèbre de ses fans trop attachées. Le joueur pousse et tire des T-shirts pour faire tomber les fans qui sont montées sur la scène. Le but est d'aider le chanteur à rester « en vie » le plus longtemps possible."],
     // responsibilities
     [
-      ["Mechanics design", "Character ability design", "2D asset creation", "Music and sound creation"],
-      ["Conception des mécaniques", 'Conception des capacités des personnages', 'Création des sprites 2D', 'Création de la musique et des sons']
+      ["Mechanics design", "Character ability design", "2D asset creation", "Music and sound creation", 'Documentation'],
+      ["Conception des mécaniques", 'Conception des capacités des personnages', 'Création des sprites 2D', 'Création de la musique et des sons', 'Documentation']
     ],
     // documentation
     [
-      [""],
-      [""]
+      ["This game was created in a team of 3 during a 3 weeks university class game jam in November and December 2022. The theme was unconditional love and we wanted to do something unique, so we made a classic style action game. The creation process was smooth, though we encountered 2 minor issues.",
+    'We needed more sprites than expected due to the variety of enemy types so I helped take over and make some of them. We were also concerned about the different enemy types having different skin colours. We could accidentally depict racial stereotypes, like the dark-skinned fan being faster and stronger. For this reason, we settled on the fans having similar skin colours but vastly different clothes.'],
+      ["Ce jeu été créé par une équipe de 3 pendant un game jam d'une classe universitaire en novembre et décembre 2022. Le thème était l'amour inconditionnel et nous voulions faire quelque chose unique, alors nous avions fait un jeu d'action classique. Le processus de création s'est déroulé avec seulement 2 problèmes.",
+      "Nous avions besoin de plus de sprites que prévu à cause de la variété de types d'ennemies alors j'ai aidé avec la création de certains. Nous étions aussi préoccupés avec la possibilité de représenter des stéréotypes raciaux avec les ennemies ayant des couleurs de peaux différentes, comme si la fille avec la peau sombre était plus rapide et forte. Pour cette raison, nous avions décidé qu'elles doivent avoir des couleurs de peaux similaires mais vêtements différents."]
     ],
     // inspirations
     [
-      [""],
-      [""]
+      ["Our team did not have a specific game in mind when making this game. However, the way enemies are defeated (by pushing them off screen) have been compared to the <a href='https://nintendo.fandom.com/wiki/Super_Smash_Bros._(series)' class='linkAway' target='_blank' rel='noopener noreferrer'>Super Smash Bros.</a> games by one of the playtesters."],
+      ["Notre équipe n'a pas de jeu spécifique comme inspiration quand on a créé ce jeu. Cependant, la façon dont les ennemies sont défaites (en les poussant hors écran) a été comparée aux jeux de la série <a href='https://nintendo.fandom.com/wiki/Super_Smash_Bros._(series)' class='linkAway' target='_blank' rel='noopener noreferrer'>Super Smash Bros.</a> par un de nos testeurs."]
     ],
     // video
     "images/rectangle/projects/stanStopper/video.mp4",
