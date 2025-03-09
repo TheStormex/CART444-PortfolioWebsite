@@ -25,7 +25,7 @@ class ProjectPage {
     let projectName = document.getElementById('projectName');
     makeLanguageSpans(projectName, this.name[0], this.name[1], "normal");
     let projectDescription = document.getElementById('projectDescription');
-    makeLanguageSpans(projectDescription, this.description[0], this.description[1], "normal");
+    makeLanguageSpans(projectDescription, this.description[0], this.description[1], "paragraph");
     let projectType = document.getElementById('projectPageType');
     makeLanguageSpans(projectType, this.gameType[0], this.gameType[1], "normal");
     let projectGenre = document.getElementById('projectPageGenre');
@@ -89,5 +89,8 @@ class ProjectPage {
     }
     refreshSameLanguage();
     $('html, body').animate({ scrollTop: 0 }, 'fast');
+    // let urlString = '?proj=' + currentProject;
+    addURLParameter("proj", currentProject);
+    // window.history.pushState('proj', '', urlString);
   }
 }
