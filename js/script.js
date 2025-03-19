@@ -73,7 +73,7 @@ function createProjectPages() {
       ["Mes inspirations principales pour ce jeu sont les systèmes de combat de <a href='https://store.steampowered.com/app/391540/Undertale/' class='linkAway' target='_blank' rel='noopener noreferrer'>Undertale</a>  et <a href='https://store.steampowered.com/app/1671210/DELTARUNE/' class='linkAway' target='_blank' rel='noopener noreferrer'>Deltarune</a>, ainsi que les jeux d'action à perspective descendante comme <a href='https://store.steampowered.com/app/399640/Flamebreak/' class='linkAway' target='_blank' rel='noopener noreferrer'>Flamebreak</a> et <a href='https://store.steampowered.com/app/445980/Wizard_of_Legend/?curator_clanid=6869120' class='linkAway' target='_blank' rel='noopener noreferrer'>Wizard of Legend</a>."]
     ],
     // video
-    "images/rectangle/projects/theLastHacktivists2/video.mp4",
+    ["images/rectangle/projects/theLastHacktivists2/video.mp4", "images/rectangle/projects/theLastHacktivists2/video.mp4"],
     // images
     ["images/rectangle/projects/theLastHacktivists2/tactics.png", "images/rectangle/projects/theLastHacktivists2/combat.png", "images/rectangle/projects/theLastHacktivists2/stun.png"],
     // imagesDesc
@@ -124,7 +124,7 @@ function createProjectPages() {
       ["Mon inspiration principale pour ce jeu est <a href='https://armorgames.com/play/1567/chronotron' class='linkAway' target='_blank' rel='noopener noreferrer'>Chronotron</a>, un autre jeu de plateformes et de réflexion où le personnage robot du joueur doit utiliser ses corps du passé pour résoudre les niveaux."]
     ],
     // video
-    "images/rectangle/projects/reBoot/video.mp4",
+    ["images/rectangle/projects/reBoot/video.mp4", "images/rectangle/projects/reBoot/video.mp4"],
     // images
     ["images/rectangle/projects/reBoot/level1.png", "images/rectangle/projects/reBoot/level13.png", "images/rectangle/projects/reBoot/level15.png"],
     // imagesDesc
@@ -164,13 +164,13 @@ function createProjectPages() {
       ["This game was created for fun as my first game this year. I made a prototype and tested with my friends. Over the month, I iterated and improved the game based on feedback. My <a href='https://magic.wizards.com/en' class='linkAway' target='_blank' rel='noopener noreferrer'>Magic: The Gathering</a> playing friend liked it and said it reminded him of <a href='https://mtg.wiki/page/Commander_(format)' class='linkAway' target='_blank' rel='noopener noreferrer'>cEDH</a>, and I designed future iterations based on that similarity."],
       ["J'ai créé ce jeu pour le plaisir comme mon premier jeu cette année. J'ai créé un prototype et l'ai testé avec mes amis. Au cours du mois, j'ai changé et amélioré le jeu basé sur leurs commentaires. Mon ami qui joue <a href='https://magic.wizards.com/fr' class='linkAway' target='_blank' rel='noopener noreferrer'>Magic: The Gathering</a> l'a aimé et dit que ça lui rappelle de <a href='https://mtg.wiki/page/Commander_(format)' class='linkAway' target='_blank' rel='noopener noreferrer'>cEDH</a>, alors j'ai conçu les dernières versions en me concentrant sur cette ressemblance."]
     ],
-    // inspirations https://mtg.wiki/page/Commander_(format)
+    // inspirations
     [
       ["My main inspiration for this game is <a href=' https://www.youtube.com/watch?v=Gqcbau9OoaI' class='linkAway' target='_blank' rel='noopener noreferrer'>this video</a> about a New Year event in <a href='https://store.steampowered.com/app/1449850/YuGiOh_Master_Duel/' class='linkAway' target='_blank' rel='noopener noreferrer'>Yu-Gi-Oh! Master Duel</a>, where players have low life and can win on their first turn with direct damage."],
       ["Mon inspiration principale pour ce jeu, c'est <a href=' https://www.youtube.com/watch?v=Gqcbau9OoaI' class='linkAway' target='_blank' rel='noopener noreferrer'>cette vidéo</a> au sujet d'un événement de Nouvel An dans <a href='https://store.steampowered.com/app/1449850/YuGiOh_Master_Duel/' class='linkAway' target='_blank' rel='noopener noreferrer'>Yu-Gi-Oh! Master Duel</a>, où les joueurs ont peu de points de vie et peuvent gagner au premier tour avec du dégât direct."]
     ],
     // video
-    "images/rectangle/projects/ftk/video2.mp4",
+    ["images/rectangle/projects/ftk/videoEN.mp4", "images/rectangle/projects/ftk/videoFR.mp4"],
     // images
     ["images/rectangle/projects/ftk/slow.png", "images/rectangle/projects/ftk/fast.png", "images/rectangle/projects/ftk/actionChain.png"],
     // imagesDesc
@@ -220,7 +220,7 @@ function createProjectPages() {
       ["Mes inspirations principales pour ce jeu sont <a href='https://store.steampowered.com/app/417860/Emily_is_Away/' class='linkAway' target='_blank' rel='noopener noreferrer'>Emily is Away</a> et <a href='https://store.steampowered.com/app/485380/Welcome_to_the_Game/' class='linkAway' target='_blank' rel='noopener noreferrer'>Welcome to the Game</a>, autres simulateurs d'ordinateur avec la collecte d'information et/ou des choix de dialogues par clavardage."]
     ],
     // video
-    "images/rectangle/projects/screen/video.mp4",
+    ["images/rectangle/projects/screen/video.mp4", "images/rectangle/projects/ftk/video.mp4"],
     // images
     ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
     // imagesDesc
@@ -266,7 +266,7 @@ function createProjectPages() {
       ["Mon inspiration principale pour ce jeu est le jeu pour téléphone portable <a href='https://play.google.com/store/apps/details?id=edu.cornell.gdiac.underhand&hl=en_CA&pli=1' class='linkAway' target='_blank' rel='noopener noreferrer'>Underhand</a>, un autre jeu sur la préparation d'une main parfaite des ressources pour plaire des dieux. Mes coéquipiers ont aussi introduit le jeu de cartes <a href='https://www.looneylabs.com/games/fluxx' class='linkAway' target='_blank' rel='noopener noreferrer'>FLUXX</a> comme une inspiration."]
     ],
     // video
-    "images/rectangle/projects/charmingOffering/video.mp4",
+    ["images/rectangle/projects/charmingOffering/videoEN.mp4", "images/rectangle/charmingOffering/ftk/videoFR.mp4"],
     // images
     ["images/rectangle/projects/charmingOffering/gameBoard.png", "images/rectangle/projects/charmingOffering/eventCards.png", "images/rectangle/projects/charmingOffering/godCards.png"],
     // imagesDesc
@@ -314,7 +314,7 @@ function createProjectPages() {
       ["Notre équipe n'a pas de jeu spécifique comme inspiration quand on a créé ce jeu. Cependant, la façon dont les ennemies sont défaites (en les poussant hors écran) a été comparée aux jeux de la série <a href='https://nintendo.fandom.com/wiki/Super_Smash_Bros._(series)' class='linkAway' target='_blank' rel='noopener noreferrer'>Super Smash Bros.</a> par un de nos testeurs."]
     ],
     // video
-    "images/rectangle/projects/stanStopper/video.mp4",
+    ["images/rectangle/projects/stanStopper/video.mp4", "images/rectangle/projects/stanStopper/video.mp4"],
     // images
     ["images/rectangle/projects/stanStopper/inAction.png", "images/rectangle/projects/stanStopper/explanation.png", "images/rectangle/projects/stanStopper/defeat.PNG"],
     // imagesDesc
@@ -400,6 +400,28 @@ function makeLanguageSpans(parentSection, englishPart, frenchPart, type) {
          paragraph.innerHTML = item;
          parentSection.appendChild(paragraph);
       })
+      break;
+    case "video":
+      let videoEN = document.createElement("video");
+      let videoENSource = document.createElement('source');
+      let videoFR = document.createElement("video");
+      let videoFRSource = document.createElement('source');
+      videoENSource.type = "video/mp4";
+      videoENSource.src = englishPart;
+      videoEN.id = 'projectVideoEN';
+      videoEN.classList.add("projectVideo");
+      videoEN.controls = true;
+      videoEN.appendChild(videoENSource);
+      videoEN.lang = 'en';
+      videoFRSource.type = "video/mp4";
+      videoFRSource.src = frenchPart;
+      videoFR.id = 'projectVideoFR';
+      videoFR.classList.add("projectVideo");
+      videoFR.controls = true;
+      videoFR.lang = 'fr';
+      videoFR.appendChild(videoFRSource);
+      parentSection.appendChild(videoEN);
+      parentSection.appendChild(videoFR);
       break;
     default: console.log('error');
   }
@@ -518,12 +540,10 @@ function refreshSameLanguage() {
     $('[lang="en"]').show();
     $('[lang="fr"]').hide();
     addURLParameter("lang", "en");
-    // window.history.pushState('language', '', '?lang=en');
   } else if (language === "fr") {
     $('[lang="fr"]').show();
     $('[lang="en"]').hide();
     addURLParameter("lang", "fr");
-    // window.history.pushState('language', '', '?lang=fr');
   }
 
 }
@@ -534,20 +554,15 @@ function changeLanguage() {
     $('[lang="en"]').hide();
     language = "fr";
     addURLParameter("lang", "fr");
-    // window.history.pushState('language', '', '?lang=fr');
   } else if (language === "fr") {
     $('[lang="en"]').show();
     $('[lang="fr"]').hide();
     language = "en";
     addURLParameter("lang", "en");
-    // window.history.pushState('language', '', '?lang=en');
   }
 }
 
 function addURLParameter(parameter, value) {
-  console.log(parameter);
-  console.log(value);
   theUrl.searchParams.set(parameter, value);
-  console.log(theUrl.toString());
   history.pushState({}, null, theUrl.toString());
 }

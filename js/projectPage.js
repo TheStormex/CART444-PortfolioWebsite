@@ -21,7 +21,6 @@ class ProjectPage {
   }
 
   show() {
-    // $('#projectName').text(this.name);
     let projectName = document.getElementById('projectName');
     makeLanguageSpans(projectName, this.name[0], this.name[1], "normal");
     let projectDescription = document.getElementById('projectDescription');
@@ -43,8 +42,8 @@ class ProjectPage {
     let addInfoSection = document.getElementById("projectAdditional");
     addInfoSection.innerHTML = "";
     makeLanguageSpans(addInfoSection, this.additionalInfo[0], this.additionalInfo[1], "paragraph");
-    let video = document.getElementById("projectVideo");
-    video.src = this.video;
+    let videoSection = document.getElementById("projectVideoParent");
+    makeLanguageSpans(videoSection, this.video[0], this.video[1], "video");
     let projectImage1 = document.getElementById("projectImage1Image");
     projectImage1.src = this.images[0];
     let projectImage2 = document.getElementById("projectImage2Image");
@@ -89,8 +88,6 @@ class ProjectPage {
     }
     refreshSameLanguage();
     $('html, body').animate({ scrollTop: 0 }, 'fast');
-    // let urlString = '?proj=' + currentProject;
     addURLParameter("proj", currentProject);
-    // window.history.pushState('proj', '', urlString);
   }
 }
