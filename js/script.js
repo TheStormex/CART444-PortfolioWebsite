@@ -14,7 +14,8 @@ let mainPage;
 let projectPage;
 let exampleAudio;
 let setLanguageIndex = 0;
-let theUrl = new URL("http://127.0.0.1:3000/");
+let urlString = "http://127.0.0.1:3000/"; // https://chetan.games/ http://127.0.0.1:3000/
+let theUrl = new URL(urlString);
 
 function createProjectPages() {
   const firstLanguage = new Proxy(new URLSearchParams(window.location.search), {
@@ -220,7 +221,7 @@ function createProjectPages() {
       ["Mes inspirations principales pour ce jeu sont <a href='https://store.steampowered.com/app/417860/Emily_is_Away/' class='linkAway' target='_blank' rel='noopener noreferrer'>Emily is Away</a> et <a href='https://store.steampowered.com/app/485380/Welcome_to_the_Game/' class='linkAway' target='_blank' rel='noopener noreferrer'>Welcome to the Game</a>, autres simulateurs d'ordinateur avec la collecte d'information et/ou des choix de dialogues par clavardage."]
     ],
     // video
-    ["images/rectangle/projects/screen/video.mp4", "images/rectangle/projects/ftk/video.mp4"],
+    ["images/rectangle/projects/screen/video.mp4", "images/rectangle/projects/screen/video.mp4"],
     // images
     ["images/rectangle/projects/screen/spreadsheets.png", "images/rectangle/projects/screen/chatroom.png", "images/rectangle/projects/screen/diary.png"],
     // imagesDesc
@@ -266,7 +267,7 @@ function createProjectPages() {
       ["Mon inspiration principale pour ce jeu est le jeu pour téléphone portable <a href='https://play.google.com/store/apps/details?id=edu.cornell.gdiac.underhand&hl=en_CA&pli=1' class='linkAway' target='_blank' rel='noopener noreferrer'>Underhand</a>, un autre jeu sur la préparation d'une main parfaite des ressources pour plaire des dieux. Mes coéquipiers ont aussi introduit le jeu de cartes <a href='https://www.looneylabs.com/games/fluxx' class='linkAway' target='_blank' rel='noopener noreferrer'>FLUXX</a> comme une inspiration."]
     ],
     // video
-    ["images/rectangle/projects/charmingOffering/videoEN.mp4", "images/rectangle/charmingOffering/ftk/videoFR.mp4"],
+    ["images/rectangle/projects/charmingOffering/videoEN.mp4", "images/rectangle/projects/charmingOffering/videoFR.mp4"],
     // images
     ["images/rectangle/projects/charmingOffering/gameBoard.png", "images/rectangle/projects/charmingOffering/eventCards.png", "images/rectangle/projects/charmingOffering/godCards.png"],
     // imagesDesc
@@ -468,6 +469,13 @@ function toProjectPage(mainSection, projectName) {
   mainPage = document.getElementById('mainPage');
   projectPage = document.getElementById('projectPage');
   currentProject = projectName;
+  // stop montage video
+  let theMontageVideo = document.getElementById('videoFull');
+  if (typeof theMontageVideo !== 'undefined' && theMontageVideo !== null) {
+    theMontageVideo.pause();
+    theMontageVideo.currentTime = 0;
+    finishVideo();
+  }
   switch (projectName) {
     case "theLastHacktivists2":
       projectPages[0].show();
@@ -497,6 +505,15 @@ function toProjectPage(mainSection, projectName) {
 
 function toMainPage() {
   if (isProject === true) {
+    // stop videos
+    let theVideoEN = document.getElementById('projectVideoEN');
+    let theVideoFR = document.getElementById('projectVideoFR');
+    if (typeof theVideoEN !== 'undefined' && typeof theVideoFR !== 'undefined' && theVideoEN !== null && theVideoFR !== null) {
+      theVideoEN.pause();
+      theVideoEN.currentTime = 0;
+      theVideoFR.pause();
+      theVideoFR.currentTime = 0;
+    }
     mainPage = document.getElementById('mainPage');
     projectPage = document.getElementById('projectPage');
     $(projectPage).fadeOut(150);
@@ -505,14 +522,13 @@ function toMainPage() {
     currentProject = 'none';
     generateProjects();
     window.history.replaceState(null, '', window.location.pathname);
-    theUrl.href = 'http://127.0.0.1:3000/';
+    theUrl.href = urlString;
     refreshSameLanguage();
   }
 }
 
 function toggleProjects() {
   $('.projectItem').fadeToggle(100);
-  generateProjects();
 }
 
 function playVideo() {
@@ -549,6 +565,17 @@ function refreshSameLanguage() {
 }
 
 function changeLanguage() {
+  if (isProject === true) {
+    // stop videos
+    let theVideoEN = document.getElementById('projectVideoEN');
+    let theVideoFR = document.getElementById('projectVideoFR');
+    if (typeof theVideoEN !== 'undefined' && typeof theVideoFR !== 'undefined' && theVideoEN !== null && theVideoFR !== null) {
+      theVideoEN.pause();
+      theVideoEN.currentTime = 0;
+      theVideoFR.pause();
+      theVideoFR.currentTime = 0;
+    }
+  }
   if (language === "en") {
     $('[lang="fr"]').show();
     $('[lang="en"]').hide();
