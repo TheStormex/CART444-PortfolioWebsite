@@ -317,7 +317,7 @@ function createProjectPages() {
     // video
     ["images/rectangle/projects/stanStopper/video.mp4", "images/rectangle/projects/stanStopper/video.mp4"],
     // images
-    ["images/rectangle/projects/stanStopper/inAction.png", "images/rectangle/projects/stanStopper/explanation.png", "images/rectangle/projects/stanStopper/defeat.PNG"],
+    ["images/rectangle/projects/stanStopper/inAction.png", "images/rectangle/projects/stanStopper/explanation.png", "images/rectangle/projects/stanStopper/defeat.png"],
     // imagesDesc
     [["Bodyguard Vs. Fans", "Explanation Screen", "Defeat Screen"], ["Le garde du corps contre les fans", "Écran d'explications", "Écran de défaite"]],
     // thumbnail index
