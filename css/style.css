@@ -485,8 +485,8 @@ strong {
 	font-size: inherit;
 	cursor: help;
 	text-decoration-line: none;
-	border: 3px;
-	padding: 3px;
+	/* border: 3px; */
+	padding: 0.05vw;
 	border-style: solid;
 	border-color: #ffD355;
 }

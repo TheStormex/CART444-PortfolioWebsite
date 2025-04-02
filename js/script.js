@@ -14,7 +14,7 @@ let mainPage;
 let projectPage;
 let exampleAudio;
 let setLanguageIndex = 0;
-let urlString = "https://thestormex.github.io/CART444-PortfolioWebsite/"; // https://chetan.games/ http://127.0.0.1:3000/ https://thestormex.github.io/CART444-PortfolioWebsite/
+let urlString = "http://127.0.0.1:3000/"; // https://chetan.games/ http://127.0.0.1:3000/ https://thestormex.github.io/CART444-PortfolioWebsite/
 let theUrl = new URL(urlString);
 
 function createProjectPages() {
@@ -152,8 +152,8 @@ function createProjectPages() {
      "Jeu de cartes à 2 joueurs sur l'essai de gagner au premier tour"],
     // description
     [
-      ["2 players attempt to reduce each other's life from 6 to 0 as quickly as possible using cards that deal damage among other thing. The sooner a player wins, the more points they get. Afterwards, the players play another round. The first player to get 6 points win the match. Cards can be played in response to each other, leading to long 'action chains'.", "<a href='https://thestormex.github.io/Dreams/' class='linkAway' target='_blank' rel='noopener noreferrer'>It can be played here.</a>"],
-      ["2 joueurs essayent de réduire les points de vie de leur adversaire de 6 à 0 le plus tôt possible en utilisant des cartes qui infligent du dégât ainsi qu'autre choses. Le plus tôt qu'un joueur gagne, le plus de points qu'il reçoive. Après, les joueurs jouent une autre fois. Le premier joueur ayant 6 points gagnent le match. Les cartes peuvent être jouées en réponse aux autres cartes, causant des 'chaînes d'actions' longues.", "<a href='https://thestormex.github.io/Dreams/' class='linkAway' target='_blank' rel='noopener noreferrer'>Ce jeu est jouable ici.</a>"]
+      ["2 players attempt to reduce each other's life from 6 to 0 as quickly as possible using cards that deal damage among other thing. The sooner a player wins, the more points they get. Afterwards, the players play another round. The first player to get 6 points win the match. Cards can be played in response to each other, leading to long 'action chains'.", "<a href='https://thestormex.itch.io/ftk' class='linkAway' target='_blank' rel='noopener noreferrer'>It can be played here.</a>"],
+      ["2 joueurs essayent de réduire les points de vie de leur adversaire de 6 à 0 le plus tôt possible en utilisant des cartes qui infligent du dégât ainsi qu'autre choses. Le plus tôt qu'un joueur gagne, le plus de points qu'il reçoive. Après, les joueurs jouent une autre fois. Le premier joueur ayant 6 points gagnent le match. Les cartes peuvent être jouées en réponse aux autres cartes, causant des 'chaînes d'actions' longues.", "<a href='https://thestormex.itch.io/ftk' class='linkAway' target='_blank' rel='noopener noreferrer'>Ce jeu est jouable ici.</a>"]
      ],
     // responsibilities
     [
