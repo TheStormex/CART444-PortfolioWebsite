@@ -104,8 +104,8 @@ function createProjectPages() {
     "Jeu de plateforme-réflexion sur la réincarnation et le clonage"],
     // description
     [
-      ["The player controls a robot and must get to the end of each level through opening doors, stepping on buttons, and respawning to leave behind a clone that can be used as platforms and to keep buttons pressed. These actions require battery energy to use, which must be managed properly.", "<a href='https://thestormex.github.io/Dreams/' class='linkAway' target='_blank' rel='noopener noreferrer'>It can be played here.</a>"],
-      ["Le joueur contrôle un robot et doit arriver à la fin de chaque niveau en ouvrant des portes, marchant sur des boutons, et en se réincarnant pour faire apparaître un clone qui peut être utilisé comme des plteformes et pour garder les boutons appuyés. Ces actions nécessitent la consommation de l'énergie de la pile, qui doit être gérée attentivement.", "<a href='https://thestormex.github.io/Dreams/' class='linkAway' target='_blank' rel='noopener noreferrer'>Ce jeu est jouable ici.</a>"]
+      ["The player controls a robot and must get to the end of each level through opening doors, stepping on buttons, and respawning to leave behind a clone that can be used as platforms and to keep buttons pressed. These actions require battery energy to use, which must be managed properly.", "<a href='https://thestormex.itch.io/re-boot' class='linkAway' target='_blank' rel='noopener noreferrer'>It can be found here.</a>"],
+      ["Le joueur contrôle un robot et doit arriver à la fin de chaque niveau en ouvrant des portes, marchant sur des boutons, et en se réincarnant pour faire apparaître un clone qui peut être utilisé comme des plteformes et pour garder les boutons appuyés. Ces actions nécessitent la consommation de l'énergie de la pile, qui doit être gérée attentivement.", "<a href='https://thestormex.itch.io/re-boot' class='linkAway' target='_blank' rel='noopener noreferrer'>Ce jeu se trouve ici.</a>"]
     ],
     // responsibilities
     [
@@ -198,8 +198,8 @@ function createProjectPages() {
     "Jeu de mystère pointer-cliquer sur l'exploration des fichiers d'un ordinateur et la messagerie texte"],
     // description
     [
-     ["The player is a detective who must explore the hacked laptop of a drug dealer and navigate text messages with another drug dealer by pretending to be its owner to fish out information necessary to rescue a hostage. Clues to help impersonate the laptop's owner are scattered in the files on the laptop.", "<a href='https://github.com/xCyberus/game-jam-2' class='linkAway' target='_blank' rel='noopener noreferrer'>It can be found here.</a>"],
-     ["Le joueur est un détective qui doit explorer un ordinateur portable d'un trafiquant de drogues et naviguer la messagerie texte avec un autre trafiquant de drogues en faisant semblant d'être son propriétaire pour trouver l'information nécessaire pour sauver un otage. Les indices pour aider avec l'imitation du propriétaire de l'ordinateur sont dispersés dans les fichiers de l'ordinateur.", "<a href='https://github.com/xCyberus/game-jam-2' class='linkAway' target='_blank' rel='noopener noreferrer'>Ce jeu se trouve ici.</a>"]
+     ["The player is a detective who must explore the hacked laptop of a drug dealer and navigate text messages with another drug dealer by pretending to be its owner to fish out information necessary to rescue a hostage. Clues to help impersonate the laptop's owner are scattered in the files on the laptop.", "<a href='https://thestormex.itch.io/screen' class='linkAway' target='_blank' rel='noopener noreferrer'>It can be found here.</a>"],
+     ["Le joueur est un détective qui doit explorer un ordinateur portable d'un trafiquant de drogues et naviguer la messagerie texte avec un autre trafiquant de drogues en faisant semblant d'être son propriétaire pour trouver l'information nécessaire pour sauver un otage. Les indices pour aider avec l'imitation du propriétaire de l'ordinateur sont dispersés dans les fichiers de l'ordinateur.", "<a href='https://thestormex.itch.io/screen' class='linkAway' target='_blank' rel='noopener noreferrer'>Ce jeu se trouve ici.</a>"]
     ],
     // responsibilities
     [
