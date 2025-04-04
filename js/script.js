@@ -157,8 +157,8 @@ function createProjectPages() {
      ],
     // responsibilities
     [
-      ["Mechanics design", "Writing card texts", "Card presentation design"],
-      ["Conception de mécaniques", "Écriture du texte des cartes", "Conception de la présentation des cartes"]
+      ["Mechanics design", "Writing card texts", "Card presentation design", "<a href='https://docs.google.com/document/d/1Sgvi5z2aqre7V0X8ksFlX4RN1W1ogB9Au1D22K5R4ws/edit?tab=t.0' class='linkAway' target='_blank' rel='noopener noreferrer'>Writing instructions</a>"],
+      ["Conception de mécaniques", "Écriture du texte des cartes", "Conception de la présentation des cartes", "<a href='https://docs.google.com/document/d/1BkgVoOa_140ReH9usrwJlDn61EYXzIwgof5ZqEAK9po/edit?tab=t.0' class='linkAway' target='_blank' rel='noopener noreferrer'>Écriture des règles</a>"]
     ],
     // documentation
     [
