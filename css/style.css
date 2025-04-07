@@ -1,4 +1,11 @@
 
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .sectionMenu, .sectionContent {
+    width: 100%;
+  }
+}
+
 #title {
 	display: inline-block;
 	margin: 6%;

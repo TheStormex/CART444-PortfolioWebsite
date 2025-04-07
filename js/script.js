@@ -14,7 +14,7 @@ let mainPage;
 let projectPage;
 let exampleAudio;
 let setLanguageIndex = 0;
-let urlString = "http://127.0.0.1:3000/"; // https://chetan.games/ http://127.0.0.1:3000/ https://thestormex.github.io/CART444-PortfolioWebsite/
+let urlString = "https://thestormex.github.io/CART444-PortfolioWebsite/"; // https://chetan.games/ http://127.0.0.1:3000/ https://thestormex.github.io/CART444-PortfolioWebsite/
 let theUrl = new URL(urlString);
 
 function createProjectPages() {
