@@ -14,7 +14,7 @@ let mainPage;
 let projectPage;
 let exampleAudio;
 let setLanguageIndex = 0;
-let urlString = "https://thestormex.github.io/CART444-PortfolioWebsite/"; // https://chetan.games/ http://127.0.0.1:3000/ https://thestormex.github.io/CART444-PortfolioWebsite/
+let urlString = "http://127.0.0.1:3000/"; // https://chetan.games/ http://127.0.0.1:3000/ https://thestormex.github.io/CART444-PortfolioWebsite/
 let theUrl = new URL(urlString);
 
 function createProjectPages() {
@@ -249,7 +249,7 @@ function createProjectPages() {
     // description
     [
       ["The player must rely on a combination of resource management and luck to craft the perfect hand of cards to please 2 random gods of luck. Each turn, a random event occurs and the player must make a decision which affects the content of their hand.", "<a href='https://itch.io/jam/gamebling-game-jam-2/rate/1923517' class='linkAway' target='_blank' rel='noopener noreferrer'>It can be played here.</a>"],
-      ["Le joueur doit compter sur une combinaison de gestion de ressources et de la chance pour bâtir la main parfaite des cartes pour plaire 2 dieux aléatoires de la chance. Chaque tour, un événement aléatoire arrive et le joueur doit prendre une décision qui affectera le contenu de leur main", "<a href='https://itch.io/jam/gamebling-game-jam-2/rate/1923517' class='linkAway' target='_blank' rel='noopener noreferrer'>Ce jeu est jouable ici.</a>"]
+      ["Le joueur doit compter sur une combinaison de gestion de ressources et de la chance pour bâtir la main parfaite des cartes pour plaire 2 dieux aléatoires de la chance. Chaque tour, un événement aléatoire arrive et le joueur doit prendre une décision qui affectera le contenu de leur main.", "<a href='https://itch.io/jam/gamebling-game-jam-2/rate/1923517' class='linkAway' target='_blank' rel='noopener noreferrer'>Ce jeu est jouable ici.</a>"]
    ],
     // responsibilities
     [

@@ -8,10 +8,11 @@
 
 #title {
 	display: inline-block;
-	margin: 6%;
+	margin: 5%;
 	background-color: #000020;
 	grid-area: header;
 	vertical-align: middle;
+  align: middle;
 }
 
 #projectPage {
@@ -31,6 +32,7 @@
 	width: 100%;
 	height: 100%;
 	text-align: left;
+  margin-top: 0px;
 }
 
 #videoContainer {
@@ -50,10 +52,17 @@
 
 #name {
 	cursor: pointer;
-	margin: 0.1%;
+	margin: 0.5%;
 	vertical-align: middle;
+  align: middle;
 	object-fit: contain;
   border-radius: 0;
+  width: 60%;
+}
+
+#nameSpan {
+	vertical-align: middle;
+  margin-left: 15%;
 }
 
 #promo:hover {
@@ -195,7 +204,7 @@
 }
 
 .sectionMenu {
-	width: 20%;
+	width: 18%;
 	height: 100%;
 	background-color: #000020;
 	position: fixed;
@@ -203,7 +212,7 @@
 }
 
 .contentParts {
-	width: 80%;
+	width: 82%;
 	display: inline-block;
 	position: relative;
 	text-align: center;
@@ -218,10 +227,10 @@
 	display: block;
   transition-duration: 0.2s;
 	text-decoration: none;
-	font-size: 1.2vw;
+	font-size: calc(1.8vh + 0.1vw);
 	margin-top: 2%;
 	margin-bottom: 2%;
-	padding: 0.5%;
+	padding: 0.6%;
 }
 
 
@@ -428,7 +437,7 @@ button:hover {
 }
 
 img {
-	margin-top: 1.2vh;
+	margin-top: 1vh;
 	max-width: 100%;
 	vertical-align: baseline;
 	object-fit: fill;
@@ -449,7 +458,7 @@ h2 {
 	text-decoration: underline;
 	text-decoration-color: #FFD355;
 	text-align: center;
-	font-size: 2.5vw;
+	font-size: 2vw;
 }
 
 h4 {
