@@ -6,6 +6,14 @@
   }
 }
 
+#preloadScreen {
+  display: initial;
+}
+
+#postloadScreen {
+  visibility: hidden;
+}
+
 #title {
 	display: inline-block;
 	margin: 5%;

@@ -25,574 +25,584 @@
   <meta name="theme-color" content="#000000">
   </head>
 <!-- window.location.reload();  -->
-  <body onload="createProjectPages(); refreshSameLanguage()">
-    <div class="sectionMenu">
-      <span id="title" title="Che Tan">
-         <span id="nameSpan"> <img onclick="toMainPage()" src="images/logo/largeLogo.png" id="name" alt="Che Tan horizontal name logo"> </span>
-         <h2>
-           <span lang="en"> Game <br> Designer </span> <span lang="fr"> Concepteur <br> de Jeux </span>
-         </h2>
-      </span>
-      <span id="menuBar">
-      <ul id="menu">
-        <a href="#contentVideo"> <li class="menuItem" id="promoVideo" onclick="toMainPage()">
-          <div class="menuSide">
-          </div>
-          <span lang="en"> Promo Video </span> <span lang="fr"> Vidéo de Promotion </span> </li> </a>
-        <li class="menuItem" id="portfolio" onclick="toMainPage()">
-          <div class="menuSide">
-              <!-- <a href="#"> -->
-                <img class="dropDown" onclick="toggleProjects()" src="images/decoration/projectMenuButton.png">
-              <!-- </a> -->
-          </div>
-          <a href="#contentPortfolio"> <span lang="en"> Featured Projects </span> <span lang="fr"> Projets Présentés </span> </a>
-        </li>
-        <!-- <hr /> -->
-        <li class="menuItem projectItem" onclick="toProjectPage(1, 'theLastHacktivists2')">
-          <div class="menuSide">
-          </div>
-          <div class="menuSide">
-              <img class="controller" onclick="toProjectPage(1, 'theLastHacktivists2')" src="images/decoration/orangeController.png">
-          </div>
-          The Last <br>
-          <div class="menuSide">
-          </div>
-          <div class="menuSide">
-          </div>
-          Hacktivists 2
-          <!-- <img class="checkmark" id="check1" src="images/decoration/check.png"> -->
-        </li>
-        <li class="menuItem projectItem" onclick="toProjectPage(1, 'reBoot')">
-          <div class="menuSide">
-          </div>
-          <div class="menuSide">
-              <img class="controller" onclick="toProjectPage(1, 'reBoot')" src="images/decoration/orangeController.png">
-          </div>
-          Re-Boot
-          <!-- <img class="checkmark" id="check2" src="images/decoration/check.png"> -->
-        </li>
-        <li class="menuItem projectItem" onclick="toProjectPage(1, 'ftk')">
-          <div class="menuSide">
-          </div>
-          <div class="menuSide">
-              <img class="controller" onclick="toProjectPage(1, 'ftk')" src="images/decoration/orangeController.png">
-          </div>
-          First Turn Kill
-          <!-- <img class="checkmark" id="check3" src="images/decoration/check.png"> -->
-        </li>
-        <li class="menuItem projectItem" onclick="toProjectPage(1, 'screen')">
-          <div class="menuSide">
-          </div>
-          <div class="menuSide">
-              <img class="controller" onclick="toProjectPage(1, 'screen')" src="images/decoration/orangeController.png">
-          </div>
-          Screen
-          <!-- <img class="checkmark" id="check4" src="images/decoration/check.png"> -->
-        </li>
-        <li class="menuItem projectItem" onclick="toProjectPage(1, 'charmingOffering')">
-          <div class="menuSide">
-          </div>
-          <div class="menuSide">
-              <img class="controller" onclick="toProjectPage(1, 'charmingOffering')" src="images/decoration/orangeController.png">
-          </div>
-          Charming Offering
-          <!-- <img class="checkmark" id="check4" src="images/decoration/check.png"> -->
-        </li>
-        <li class="menuItem projectItem" onclick="toProjectPage(1, 'stanStopper')">
-          <div class="menuSide">
-          </div>
-          <div class="menuSide">
-              <img class="controller" onclick="toProjectPage(1, 'stanStopper')" src="images/decoration/orangeController.png">
-          </div>
-          Stan Stopper
-          <!-- <img class="checkmark" id="check4" src="images/decoration/check.png"> -->
-        </li>
-        <!-- <hr /> -->
-        <a href="#contentAbout"> <li class="menuItem" id="aboutMe" onclick="toMainPage()">
-          <div class="menuSide">
-          </div>
-          <span lang="en"> About Me </span> <span lang="fr"> À Propos </span> </li> </a>
-         <a href="#contentEducation"> <li class="menuItem" id="education" onclick="toMainPage()">
-           <div class="menuSide">
-           </div>
-           <span lang="en"> Education </span> <span lang="fr"> Éducation </span> </li>  </a>
-        <span lang="en">
-          <a href=images/CheTanCVeng.pdf  target="_blank" rel="noopener noreferrer"> <li class="menuItem" id="cv" onclick="toMainPage()">
-            <div class="menuSide">
-            </div>
-            CV (English) </li> </a>
-        </span>
-        <span lang="fr">
-          <a href=images/CheTanCVfr.pdf  target="_blank" rel="noopener noreferrer"> <li class="menuItem" id="cv" onclick="toMainPage()">
-            <div class="menuSide">
-            </div>
-            CV (Français) </li> </a>
-        </span>
-        <li class="menuItem" id="socialMedia">
-            <div class="menuSide">
-            </div>
-           <a href="https://www.linkedin.com/in/che-t-625842a6/" target="_blank" rel="noopener noreferrer" title="LinkedIn"> LinkedIn </a>
-        </li>
-        <a> <li class="menuItem"  id="languageButton" onclick="changeLanguage()">
-          <div class="menuSide">
-          </div>
-          <span lang="en"> Français </span> <span lang="fr"> English </span> </li>  </a>
-      </ul>
-      </span>
+  <body onload="createProjectPages(); refreshSameLanguage();">
+    <div id="preloadScreen">
+      <h1> Please wait, the site is loading. <br>
+        Attendez s'il vous plaît, le site charge actuellement.
+      </h1>
+      <h2> If JavaScript is disabled, please enable it for the site to work. <br>
+        Si JavaScript est déactivé, veuillez l'activer pour que le site fonctionne.
+      </h2>
     </div>
-    <div class="sectionContent" id="mainPage">
-      <div class="contentParts">
-        <div class="content" id="contentVideo">
-          <h3 id="egg">
-            <span lang="en"> Hi! This is an easter egg! </span> <span lang="fr"> Allô! Voici un easter egg! </span>
-          </h3>
-          <div id="videoContainer">
-            <video autoplay muted loop id="video">
-              <source src="images/montage.mp4" type="video/mp4">
-            </video>
-            <video id="videoFull" controls>
-              <source src="images/montage.mp4" type="video/mp4">
-            </video>
-            <div id="overlay">
-              <p>
-                <span lang="en"> Che Tan's Game Design Portfolio </span> <span lang="fr"> Portfolio de Conception de Jeux de Che Tan </span> <br>
-                <button type="button" onclick="playVideo()"> <span lang="en"> Play </span> <span lang="fr"> Jouer </span>  </button>
-              </p>
+    <div id="postloadScreen">
+      <div class="sectionMenu">
+        <span id="title" title="Che Tan">
+           <span id="nameSpan"> <img onclick="toMainPage()" src="images/logo/largeLogo.png" id="name" alt="Che Tan horizontal name logo"> </span>
+           <h2>
+             <span lang="en"> Game <br> Designer </span> <span lang="fr"> Concepteur <br> de Jeux </span>
+           </h2>
+        </span>
+        <span id="menuBar">
+        <ul id="menu">
+          <a href="#contentVideo"> <li class="menuItem" id="promoVideo" onclick="toMainPage()">
+            <div class="menuSide">
             </div>
-          </div>
-        </div>
-        <div class="content" id="contentPortfolio">
-          <h1>
-            <span lang="en"> Featured Projects </span> <span lang="fr"> Projets Présentés </span>
-          </h1>
-          <div class="contentBlock" id="portfolioSection">
-          </div>
-        </div>
-        <div class="content" id="contentAbout">
-          <h1>
-            <span lang="en"> About Me </span> <span lang="fr"> À Propos </span>
-          </h1>
-          <div class="contentBlock">
-            <div class="imageSide aboutImage">
-              <img id="aboutImage1" src="images/rectangle/portrait2.png">
+            <span lang="en"> Promo Video </span> <span lang="fr"> Vidéo de Promotion </span> </li> </a>
+          <li class="menuItem" id="portfolio" onclick="toMainPage()">
+            <div class="menuSide">
+                <!-- <a href="#"> -->
+                  <img class="dropDown" onclick="toggleProjects()" src="images/decoration/projectMenuButton.png">
+                <!-- </a> -->
             </div>
-            <div class="textSide">
-              <h2>
-                <span lang="en"> Who am I? </span> <span lang="fr"> Qui suis-je? </span>
-              </h2>
-              <p>
-                <span lang="en"> I am a game designer from Montreal. I specialize in mechanics design. </span> <span lang="fr"> Je suis un concepteur de jeux à Montréal. Je spécialise au conception de mécaniques. </span>
-              </p>
-              <p>
-                <span lang="en"> I have created many games in college and university for which I attained high marks, such as <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, a 2D puzzle platformer about a clone-spawning robot. </span>
-                <span lang="fr"> J'ai crée plusieurs jeux au CÉGEP et à l'université pour lesquels j'ai reçu des bonnes notes, comme <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, un jeu de platforme et de réflexion sur un robot qui fabrique des clones. </span>
-
-              </p>
-              <p>
-                <span lang="en"> I was the Canadian champion of <a title="Link to Fandom Wiki page" class="linkAway" href="https://justdance.fandom.com/wiki/Just_Dance_World_Cup" target="_blank" rel="noopener noreferrer">Just Dance World Cup</a> in
-                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2014')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10152758284116578&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2014</a>,
-                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2015')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10153174328836629&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2015</a>, and
-                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2019')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=3920627001343361&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2019</a>. </span>
-                <span lang="fr"> J'étais le champion de <a title="Link to Fandom Wiki page" class="linkAway" href="https://justdance.fandom.com/wiki/Just_Dance_World_Cup" target="_blank" rel="noopener noreferrer">World Cup Just Dance</a> en
-                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2014')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10152758284116578&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2014</a>,
-                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2015')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10153174328836629&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2015</a>, et
-                  <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2019')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=3920627001343361&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2019</a>. </span>
-              </p>
+            <a href="#contentPortfolio"> <span lang="en"> Featured Projects </span> <span lang="fr"> Projets Présentés </span> </a>
+          </li>
+          <!-- <hr /> -->
+          <li class="menuItem projectItem" onclick="toProjectPage(1, 'theLastHacktivists2')">
+            <div class="menuSide">
             </div>
-          </div>
-          <div class="imageSide aboutImage" id="">
-            <img id="aboutImage2" src="images/rectangle/game2.png">
-            <h3 class="underImage" id="helpHover">
-              <span lang="en"> Hover over the <strong>Skills</strong> to see examples </span> <span lang="fr"> Bougez la souris sur les <strong>Compétences</strong> pour voir des exemples </span>
-            </h3>
-          </div>
-          <div class="textSide">
-            <h2>
-              <span lang="en"> My Game Development Skills </span> <span lang="fr"> Mes Compétences de <br> Développement de Jeux </span>
-            </h2>
-              <ul class="pointsList">
-                <li> <strong onmouseover="changeSkill('design')" onmouseout="resetSkills()">
-                  <span lang="en">
-                    Game design (mechanics, narrative, level, UI, UX)
-                  </span>
-                  <span lang="fr">
-                    Conception des jeux (mécaniques, histoires, niveaux, interfaces, expérience de l'utilisateur)
-                  </span>
-                </strong> </li>
-                <li> <strong onmouseover="changeSkill('website')" onmouseout="resetSkills()">
-                  <span lang="en">
-                    HTML, CSS, JavaScript (p5js)
-                  </span>
-                  <span lang="fr">
-                    HTML, CSS, JavaScript (p5js)
-                  </span>
-                </strong> </li>
-                <li> <strong onmouseover="changeSkill('engine')" onmouseout="resetSkills()">
-                  <span lang="en">
-                    Game Engines (Unity, Unreal)
-                  </span>
-                  <span lang="fr">
-                    Moteurs de jeux (Unity, Unreal)
-                  </span>
-                   </strong> </li>
-                <li> <strong onmouseover="changeSkill('vector')" onmouseout="resetSkills()">
-                  <span lang="en">
-                    Vector art (Figma)
-                  </span>
-                  <span lang="fr">
-                    Art vectoriel (Figma)
-                  </span>
-                </strong> </li>
-                <li> <strong onmouseover="changeSkill('pixel')" onmouseout="resetSkills()">
-                  <span lang="en">
-                    Pixel Art (GraphicsGale)
-                  </span>
-                  <span lang="fr">
-                    Pixel-Art (GraphicsGale)
-                  </span>
-                </strong> </li>
-                <li> <strong onmouseover="changeSkill('3d')" onmouseout="resetSkills()">
-                  <span lang="en">
-                    3D Modeling for Environment (Maya)
-                  </span>
-                  <span lang="fr">
-                    Modélisation 3D pour l'environnement (Maya)
-                  </span>
-                </strong> </li>
-                <li> <strong onmouseover="changeSkill('management')" onmouseout="resetSkills()">
-                  <span lang="en">
-                    Project management
-                  </span>
-                  <span lang="fr">
-                    Gestion des projets
-                  </span>
-                </strong> </li>
-                <li> <strong onmouseover="changeSkill('music')" onmouseout="resetSkills()">
-                  <span lang="en">
-                    Electronic music composition
-                  </span>
-                  <span lang="fr">
-                    Composition de musique électronique
-                  </span>
-                </strong>
-                  <br>
-                  <audio title="Stan Stopper" id="song" controls>
-                    <source src="images/epicSong.wav" type="audio/wav">
-                  </audio>
-                 </li>
-                <li> <strong onmouseover="changeSkill('audioEn')" onmouseout="resetSkills()">
-                  <span lang="en">
-                    Audio engineering (FL Studio, Audacity)
-                  </span>
-                  <span lang="fr">
-                   Ingénierie audio (FL Studio, Audacity)
-                  </span>
-
-                 </strong> </li>
-              <ul>
-          </div>
-        </div>
-        <div class="content" id="contentEducation">
-          <h1>
-            <span lang="en"> Education </span> <span lang="fr"> Éducation </span>
-          </h1>
-          <div class="contentBlock">
-            <div class="imageSide">
-              <span lang="en">
-                <a href="https://www.concordia.ca" target="_blank" rel="noopener noreferrer"> <img title="Concordia University (Click to go the school's website)" src="images/rectangle/schools/concordia_crop.png"> </a>
-              </span>
-              <span lang="fr">
-                <a href="https://www.concordia.ca/fr.html" target="_blank" rel="noopener noreferrer"> <img title="Université Concordia (Cliquez pour aller au site web de l'école)" src="images/rectangle/schools/concordia_crop.png"> </a>
-              </span>
+            <div class="menuSide">
+                <img class="controller" onclick="toProjectPage(1, 'theLastHacktivists2')" src="images/decoration/orangeController.png">
             </div>
-            <div class="textSide">
-              <h2>
-                <span lang="en">
-                  <a title="Concordia University (Click to go the school's website)" href="https://www.concordia.ca" target="_blank" rel="noopener noreferrer"> Concordia University </a>
-                </span>
-                <span lang="fr">
-                  <a title="Université Concordia (Cliquez pour aller au site web de l'école)" href="https://www.concordia.ca/fr.html" target="_blank" rel="noopener noreferrer">  Université Concordia </a>
-                </span>
-              </h2>
-              <ul class="pointsList">
-                <li>2019 - 2023</li>
-                <li><span lang="en"> Public University </span> <span lang="fr"> Université publique </span></li>
-                <li>
-                  <span lang="en">
-                    Specialization in <a class="linkAway" href="https://www.concordia.ca/academics/undergraduate/computation-arts.html" target="_blank" rel="noopener noreferrer"> Computation Arts </a>
-                  </span>
-                  <span lang="fr">
-                    Spécialisation en <a class="linkAway" href="https://www.concordia.ca/fr/etudes/programmes-de-1er-cycle/arts-numeriques.html" target="_blank" rel="noopener noreferrer"> Arts numériques </a>
-                  </span>
-                </li>
-                <li><span lang="en"> 3.87 Cumulative GPA at the time of graduation </span> <span lang="fr"> 3.87 GPA cumulative à la graduation </span></li>
-                <li><span lang="en"> <a class="linkAway" href="images/concordiaDiploma.pdf" target="_blank" rel="noopener noreferrer"> Graduated with Distinction </a></span> <span lang="fr"> <a class="linkAway" href="images/concordiaDiploma.pdf" target="_blank" rel="noopener noreferrer"> Diplômé avec distinction </a></span> </li>
-                <li>
-                  <span lang="en">
-                    Worked as a student ambassador from 2022 to 2023. Delivering <a class="linkAway" href="https://www.concordia.ca/admissions/undergraduate/welcometours.html#campustours" target="_blank" rel="noopener noreferrer"> campus tours </a>
-                  </span>
-                  <span lang="fr">
-                    Travaillé en étant ambassadeur scolaire de 2022 à 2023. Délivrant des <a class="linkAway" href="https://www.concordia.ca/fr/admission/etudes-au-1er-cycle/accueilvisites.html" target="_blank" rel="noopener noreferrer"> visites guidées </a>
-                  </span>
-                </li>
-              <ul>
+            The Last <br>
+            <div class="menuSide">
             </div>
-          </div>
-          <div class="contentBlock">
-            <div class="imageSide">
-              <span lang="en">
-                <a href="https://www.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> <img title="Dawson College (Click to go the school's website)" src="images/rectangle/schools/dawson_crop.png"> </a>
-              </span>
-              <span lang="fr">
-                <a href="https://fr.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> <img title="Collège Dawson (Cliquez pour aller au site web de l'école)" src="images/rectangle/schools/dawson_crop.png"> </a>
-              </span>
+            <div class="menuSide">
             </div>
-            <div class="textSide">
-              <h2>
-                <span lang="en">
-                  <a title="Dawson College (Click to go the school's website)" href="https://www.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> Dawson College </a>
-                </span>
-                <span lang="fr">
-                  <a title="Collège Dawson (Cliquez pour aller au site web de l'école)" href="https://fr.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> Collège Dawson </a>
-                </span>
-
-              </h2>
-              <ul class="pointsList">
-                <li>2017 - 2019</li>
-                <li>
-                  <span lang="en">
-                    Public CEGEP
-                  </span>
-                  <span lang="fr">
-                    Cégep public
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    <a class="linkAway" href="https://www.dawsoncollege.qc.ca/interactive-media-arts/" target="_blank" rel="noopener noreferrer"> Interactive Media Arts </a>
-                  </span>
-                  <span lang="fr">
-                    <a class="linkAway" href="https://fr.dawsoncollege.qc.ca/interactive-media-arts/" target="_blank" rel="noopener noreferrer"> Arts médiatiques interactifs </a>
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    92% Average cumulative grade
-                  </span>
-                  <span lang="fr">
-                    92% note moyenne cumulative
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    <a class="linkAway" href="images/honor.pdf" target="_blank" rel="noopener noreferrer"> Received semestral honours letter </a>
-                  </span>
-                  <span lang="fr">
-                    <a class="linkAway" href="images/honor.pdf" target="_blank" rel="noopener noreferrer"> Reçu la lettre d'honneurs semesterielle </a>
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    <a class="linkAway" href="images/Recommendation_ Che.pdf" target="_blank" rel="noopener noreferrer"> Letter of recommendation from main instructor </a>
-                  </span>
-                  <span lang="fr">
-                    <a class="linkAway" href="images/Recommendation_ Che.pdf" target="_blank" rel="noopener noreferrer"> Lettre de recommandation du professeur principal </a>
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    <a class="linkAway" href="https://www.dawsoncollege.qc.ca/alc-festival/wp-content/uploads/sites/164/Verity_Press-Release.pdf" target="_blank" rel="noopener noreferrer"> Performed in a play as part of the Dawson Theatre Collective </a>
-                  </span>
-                  <span lang="fr">
-                    <a class="linkAway" href="https://www.dawsoncollege.qc.ca/alc-festival/wp-content/uploads/sites/164/Verity_Press-Release.pdf" target="_blank" rel="noopener noreferrer"> Performé dans une pièce de théâtre en faisant partie du Dawson Theatre Collective </a>
-                  </span>
-                </li>
-              <ul>
+            Hacktivists 2
+            <!-- <img class="checkmark" id="check1" src="images/decoration/check.png"> -->
+          </li>
+          <li class="menuItem projectItem" onclick="toProjectPage(1, 'reBoot')">
+            <div class="menuSide">
             </div>
-          </div>
-          <div class="contentBlock">
-            <div class="imageSide">
-              <span lang="en">
-                <a href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> <img  title="Collège Saint-Louis (Click to go the school's website)" src="images/rectangle/schools/saintLouis_crop.png"> </a>
-              </span>
-              <span lang="fr">
-                <a href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> <img  title="Collège Saint-Louis (Cliquez pour aller au site web de l'école)" src="images/rectangle/schools/saintLouis_crop.png"> </a>
-              </span>
+            <div class="menuSide">
+                <img class="controller" onclick="toProjectPage(1, 'reBoot')" src="images/decoration/orangeController.png">
             </div>
-            <div class="textSide">
-              <h2>
-                <span lang="en">
-                  <a title="Collège Saint-Louis (Click to go the school's website)" href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> Collège Saint-Louis </a>
-                </span>
-                <span lang="fr">
-                  <a title="Collège Saint-Louis (Cliquez pour aller au site web de l'école)" href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> Collège Saint-Louis </a>
-                </span>
-              </h2>
-              <ul class="pointsList">
-                <li>2012 - 2017</li>
-                <li>
-                  <span lang="en">
-                    Public High School
-                  </span>
-                  <span lang="fr">
-                    École secondaire publique
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    <a class="linkAway" href="https://www.ibo.org/" target="_blank" rel="noopener noreferrer"> International Baccalaureate </a>
-                  </span>
-                  <span lang="fr">
-                    <a class="linkAway" href="https://www.ibo.org/fr/" target="_blank" rel="noopener noreferrer"> Baccalauréat International </a>
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    Taken Natural Science Math
-                  </span>
-                  <span lang="fr">
-                    Pris les classes de mathématique de Science Naturelle
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    Taken Physics and Chemistry
-                  </span>
-                  <span lang="fr">
-                    Pris les classes de Physique et Chimie
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    Performed in the Dance and Acting clubs
-                  </span>
-                  <span lang="fr">
-                    Performé dans les clubs de danse et de théâtre
-                  </span>
-                </li>
-                <li>
-                  <span lang="en">
-                    Volunteered for Christmas Basket and Open House events
-                  </span>
-                  <span lang="fr">
-                    Fait du bénévolat pour les paniers de Noël et les événements de portes ouvertes
-                  </span>
-                </li>
-              <ul>
+            Re-Boot
+            <!-- <img class="checkmark" id="check2" src="images/decoration/check.png"> -->
+          </li>
+          <li class="menuItem projectItem" onclick="toProjectPage(1, 'ftk')">
+            <div class="menuSide">
             </div>
-          </div>
-        </div>
+            <div class="menuSide">
+                <img class="controller" onclick="toProjectPage(1, 'ftk')" src="images/decoration/orangeController.png">
+            </div>
+            First Turn Kill
+            <!-- <img class="checkmark" id="check3" src="images/decoration/check.png"> -->
+          </li>
+          <li class="menuItem projectItem" onclick="toProjectPage(1, 'screen')">
+            <div class="menuSide">
+            </div>
+            <div class="menuSide">
+                <img class="controller" onclick="toProjectPage(1, 'screen')" src="images/decoration/orangeController.png">
+            </div>
+            Screen
+            <!-- <img class="checkmark" id="check4" src="images/decoration/check.png"> -->
+          </li>
+          <li class="menuItem projectItem" onclick="toProjectPage(1, 'charmingOffering')">
+            <div class="menuSide">
+            </div>
+            <div class="menuSide">
+                <img class="controller" onclick="toProjectPage(1, 'charmingOffering')" src="images/decoration/orangeController.png">
+            </div>
+            Charming Offering
+            <!-- <img class="checkmark" id="check4" src="images/decoration/check.png"> -->
+          </li>
+          <li class="menuItem projectItem" onclick="toProjectPage(1, 'stanStopper')">
+            <div class="menuSide">
+            </div>
+            <div class="menuSide">
+                <img class="controller" onclick="toProjectPage(1, 'stanStopper')" src="images/decoration/orangeController.png">
+            </div>
+            Stan Stopper
+            <!-- <img class="checkmark" id="check4" src="images/decoration/check.png"> -->
+          </li>
+          <!-- <hr /> -->
+          <a href="#contentAbout"> <li class="menuItem" id="aboutMe" onclick="toMainPage()">
+            <div class="menuSide">
+            </div>
+            <span lang="en"> About Me </span> <span lang="fr"> À Propos </span> </li> </a>
+           <a href="#contentEducation"> <li class="menuItem" id="education" onclick="toMainPage()">
+             <div class="menuSide">
+             </div>
+             <span lang="en"> Education </span> <span lang="fr"> Éducation </span> </li>  </a>
+          <span lang="en">
+            <a href=images/CheTanCVeng.pdf  target="_blank" rel="noopener noreferrer"> <li class="menuItem" id="cv" onclick="toMainPage()">
+              <div class="menuSide">
+              </div>
+              CV (English) </li> </a>
+          </span>
+          <span lang="fr">
+            <a href=images/CheTanCVfr.pdf  target="_blank" rel="noopener noreferrer"> <li class="menuItem" id="cv" onclick="toMainPage()">
+              <div class="menuSide">
+              </div>
+              CV (Français) </li> </a>
+          </span>
+          <li class="menuItem" id="socialMedia">
+              <div class="menuSide">
+              </div>
+             <a href="https://www.linkedin.com/in/che-t-625842a6/" target="_blank" rel="noopener noreferrer" title="LinkedIn"> LinkedIn </a>
+          </li>
+          <a> <li class="menuItem"  id="languageButton" onclick="changeLanguage()">
+            <div class="menuSide">
+            </div>
+            <span lang="en"> Français </span> <span lang="fr"> English </span> </li>  </a>
+        </ul>
+        </span>
       </div>
-    </div>
-    <div class="sectionContent" id="projectPage">
-      <div class="contentParts">
-        <div class="content">
-          <h1 id="projectName">
-            Project Name
-          </h1>
-        </div>
-        <div class="content">
-          <div class="tagsLine">
-            <h4 class="tag projectType" id="projectPageType">
-            </h4>
-            <h4 class="tag projectGenre" id="projectPageGenre">
-            </h4>
-            <h4 class="tag projectEngine" id="projectPageEngine">
-            </h4>
-          </div>
-          <h3 id="projectLine">
-            Line
-          </h3>
-        </div>
-          <div class="contentBlock">
-            <div class="imageSide">
-              <div id="projectVideoParent">
-              </div>
-              <h3 class="underImage" id="projectVideoText">
-                <span lang="en">
-                  Video
-                </span>
-                <span lang="fr">
-                  Vidéo
-                </span>
-              </h3>
-            </div>
-            <div class="textSide">
-              <h2>
-                Description
-              </h2>
-              <div id="projectDescription">
+      <div class="sectionContent" id="mainPage">
+        <div class="contentParts">
+          <div class="content" id="contentVideo">
+            <h3 id="egg">
+              <span lang="en"> Hi! This is an easter egg! </span> <span lang="fr"> Allô! Voici un easter egg! </span>
+            </h3>
+            <div id="videoContainer">
+              <video autoplay muted loop id="video">
+                <source src="images/montage.mp4" type="video/mp4">
+              </video>
+              <video id="videoFull" controls>
+                <source src="images/montage.mp4" type="video/mp4">
+              </video>
+              <div id="overlay">
+                <p>
+                  <span lang="en"> Che Tan's Game Design Portfolio </span> <span lang="fr"> Portfolio de Conception de Jeux <br> de Che Tan </span> <br>
+                  <button type="button" onclick="playVideo()"> <span lang="en"> Play </span> <span lang="fr"> Jouer </span>  </button>
+                </p>
               </div>
             </div>
           </div>
-          <div class="imageSide" id="projectImage1">
-            <img id="projectImage1Image" src="images/rectangle/game2.png">
-            <h3 class="underImage" id="projectImage1Text">
-            </h3>
-          </div>
-          <div class="textSide">
-            <h2>
-              <span lang="en">
-                My Responsibilities
-              </span>
-              <span lang="fr">
-                Mes Responsabilités
-              </span>
-            </h2>
-              <ul class="pointsList" id="projectResponsibilities">
-              </ul>
-          </div>
-          <div class="contentBlock">
-            <div class="imageSide" id="projectImage2">
-              <img id="projectImage2Image" src="images/rectangle/test.png">
-              <h3 class="underImage" id="projectImage2Text">
-              </h3>
-            </div>
-            <div class="textSide">
-              <h2>
-                Documentation
-              </h2>
-                <div id="projectDocumentation">
-                </div>
-            </div>
-          </div>
-          <div class="imageSide" id="projectImage3">
-            <img id="projectImage3Image" src="images/rectangle/game2.png">
-            <h3 class="underImage" id="projectImage3Text">
-            </h3>
-          </div>
-          <div class="textSide">
-            <h2>
-              Inspirations
-            </h2>
-            <div id="projectAdditional">
-            </div>
-          </div>
-          <div>
+          <div class="content" id="contentPortfolio">
             <h1>
-              <span lang="en">
-                Other Games
-              </span>
-              <span lang="fr">
-                Autres Jeux
-              </span>
+              <span lang="en"> Featured Projects </span> <span lang="fr"> Projets Présentés </span>
             </h1>
-            <div id="otherProjects">
+            <div class="contentBlock" id="portfolioSection">
             </div>
           </div>
+          <div class="content" id="contentAbout">
+            <h1>
+              <span lang="en"> About Me </span> <span lang="fr"> À Propos </span>
+            </h1>
+            <div class="contentBlock">
+              <div class="imageSide aboutImage">
+                <img id="aboutImage1" src="images/rectangle/portrait2.png">
+              </div>
+              <div class="textSide">
+                <h2>
+                  <span lang="en"> Who am I? </span> <span lang="fr"> Qui suis-je? </span>
+                </h2>
+                <p>
+                  <span lang="en"> I am a game designer from Montreal. I specialize in mechanics design. </span> <span lang="fr"> Je suis un concepteur de jeux à Montréal. Je spécialise au conception de mécaniques. </span>
+                </p>
+                <p>
+                  <span lang="en"> I have created many games in college and university for which I attained high marks, such as <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, a 2D puzzle platformer about a clone-spawning robot. </span>
+                  <span lang="fr"> J'ai crée plusieurs jeux au CÉGEP et à l'université pour lesquels j'ai reçu des bonnes notes, comme <a class="linkAway" onclick="toProjectPage(1, 'reBoot')">Re-Boot</a>, un jeu de platforme et de réflexion sur un robot qui fabrique des clones. </span>
+
+                </p>
+                <p>
+                  <span lang="en"> I was the Canadian champion of <a title="Link to Fandom Wiki page" class="linkAway" href="https://justdance.fandom.com/wiki/Just_Dance_World_Cup" target="_blank" rel="noopener noreferrer">Just Dance World Cup</a> in
+                    <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2014')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10152758284116578&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2014</a>,
+                    <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2015')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10153174328836629&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2015</a>, and
+                    <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2019')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=3920627001343361&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2019</a>. </span>
+                  <span lang="fr"> J'étais le champion de <a title="Link to Fandom Wiki page" class="linkAway" href="https://justdance.fandom.com/wiki/Just_Dance_World_Cup" target="_blank" rel="noopener noreferrer">World Cup Just Dance</a> en
+                    <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2014')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10152758284116578&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2014</a>,
+                    <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2015')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=10153174328836629&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2015</a>, et
+                    <a title="Link to original image (Facebook account needed)" onmouseover="justDanceImages('2019')" onmouseout="resetSkills()" class="linkAway" href="https://www.facebook.com/photo.php?fbid=3920627001343361&set=t.100002116943722&type=3" target="_blank" rel="noopener noreferrer">2019</a>. </span>
+                </p>
+              </div>
+            </div>
+            <div class="imageSide aboutImage" id="">
+              <img id="aboutImage2" src="images/rectangle/game2.png">
+              <h3 class="underImage" id="helpHover">
+                <span lang="en"> Hover over the <strong>Skills</strong> to see examples </span> <span lang="fr"> Bougez la souris sur les <strong>Compétences</strong> pour voir des exemples </span>
+              </h3>
+            </div>
+            <div class="textSide">
+              <h2>
+                <span lang="en"> My Game Development Skills </span> <span lang="fr"> Mes Compétences de <br> Développement de Jeux </span>
+              </h2>
+                <ul class="pointsList">
+                  <li> <strong onmouseover="changeSkill('design')" onmouseout="resetSkills()">
+                    <span lang="en">
+                      Game design (mechanics, narrative, level, UI, UX)
+                    </span>
+                    <span lang="fr">
+                      Conception des jeux (mécaniques, histoires, niveaux, interfaces, expérience de l'utilisateur)
+                    </span>
+                  </strong> </li>
+                  <li> <strong onmouseover="changeSkill('website')" onmouseout="resetSkills()">
+                    <span lang="en">
+                      HTML, CSS, JavaScript (p5js)
+                    </span>
+                    <span lang="fr">
+                      HTML, CSS, JavaScript (p5js)
+                    </span>
+                  </strong> </li>
+                  <li> <strong onmouseover="changeSkill('engine')" onmouseout="resetSkills()">
+                    <span lang="en">
+                      Game Engines (Unity, Unreal)
+                    </span>
+                    <span lang="fr">
+                      Moteurs de jeux (Unity, Unreal)
+                    </span>
+                     </strong> </li>
+                  <li> <strong onmouseover="changeSkill('vector')" onmouseout="resetSkills()">
+                    <span lang="en">
+                      Vector art (Figma)
+                    </span>
+                    <span lang="fr">
+                      Art vectoriel (Figma)
+                    </span>
+                  </strong> </li>
+                  <li> <strong onmouseover="changeSkill('pixel')" onmouseout="resetSkills()">
+                    <span lang="en">
+                      Pixel Art (GraphicsGale)
+                    </span>
+                    <span lang="fr">
+                      Pixel-Art (GraphicsGale)
+                    </span>
+                  </strong> </li>
+                  <li> <strong onmouseover="changeSkill('3d')" onmouseout="resetSkills()">
+                    <span lang="en">
+                      3D Modeling for Environment (Maya)
+                    </span>
+                    <span lang="fr">
+                      Modélisation 3D pour l'environnement (Maya)
+                    </span>
+                  </strong> </li>
+                  <li> <strong onmouseover="changeSkill('management')" onmouseout="resetSkills()">
+                    <span lang="en">
+                      Project management
+                    </span>
+                    <span lang="fr">
+                      Gestion des projets
+                    </span>
+                  </strong> </li>
+                  <li> <strong onmouseover="changeSkill('music')" onmouseout="resetSkills()">
+                    <span lang="en">
+                      Electronic music composition
+                    </span>
+                    <span lang="fr">
+                      Composition de musique électronique
+                    </span>
+                  </strong>
+                    <br>
+                    <audio title="Stan Stopper" id="song" controls>
+                      <source src="images/epicSong.wav" type="audio/wav">
+                    </audio>
+                   </li>
+                  <li> <strong onmouseover="changeSkill('audioEn')" onmouseout="resetSkills()">
+                    <span lang="en">
+                      Audio engineering (FL Studio, Audacity)
+                    </span>
+                    <span lang="fr">
+                     Ingénierie audio (FL Studio, Audacity)
+                    </span>
+
+                   </strong> </li>
+                <ul>
+            </div>
+          </div>
+          <div class="content" id="contentEducation">
+            <h1>
+              <span lang="en"> Education </span> <span lang="fr"> Éducation </span>
+            </h1>
+            <div class="contentBlock">
+              <div class="imageSide">
+                <span lang="en">
+                  <a href="https://www.concordia.ca" target="_blank" rel="noopener noreferrer"> <img title="Concordia University (Click to go the school's website)" src="images/rectangle/schools/concordia_crop.png"> </a>
+                </span>
+                <span lang="fr">
+                  <a href="https://www.concordia.ca/fr.html" target="_blank" rel="noopener noreferrer"> <img title="Université Concordia (Cliquez pour aller au site web de l'école)" src="images/rectangle/schools/concordia_crop.png"> </a>
+                </span>
+              </div>
+              <div class="textSide">
+                <h2>
+                  <span lang="en">
+                    <a title="Concordia University (Click to go the school's website)" href="https://www.concordia.ca" target="_blank" rel="noopener noreferrer"> Concordia University </a>
+                  </span>
+                  <span lang="fr">
+                    <a title="Université Concordia (Cliquez pour aller au site web de l'école)" href="https://www.concordia.ca/fr.html" target="_blank" rel="noopener noreferrer">  Université Concordia </a>
+                  </span>
+                </h2>
+                <ul class="pointsList">
+                  <li>2019 - 2023</li>
+                  <li><span lang="en"> Public University </span> <span lang="fr"> Université publique </span></li>
+                  <li>
+                    <span lang="en">
+                      Specialization in <a class="linkAway" href="https://www.concordia.ca/academics/undergraduate/computation-arts.html" target="_blank" rel="noopener noreferrer"> Computation Arts </a>
+                    </span>
+                    <span lang="fr">
+                      Spécialisation en <a class="linkAway" href="https://www.concordia.ca/fr/etudes/programmes-de-1er-cycle/arts-numeriques.html" target="_blank" rel="noopener noreferrer"> Arts numériques </a>
+                    </span>
+                  </li>
+                  <li><span lang="en"> 3.87 Cumulative GPA at the time of graduation </span> <span lang="fr"> 3.87 GPA cumulative à la graduation </span></li>
+                  <li><span lang="en"> <a class="linkAway" href="images/concordiaDiploma.pdf" target="_blank" rel="noopener noreferrer"> Graduated with Distinction </a></span> <span lang="fr"> <a class="linkAway" href="images/concordiaDiploma.pdf" target="_blank" rel="noopener noreferrer"> Diplômé avec distinction </a></span> </li>
+                  <li>
+                    <span lang="en">
+                      Worked as a student ambassador from 2022 to 2023. Delivering <a class="linkAway" href="https://www.concordia.ca/admissions/undergraduate/welcometours.html#campustours" target="_blank" rel="noopener noreferrer"> campus tours </a>
+                    </span>
+                    <span lang="fr">
+                      Travaillé en étant ambassadeur scolaire de 2022 à 2023. Délivrant des <a class="linkAway" href="https://www.concordia.ca/fr/admission/etudes-au-1er-cycle/accueilvisites.html" target="_blank" rel="noopener noreferrer"> visites guidées </a>
+                    </span>
+                  </li>
+                <ul>
+              </div>
+            </div>
+            <div class="contentBlock">
+              <div class="imageSide">
+                <span lang="en">
+                  <a href="https://www.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> <img title="Dawson College (Click to go the school's website)" src="images/rectangle/schools/dawson_crop.png"> </a>
+                </span>
+                <span lang="fr">
+                  <a href="https://fr.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> <img title="Collège Dawson (Cliquez pour aller au site web de l'école)" src="images/rectangle/schools/dawson_crop.png"> </a>
+                </span>
+              </div>
+              <div class="textSide">
+                <h2>
+                  <span lang="en">
+                    <a title="Dawson College (Click to go the school's website)" href="https://www.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> Dawson College </a>
+                  </span>
+                  <span lang="fr">
+                    <a title="Collège Dawson (Cliquez pour aller au site web de l'école)" href="https://fr.dawsoncollege.qc.ca/" target="_blank" rel="noopener noreferrer"> Collège Dawson </a>
+                  </span>
+
+                </h2>
+                <ul class="pointsList">
+                  <li>2017 - 2019</li>
+                  <li>
+                    <span lang="en">
+                      Public CEGEP
+                    </span>
+                    <span lang="fr">
+                      Cégep public
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      <a class="linkAway" href="https://www.dawsoncollege.qc.ca/interactive-media-arts/" target="_blank" rel="noopener noreferrer"> Interactive Media Arts </a>
+                    </span>
+                    <span lang="fr">
+                      <a class="linkAway" href="https://fr.dawsoncollege.qc.ca/interactive-media-arts/" target="_blank" rel="noopener noreferrer"> Arts médiatiques interactifs </a>
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      92% Average cumulative grade
+                    </span>
+                    <span lang="fr">
+                      92% note moyenne cumulative
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      <a class="linkAway" href="images/honor.pdf" target="_blank" rel="noopener noreferrer"> Received semestral honours letter </a>
+                    </span>
+                    <span lang="fr">
+                      <a class="linkAway" href="images/honor.pdf" target="_blank" rel="noopener noreferrer"> Reçu la lettre d'honneurs semesterielle </a>
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      <a class="linkAway" href="images/Recommendation_ Che.pdf" target="_blank" rel="noopener noreferrer"> Letter of recommendation from main instructor </a>
+                    </span>
+                    <span lang="fr">
+                      <a class="linkAway" href="images/Recommendation_ Che.pdf" target="_blank" rel="noopener noreferrer"> Lettre de recommandation du professeur principal </a>
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      <a class="linkAway" href="https://www.dawsoncollege.qc.ca/alc-festival/wp-content/uploads/sites/164/Verity_Press-Release.pdf" target="_blank" rel="noopener noreferrer"> Performed in a play as part of the Dawson Theatre Collective </a>
+                    </span>
+                    <span lang="fr">
+                      <a class="linkAway" href="https://www.dawsoncollege.qc.ca/alc-festival/wp-content/uploads/sites/164/Verity_Press-Release.pdf" target="_blank" rel="noopener noreferrer"> Performé dans une pièce de théâtre en faisant partie du Dawson Theatre Collective </a>
+                    </span>
+                  </li>
+                <ul>
+              </div>
+            </div>
+            <div class="contentBlock">
+              <div class="imageSide">
+                <span lang="en">
+                  <a href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> <img  title="Collège Saint-Louis (Click to go the school's website)" src="images/rectangle/schools/saintLouis_crop.png"> </a>
+                </span>
+                <span lang="fr">
+                  <a href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> <img  title="Collège Saint-Louis (Cliquez pour aller au site web de l'école)" src="images/rectangle/schools/saintLouis_crop.png"> </a>
+                </span>
+              </div>
+              <div class="textSide">
+                <h2>
+                  <span lang="en">
+                    <a title="Collège Saint-Louis (Click to go the school's website)" href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> Collège Saint-Louis </a>
+                  </span>
+                  <span lang="fr">
+                    <a title="Collège Saint-Louis (Cliquez pour aller au site web de l'école)" href="https://collegesaintlouis.ecolelachine.com/" target="_blank" rel="noopener noreferrer"> Collège Saint-Louis </a>
+                  </span>
+                </h2>
+                <ul class="pointsList">
+                  <li>2012 - 2017</li>
+                  <li>
+                    <span lang="en">
+                      Public High School
+                    </span>
+                    <span lang="fr">
+                      École secondaire publique
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      <a class="linkAway" href="https://www.ibo.org/" target="_blank" rel="noopener noreferrer"> International Baccalaureate </a>
+                    </span>
+                    <span lang="fr">
+                      <a class="linkAway" href="https://www.ibo.org/fr/" target="_blank" rel="noopener noreferrer"> Baccalauréat International </a>
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      Taken Natural Science Math
+                    </span>
+                    <span lang="fr">
+                      Pris les classes de mathématique de Science Naturelle
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      Taken Physics and Chemistry
+                    </span>
+                    <span lang="fr">
+                      Pris les classes de Physique et Chimie
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      Performed in the Dance and Acting clubs
+                    </span>
+                    <span lang="fr">
+                      Performé dans les clubs de danse et de théâtre
+                    </span>
+                  </li>
+                  <li>
+                    <span lang="en">
+                      Volunteered for Christmas Basket and Open House events
+                    </span>
+                    <span lang="fr">
+                      Fait du bénévolat pour les paniers de Noël et les événements de portes ouvertes
+                    </span>
+                  </li>
+                <ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="sectionContent" id="projectPage">
+        <div class="contentParts">
+          <div class="content">
+            <h1 id="projectName">
+              Project Name
+            </h1>
+          </div>
+          <div class="content">
+            <div class="tagsLine">
+              <h4 class="tag projectType" id="projectPageType">
+              </h4>
+              <h4 class="tag projectGenre" id="projectPageGenre">
+              </h4>
+              <h4 class="tag projectEngine" id="projectPageEngine">
+              </h4>
+            </div>
+            <h3 id="projectLine">
+              Line
+            </h3>
+          </div>
+            <div class="contentBlock">
+              <div class="imageSide">
+                <div id="projectVideoParent">
+                </div>
+                <h3 class="underImage" id="projectVideoText">
+                  <span lang="en">
+                    Video
+                  </span>
+                  <span lang="fr">
+                    Vidéo
+                  </span>
+                </h3>
+              </div>
+              <div class="textSide">
+                <h2>
+                  Description
+                </h2>
+                <div id="projectDescription">
+                </div>
+              </div>
+            </div>
+            <div class="imageSide" id="projectImage1">
+              <img id="projectImage1Image" src="images/rectangle/game2.png">
+              <h3 class="underImage" id="projectImage1Text">
+              </h3>
+            </div>
+            <div class="textSide">
+              <h2>
+                <span lang="en">
+                  My Responsibilities
+                </span>
+                <span lang="fr">
+                  Mes Responsabilités
+                </span>
+              </h2>
+                <ul class="pointsList" id="projectResponsibilities">
+                </ul>
+            </div>
+            <div class="contentBlock">
+              <div class="imageSide" id="projectImage2">
+                <img id="projectImage2Image" src="images/rectangle/test.png">
+                <h3 class="underImage" id="projectImage2Text">
+                </h3>
+              </div>
+              <div class="textSide">
+                <h2>
+                  Documentation
+                </h2>
+                  <div id="projectDocumentation">
+                  </div>
+              </div>
+            </div>
+            <div class="imageSide" id="projectImage3">
+              <img id="projectImage3Image" src="images/rectangle/game2.png">
+              <h3 class="underImage" id="projectImage3Text">
+              </h3>
+            </div>
+            <div class="textSide">
+              <h2>
+                Inspirations
+              </h2>
+              <div id="projectAdditional">
+              </div>
+            </div>
+            <div>
+              <h1>
+                <span lang="en">
+                  Other Games
+                </span>
+                <span lang="fr">
+                  Autres Jeux
+                </span>
+              </h1>
+              <div id="otherProjects">
+              </div>
+            </div>
+        </div>
+      </div>
+      <footer>
+        <em>
+          <span lang="en">
+            Website coded by Che Tan, school images belong to their respective photographers
+          </span>
+          <span lang="fr">
+            Site web codé par Che Tan, images des écoles appartiennent à leurs photographes respectifs
+          </span>
+        </em>
+      </footer>
+      <script>
+      </script>
     </div>
-    <footer>
-      <em>
-        <span lang="en">
-          Website coded by Che Tan, school images belong to their respective photographers
-        </span>
-        <span lang="fr">
-          Site web codé par Che Tan, images des écoles appartiennent à leurs photographes respectifs
-        </span>
-      </em>
-    </footer>
-  <script>
-  </script>
   </body>
 </html>

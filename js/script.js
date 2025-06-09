@@ -1,7 +1,9 @@
 "use strict";
 
 let darkMode = false;
-let language = "en";
+let language = "";
+let preLoad;
+let postLoad;
 // is the page a project or the main page?
 let isProject = false;
 let videoPlaying = false;
@@ -18,6 +20,10 @@ let urlString = "http://127.0.0.1:3000/"; // https://chetan.games/ http://127.0.
 let theUrl = new URL(urlString);
 
 function createProjectPages() {
+  preLoad = document.getElementById('preloadScreen');
+  preLoad.style.display = 'none';
+  postLoad = document.getElementById('postloadScreen');
+  postLoad.style.visibility = 'visible';
   const firstLanguage = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
   });
