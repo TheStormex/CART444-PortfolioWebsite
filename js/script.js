@@ -19,11 +19,28 @@ let setLanguageIndex = 0;
 let urlString = "http://127.0.0.1:3000/"; // https://chetan.games/ http://127.0.0.1:3000/ https://thestormex.github.io/CART444-PortfolioWebsite/
 let theUrl = new URL(urlString);
 
+window.onresize = checkSubmenu;
+
+function checkSubmenu() {
+  if (window.innerWidth <= 800) {
+    let submenuOptions = document.getElementsByClassName('projectItem');
+    for (let i = 0; i < submenuOptions.length; i++) {
+      submenuOptions[i].style.display = 'none';
+    }
+  }
+}
+
 function createProjectPages() {
   preLoad = document.getElementById('preloadScreen');
   preLoad.style.display = 'none';
   postLoad = document.getElementById('postloadScreen');
   postLoad.style.visibility = 'visible';
+  // make the project items be invisible if the website is accessed
+  let submenuOptions = document.getElementsByClassName('projectItem');
+  for (let i = 0; i < submenuOptions.length; i++) {
+    submenuOptions[i].style.display = 'none';
+  }
+  // find the language to be set if there is one
   const firstLanguage = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
   });

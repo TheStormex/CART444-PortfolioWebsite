@@ -1,11 +1,4 @@
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .sectionMenu, .sectionContent {
-    width: 100%;
-  }
-}
-
 #preloadScreen {
   display: initial;
 }
@@ -40,7 +33,7 @@
 	width: 100%;
 	height: 100%;
 	text-align: left;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 #videoContainer {
@@ -66,6 +59,16 @@
 	object-fit: contain;
   border-radius: 0;
   width: 60%;
+}
+
+#preloadName {
+  margin-top: 3%;
+  margin-left: 40%;
+  vertical-align: middle;
+  align: middle;
+  object-fit: contain;
+  border-radius: 0;
+  width: 20%;
 }
 
 #nameSpan {
@@ -207,20 +210,23 @@
 	overflow: hidden;
 }
 
-.sectionContent > div {
+.sectionContent {
 	display: inline-block;
+  float: right;
+  width: 82%;
 }
 
 .sectionMenu {
 	width: 18%;
-	height: 100%;
+	/* height: 100%; */
 	background-color: #000020;
 	position: fixed;
+  float: left;
 	text-align: left;
 }
 
 .contentParts {
-	width: 82%;
+	/* width: 82%; */
 	display: inline-block;
 	position: relative;
 	text-align: center;
@@ -233,9 +239,9 @@
 
 .menuItem {
 	display: block;
-  transition-duration: 0.2s;
+  /* transition-duration: 0.2s; */
 	text-decoration: none;
-	font-size: calc(1.8vh + 0.1vw);
+	font-size: 1.2vw;
 	margin-top: 2%;
 	margin-bottom: 2%;
 	padding: 0.6%;
@@ -244,15 +250,16 @@
 
 .menuItem:hover {
 	color: #FF7800;
-	font-size: 1.22vw;
+	/* font-size: 1.22vw; */
 	cursor: pointer;
 }
 
 .menuSide {
 	display: inline-block;
-	width: 15%;
-	height: 100%;
-	margin: 0;
+  /* display: none; */
+  width: 15%;
+  height: 50%;
+  margin: 0;
 }
 
 .pointsList {
@@ -303,8 +310,10 @@
 }
 
 .dropDown {
-	width: 35%;
-	margin-left: 65%;
+  display: inline-block;
+  width: 35%;
+	margin-left: 65%;;
+  text-decoration: none;
 }
 
 .controller {
@@ -389,6 +398,9 @@ ul {
 li {
   list-style: square;
 	padding-left: 0.5vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: calc(5px + 1vw);
 }
 
 li::marker {
@@ -407,7 +419,7 @@ p {
 	margin-top: 0.5vh;
 	margin-left: 3.5vw;
 	margin-right:2vw;
-	font-size: 1vw;
+	font-size: calc(5px + 1vw);
 	text-align: justify;
 	line-height: 150%;
 }
@@ -440,8 +452,9 @@ button {
 }
 
 button:hover {
-	font-size: 4.5vw;
+	/* font-size: 4.5vw; */
 	cursor: pointer;
+  opacity: 70%;
 }
 
 img {
@@ -453,7 +466,7 @@ img {
 
 h1 {
 	text-align: center;
-	font-size: 4vw;
+	font-size: calc(15px + 2.5vw);
 	margin: 0;
 	margin-top: 1.8vh;
 	margin-bottom: 1.8vh;
@@ -466,12 +479,12 @@ h2 {
 	text-decoration: underline;
 	text-decoration-color: #FFD355;
 	text-align: center;
-	font-size: 2vw;
+  font-size: calc(8px + 1.6vw);
 }
 
 h4 {
 	text-align: center;
-	font-size: 1.5vw;
+	font-size: calc(5px + 1vw);
 	color: #FFFFFF;
 	margin: 0;
 	margin-top: 0.5%;
@@ -493,8 +506,10 @@ a {
 footer {
 	margin-top: 1%;
 	margin-left: 20%;
+  height: 5%;
 	text-align: center;
 	background-color: #FF7800;
+  float: left;
 	color: #FFFFFF;
 }
 
@@ -509,8 +524,7 @@ strong {
 	font-size: inherit;
 	cursor: help;
 	text-decoration-line: none;
-	/* border: 3px; */
-	padding: 0.05vw;
+	border: 1px;
 	border-style: solid;
 	border-color: #ffD355;
 }
@@ -519,4 +533,60 @@ strong:hover {
 	color: #000000;
 	background-color: #FFFFFF;
 	font-size: inherit;
+}
+
+@media screen and (max-width: 1280px) {
+  /* For mobile phones: */
+  .sectionMenu, .sectionContent {
+    width: 100%;
+  }
+  .sectionContent {
+    margin-top: 20%
+  }
+  .sectionMenu {
+    overflow: hidden;
+    display: inline;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+  }
+  #title {
+    margin: 0.1%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 20%;
+    float: left;
+  }
+  #menuBar {
+    display: inline-block;
+    width: 79%;
+  }
+  .menuItem {
+    display: inline-block;
+    font-size: 2.7vw;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .dropDown {
+    width: 5%;
+    margin-left: 1%;
+  }
+  .menuSide {
+    display: none;
+  }
+  #menu {
+    padding-top: 5%;
+  }
+  p {
+    font-size: calc(5px + 1.5vw);
+  }
+  h2 {
+    font-size: calc(8px + 2vw);;
+  }
+  .portfolioGame {
+    width: 90%;
+  }
+  h5 {
+    font-size: calc(7px + 1.7vw);
+  }
 }
